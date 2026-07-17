@@ -41,6 +41,10 @@ SEARCH_QUERIES = [
     "VLA vision language action",
     "robot manipulation world model",
     "physical AI simulation",
+    "physical intelligence",
+    "spatial intelligence",
+    "spatial AI",
+    "world action model",
     "dreamer RSSM",
     "JEPA predictive architecture",
     "genie interactive world",
@@ -52,11 +56,14 @@ SEARCH_QUERIES = [
 # Broader than arXiv queries to catch trending papers that don't use exact terms
 SOURCE_FILTER_KEYWORDS = [
     "world model", "world models", "embodied", "physical ai",
+    "physical intelligence", "spatial intelligence", "spatial ai",
     "vla", "vision language action", "robot", "manipulation",
     "simulation", "digital twin", "predictive model", "dreamer",
     "jepa", "genie", "gaia", "cosmos", "video generation",
     "autonomous driving", "reinforcement learning", "model-based",
     "agent", "planning", "interactive", "generative simulation",
+    "spatial reasoning", "3D world", "ego-centric", "open-world",
+    "long-horizon",
 ]
 
 # Valid paper sections in README (only these have paper tables)
