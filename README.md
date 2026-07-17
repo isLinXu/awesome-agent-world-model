@@ -1,13 +1,13 @@
 # Awesome Agent World Model 🧠🌍
 
 > **智能体世界模型（Agent World Model）**——让 AI 在"想象"中试错、在虚拟中成长的前沿技术栈。
-> 本列表全面覆盖从环境生成管线到神经世界模拟器、从学术论文到工业落地的全生态资源，涵盖 **350+** 高质量条目。
+> 本列表全面覆盖从环境生成管线到神经世界模拟器、从学术论文到工业落地的全生态资源，涵盖 **380+** 高质量条目。
 > 由 [isLinXu](https://github.com/isLinXu) 维护，持续更新中。欢迎 Star ⭐ 与贡献！
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![GitHub Stars](https://img.shields.io/github/stars/isLinXu/Awesome-Agent-World-Model?style=social)](https://github.com/isLinXu/Awesome-Agent-World-Model)
 [![Last Update](https://img.shields.io/badge/Last%20Update-2026--07--17-brightgreen)]()
-[![Version](https://img.shields.io/badge/Version-7.0-blue)]()
+[![Version](https://img.shields.io/badge/Version-7.1-blue)]()
 [![Coverage](https://img.shields.io/badge/Coverage-99%25%2B-brightgreen)]()
 [![Entries](https://img.shields.io/badge/Entries-380%2B-orange)]()
 
@@ -672,6 +672,14 @@
 ---
 
 ## 📈 技术全景对比
+
+### 世界模型技术全景图
+
+<p align="center">
+  <img src="assets/world-model-landscape-v7.png" alt="Awesome Agent World Model Landscape" width="100%">
+</p>
+
+> **图示**：三层架构全景图 —— 基础设施层（数据集/仿真/硬件）、技术核心层（世界模型/VLA/训练/Agent）、应用层（自动驾驶/机器人/游戏/工业）。380+ 资源全覆盖。
 
 ### 世界模型框架架构对比
 
@@ -1390,6 +1398,7 @@ graph LR
 | v1.0-v5.0 | 2025.06-2026.05 | 79→300+ | 七轮深度调研，从初始 79 条目扩展至 300+，覆盖 20 个板块 |
 | v6.0 | 2026.07.02 | 300+ | 占位符修复、代码示例、性能对比矩阵、产业报告、BibTeX 导出 |
 | **v7.0** | **2026.07.17** | **380+** | **六大流派分类、Cosmos 3/Predict 2.5、Marble 1.1、NeuroVLA、Momenta IPO、WAIC 2026、RynnWorld-4D、WorldArena 2.0、CVPR 2026 论文×5、AGIBOT World 2026 数据集、30+ 最新论文、去重整理** | **9 轮** |
+| **v7.1** | **2026.07.17** | **380+** | **技术全景图（三层架构）、微信交流群二维码、全面性评估报告** | **10 轮** |
 
 | 版本 | 发布日期 | 条目数 | 覆盖率 | 核心增强 | 调研轮次 |
 |:-----|:-----|:-----|:-----|:-----|:-----|
