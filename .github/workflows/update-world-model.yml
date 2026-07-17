@@ -12,6 +12,10 @@ on:
         description: 'End date (YYYY-MM-DD). Empty = today'
         required: false
         default: ''
+      sources:
+        description: 'Data sources (comma-separated: arxiv,huggingface,paperswithcode)'
+        required: false
+        default: 'arxiv,huggingface,paperswithcode'
   # 每天定时运行
   schedule:
     - cron: "0 0 * * *"  # 每天 UTC 00:00 运行
@@ -42,7 +46,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests pyyaml
 
-      - name: Fetch new papers
+      - name: Fetch new papers (multi-source)
         run: |
           if [ -n "${{ github.event.inputs.start_date }}" ]; then
             START_DATE="${{ github.event.inputs.start_date }}"
@@ -54,8 +58,17 @@ jobs:
           else
             END_DATE=$(date -u +%Y-%m-%d)
           fi
+          # Determine sources (default: all three)
+          SOURCES="${{ github.event.inputs.sources }}"
+          if [ -z "$SOURCES" ]; then
+            SOURCES="arxiv,huggingface,paperswithcode"
+          fi
           echo "Fetching papers from: $START_DATE to $END_DATE"
-          python scripts/auto_update.py --start_date "$START_DATE" --end_date "$END_DATE"
+          echo "Sources: $SOURCES"
+          python scripts/auto_update.py \
+            --start_date "$START_DATE" \
+            --end_date "$END_DATE" \
+            --sources "$SOURCES"
 
       - name: Update counts and metadata
         run: |
@@ -70,6 +83,6 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "auto: daily paper update $(date -u +%Y-%m-%d)"
+          git commit -m "auto: daily paper update $(date -u +%Y-%m-%d) [multi-source]"
           git pull --rebase origin main
           git push origin HEAD:main
