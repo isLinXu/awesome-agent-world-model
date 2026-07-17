@@ -96,7 +96,19 @@
 - [🏗️ 架构图示](#架构图示)
 - [📝 BibTeX 引用导出](#bibtex-引用导出)
 - [🙌 贡献指南](#贡献指南)
+- [💬 微信交流群](#微信交流群)
 - [📚 参考文献](#参考文献)
+
+---
+
+## 💬 微信交流群
+
+欢迎加入【World Model】we are the world 交流群，与全球世界模型研究者共同探讨前沿技术！
+
+> 群聊：【World Model】we are the world
+> 该二维码7天内（7月24日前）有效，过期后请通过 GitHub Issues 获取最新二维码
+
+<img src="assets/wechat-group-qr.jpg" alt="World Model 微信交流群" width="240" />
 
 ---
 
@@ -1412,7 +1424,7 @@ v7.0: 4.84/5.0 (生态完善版) ← 当前
 ---
 
 > **维护者**：[isLinXu](https://github.com/isLinXu)
-> **最后更新**：2026-07-17
+> **最后更新**：2026-07-17（v7.1 微信群二维码）
 > **许可证**：[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 > **引用格式**：`isLinXu/Awesome-Agent-World-Model v7.0 (2026)`
 
