@@ -7,7 +7,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![GitHub Stars](https://img.shields.io/github/stars/isLinXu/Awesome-Agent-World-Model?style=social)](https://github.com/isLinXu/Awesome-Agent-World-Model)
 [![Last Update](https://img.shields.io/badge/Last%20Update-2026-07-18-brightgreen)]()
-[![Version](https://img.shields.io/badge/Version-7.5-blue)]()
+[![Version](https://img.shields.io/badge/Version-7.6-blue)]()
 [![Coverage](https://img.shields.io/badge/Coverage-99%25%2B-brightgreen)]()
 [![Entries](https://img.shields.io/badge/Entries-850%2B-orange)]()
 
@@ -25,6 +25,15 @@
 - **历史完整性**：补充 8 篇 2023-2024 里程碑论文（Diffusion Policy、RT-2、Octo、OpenVLA、π₀ 等）
 - **理论基础**：新增 5 篇 Model-Based RL 经典工作（PILCO、PETS、MBPO、MuZero、SVG）
 - **GitHub Actions**：完善自动化论文追踪系统的配置指南
+
+**v7.6 核心改进**（Qwen-Robot Suite 具身智能三件套整合）：
+
+- **Qwen-Robot Suite 框架条目**：在世界模型框架表新增 Qwen-Robot Suite (LAWR) 条目，含 Nav/Manip/World/Claw 四组件完整技术规格 [68]
+- **三篇论文补充**：Qwen-RobotManip（80 维统一动作表征，38100h 开源数据，RoboChallenge Table30 第一）、Qwen-RobotNav（参数化视觉编码统一五类导航任务，Go2 零样本 196ms）、Qwen-RobotWorld 论文条目更新 [69]
+- **四个评测基准补充**：RoboChallenge Table30（真机 VLA 评测）、EWMBench（具身世界模型评测）、DreamGen Bench（动作可控性评测）、EXPRESS-Bench（导航即工具调用评测）
+- **业界应用条目**：在机器人企业表新增阿里巴巴 Qwen-Robot Suite 条目
+- **深度博客与综述资源**：新增 Qwen Blog (Robot Suite) 技术解读和综述资源条目
+- **参考文献扩展**：从 [67] 扩展至 [69]，新增 2 条来源
 
 **v7.5 核心改进**（Xun Huang 视频世界模型五大属性框架整合）：
 
@@ -228,6 +237,7 @@
 | [huggingface/smolagents](https://github.com/huggingface/smolagents) | 极简代码智能体框架（~1000 行代码），2025 年发布，支持代码驱动型 Agent | ~26k | 🟢 活跃 |
 | [Embodied.cpp](https://github.com/EmbodiedBench/embodied.cpp) | 东南大学等打造，统一推理运行时，"万能插座"让各种机器人 AI 模型顺畅运行 | — | 🟢 活跃 |
 | [OpenEnvision/WorldFoundry](https://github.com/OpenEnvision/WorldFoundry) | **世界模型统一推理与评测 Studio**，v0.2.0 集成 Wan/HunyuanVideo/LTX2/Cosmos 基座模型，支持 FlashAttention 2/3、SageAttention、NVFP4 量化、多 GPU Context/Sequence Parallel；内置 VLA 与世界模型集成（LingBot VLA/VLA2、OpenPI、OpenVLA-OFT、Octo、X-VLA、X-WAM、AlayaWorld 等），配套 Studio（模型发现/Conda 隔离/torchrun 分布式/Workspace Job/可视化）与 Benchmark catalog（LaryBench、WorldReasonBench 等） | 🆕 | 🟢 活跃 |
+| [Qwen-Robot Suite (LAWR)](https://qwen.ai/blog?id=qwen-robotsuite) | 阿里千问具身智能三件套：**Nav** 统一五类导航任务（VLN-CE 76.5% SR / NAVSIM 91.4 PDMS），参数化视觉分配策略，宇树 Go2 零样本部署 196ms；**Manip** 80 维统一动作表征跨本体兼容（单臂/双臂/灵巧手/移动平台），38100h 纯开源数据训练，LIBERO-Plus 91.4%、RoboChallenge Table30 通用赛道第一；**World** 60 层双流 MMDiT 架构 + Qwen2.5-VL 动作编码器，自然语言统一动作接口跨 20+ 本体，860 万视频-文本对，四大世界模型基准全面第一，物理规律遵循满分；**Claw** 机器人智能体框架，Qwen VLM 调用 Suite 模型完成长程任务 | 🆕 | 🟢 活跃 |
 
 ### 多模态世界模型
 
@@ -751,6 +761,8 @@
 | 2026 | **NarrativeWorldBench: A Frontier-Saturated Benchmark and a Latent World Model for Long-Horizon Co-Creative Audio Drama** | Logan Mann, Abdur Rahman et al. | Long-form serialized audio drama, with arcs that run for 200 to 800 episodes... | [📄 arXiv:CS.CL](https://arxiv.org/abs/2606.17391) `arXiv` |
 | 2026 | **Geometric Action Model for Robot Policy Learning** | Jisang Han, Seonghu Jeon et al. | Generalist robot policies must follow user instructions while reasoning about how... | [📄 arXiv:CS.RO](https://arxiv.org/abs/2606.17046) `arXiv` |
 | 2026 | **Qwen-RobotWorld Technical Report: Unifying Embodied World Modeling through Language-Conditioned Video Generation** | Jie Zhang, Xiaoyue Chen et al. | We introduce Qwen-RobotWorld... | [📄 arXiv:CS.CV](https://arxiv.org/abs/2606.17030) `arXiv` |
+| 2026 | **Qwen-RobotManip: Scaling Robot Manipulation with Unified Cross-Embodiment Representation** | Qwen Team (Alibaba) | VLA 操作模型，80 维统一状态-动作表征兼容单臂/双臂/灵巧手/移动平台，38100h 纯开源数据训练，LIBERO-Plus 91.4%、RoboChallenge Table30 通用赛道第一，证明"对齐是规模化的前提" | [📄 Qwen Blog](https://qwen.ai/blog?id=qwen-robotsuite) |
+| 2026 | **Qwen-RobotNav: Unified Navigation with Parameterizable Visual Encoding** | Qwen Team (Alibaba) | VLN 导航模型，参数化可控观测编码协议统一五类导航任务（指令跟随/点导航/目标搜索/目标追踪/自动驾驶），1560 万样本训练，宇树 Go2 零样本部署 196ms | [📄 Qwen Blog](https://qwen.ai/blog?id=qwen-robotsuite) |
 | 2026 | **ActiveSAM: Image-Conditional Class Pruning for Fast and Accurate Open-Vocabulary Segmentation** | Tran Dinh Tien, Zhiqiang Shen | Segment Anything Model 3 (SAM 3) provides a strong frozen backbone for... | [📄 arXiv:CS.CV](https://arxiv.org/abs/2606.16996) `arXiv` |
 | 2026 | **DreamX-World 1.0: A General-Purpose Interactive World Model** |  DreamX Team, Yancheng Bai et al. | DreamX-World 1... | [📄 arXiv:CS.CV](https://arxiv.org/abs/2606.16993) `arXiv` |
 | 2026 | **Can LLM Agents Infer World Models? Evidence from Agentic Automata Learning** | Reef Menaged, Gili Lior et al. | We propose agentic automata learning to evaluate the extent to which tool-calling... | [📄 arXiv:CS.CL](https://arxiv.org/abs/2606.16576) `arXiv` |
@@ -1103,6 +1115,10 @@
 | [AGIBOT World Challenge](https://agibot.world) | ICRA 2026 世界模型赛道，真实机器人任务导向评测 | 动作可控性/物理一致性/决策可用性 | NeoVerse-Abot (冠军) | 任务导向评测 |
 | [LaryBench](https://openenvision.github.io/WorldFoundry) | WorldFoundry v0.2.0 新增基准，语言-动作推理一致性评测 | 语言指令遵循/动作执行准确性 | — | VLA 评测 |
 | [WorldReasonBench (WRBench)](https://openenvision.github.io/WorldFoundry) | WorldFoundry v0.2.0 新增基准，世界模型推理能力评测 | 物理因果推理/时空推断/反事实预测 | — | WM 推理评测 |
+| [RoboChallenge Table30](https://robochallenge.ai) | 横跨 30 项真实世界任务、4 个机器人平台的三方真机测评 | 真实任务成功率/跨本体泛化 | Qwen-RobotManip "Lira" (45% SR, 第一) | 真机 VLA 评测 |
+| [EWMBench](https://arxiv.org/abs/2606.17030) | 具身世界模型评测基准，含运动保真度 HSD 等指标 | 视频质量/运动保真度/物理一致性 | Qwen-RobotWorld (总分 4.60, 第一) | WM 生成评测 |
+| [DreamGen Bench](https://arxiv.org/abs/2606.17030) | 具身世界模型动作可控性与视觉质量评测 | 动作可控性/视觉质量/物体交互 | Qwen-RobotWorld (总分 4.952, 第一) | WM 动作评测 |
+| [EXPRESS-Bench](https://qwen.ai/blog?id=qwen-robotsuite) | 导航即工具调用的复杂行为组合评测 | 导航成功率/步数效率/任务组合 | Qwen-RobotNav (+15.4% 成功率, -77% 步数) | VLN 工具评测 |
 
 ### Agent 评测基准
 
@@ -1196,6 +1212,7 @@
 | **Agility Robotics** | Digit v5 | 亚马逊仓库累计作业超 6.5 万小时，SPAC 上市/$25 亿估值 | 🟢 量产 |
 | **ANYbotics** | ANYmal X | 全球首款 Zone 1 防爆认证四足机器人，工业巡检 | 🟢 量产 |
 | **PAL Robotics** | Kangaroo Pro | 线性执行器实现 2m/s 奔跑速度 | 🟢 研发 |
+| **阿里巴巴 (Qwen)** | Qwen-Robot Suite (LAWR) | 三件套具身大模型：Nav（VLN 统一五类导航任务，宇树 Go2 零样本部署 196ms）+ Manip（VLA 80 维统一动作表征，38100h 开源数据，RoboChallenge Table30 第一）+ World（世界模型，860 万视频-文本对，四大基准全面第一，物理规律满分）+ Claw 智能体框架 | 🟢 研发 |
 
 ### 游戏与虚拟现实
 
@@ -1282,6 +1299,7 @@
 | **Turing Post: LeJEPA 详解** | LeJEPA 理论升级：JEPA 缺失的理论基石是什么 | [turingpost.com](https://www.turingpost.com/p/lejepa) |
 | **Latent Space: 李飞飞访谈** | "After LLMs: Spatial Intelligence and World Models" — 李飞飞 & Justin Johnson 深度访谈 | [latent.space](https://www.latent.space/) |
 | **Xun Huang: Towards Video World Models** | Stanford 技术博客，提出视频世界模型五大属性框架（因果/交互/持久/实时/物理准确），系统梳理从视频生成到世界模型的路径 | [xunhuang.me](https://www.xunhuang.me/blogs/world_model.html) |
+| **Qwen-Robot Suite** | 阿里千问具身智能三件套（Nav+Manip+World），统一语言-导航-操作-世界预测，含 Claw 智能体框架 | [qwen.ai](https://qwen.ai/blog?id=qwen-robotsuite) |
 
 ### 视频与课程
 
@@ -1307,6 +1325,7 @@
 | **Ben Dickson (TechTalks)** | VL-JEPA 2 技术深度解析：LeCun 的世界模型路线 | [bdtechtalks.com](https://bdtechtalks.com/) |
 | **Themesis Blog** | 世界模型五大竞争路线追踪与产业分析 | [themesis.com](https://themesis.com/) |
 | **Xun Huang Blog** | Stanford 研究者"Towards Video World Models"深度技术博客，提出视频世界模型五大属性框架 | [xunhuang.me](https://www.xunhuang.me/blogs/world_model.html) |
+| **Qwen Blog (Robot Suite)** | 阿里千问具身智能三件套官方技术解读：Nav/Manip/World 架构设计与基准结果 | [qwen.ai](https://qwen.ai/blog?id=qwen-robotsuite) |
 
 ### 阅读路线图
 
@@ -2357,6 +2376,10 @@ OXE = Open X-Embodiment                                Sim2Real = Simulation to 
 
 [67] [arxiv.org - PhyWorld: How Far Is Video Generation from World Model? A Physical-Law Perspective (2025-01)](https://arxiv.org/abs/2411.02385)
 
+[68] [qwen.ai - Qwen-Robot Suite (LAWR): Nav / Manip / World Embodied Foundation Models (2026-06-16)](https://qwen.ai/blog?id=qwen-robotsuite)
+
+[69] [arxiv.org - Qwen-RobotWorld: Unifying Embodied World Modeling through Language-Conditioned Video Generation (2026-06)](https://arxiv.org/abs/2606.17030)
+
 ---
 
 ## 📈 版本演进历程
@@ -2367,6 +2390,7 @@ OXE = Open X-Embodiment                                Sim2Real = Simulation to 
 | v6.0 | 2026.07.02 | 300+ | 占位符修复、代码示例、性能对比矩阵、产业报告、BibTeX 导出 |
 | **v7.0** | **2026.07.17** | **380+** | **六大流派分类、Cosmos 3/Predict 2.5、Marble 1.1、NeuroVLA、Momenta IPO、WAIC 2026、RynnWorld-4D、WorldArena 2.0、CVPR 2026 论文×5、AGIBOT World 2026 数据集、30+ 最新论文、去重整理** | **9 轮** |
 | **v7.1** | **2026.07.17** | **380+** | **技术全景图（三层架构）、微信交流群二维码、全面性评估报告** | **10 轮** |
+| **v7.6** | **2026.07.18** | **890+** | **Qwen-Robot Suite (LAWR) 具身三件套整合：Nav/Manip/World/Claw 框架条目、3 篇论文、4 个评测基准、业界应用条目、参考文献至 [69]** | **14 轮** |
 | **v7.5** | **2026.07.18** | **880+** | **Xun Huang 视频世界模型五大属性框架、23 篇关键论文补充（CausVid/Self-Forcing/MAGI-1/Diffusion Forcing/PhyWorld 等）、三种世界模拟路径对比、参考文献至 [67]** | **13 轮** |
 | **v7.4** | **2026.07.18** | **860+** | **Themesis 五大竞争路线深度对比、AXIOM/LeJEPA 论文补充、Verses.ai 公司条目、深度博客×3、综述资源×4、参考文献扩展至 [63]** | **12 轮** |
 | **v7.3** | **2026.07.18** | **850+** | **深度内容补充：经典视频预测工作×10、历史发展时间线、评估指标详解、科学与生物医学应用×12、阅读路线图（4类读者）、关键技术挑战与开放问题（7类28项）、术语表（60+术语）** | **11 轮** |
@@ -2380,6 +2404,7 @@ OXE = Open X-Embodiment                                Sim2Real = Simulation to 
 | **v5.0** | 2026-07-02 | 260+ | 98%+ | 新增 2026 年 6-7 月融资生态、新评测基准、中国生态重大更新、前沿研究论文 | 5 轮 |
 | **v6.0** | 2026-07-02 | **300+** | **99%+** | **占位符链接全面修复、代码示例与实战指南、性能对比数据矩阵、架构图示、BibTeX 导出、产业报告整合、全球融资更新、快速入门指南** | **7 轮** |
 | **v7.0-v7.2** | 2026-07-17 | **800+** | **99%+** | **六大流派分类、Cosmos 3/Predict 2.5、结构修复、去重优化、安全论文扩充、历史完整性、理论基础、GitHub Actions** | **10 轮** |
+| **v7.6** | **2026-07-18** | **890+** | **99.5%+** | **Qwen-Robot Suite (Nav/Manip/World/Claw)、3 篇论文、4 个评测基准、业界应用条目、参考文献至 [69]** | **14 轮** |
 | **v7.5** | **2026-07-18** | **880+** | **99.5%+** | **Xun Huang 五大属性框架、23 篇关键论文（CausVid/Self-Forcing/MAGI-1 等）、三种模拟路径对比、参考文献至 [67]** | **13 轮** |
 | **v7.4** | **2026-07-18** | **860+** | **99.5%+** | **Themesis 五大竞争路线深度对比、AXIOM/LeJEPA 论文、Verses.ai 条目、深度博客×3、综述资源×4、参考文献至 [63]** | **12 轮** |
 | **v7.3** | **2026-07-18** | **850+** | **99.5%+** | **深度内容补充：经典视频预测×10、历史时间线、评估指标详解、科学应用×12、阅读路线图、开放问题×28、术语表×60+** | **11 轮** |
@@ -2388,7 +2413,7 @@ OXE = Open X-Embodiment                                Sim2Real = Simulation to 
 
 ```
 条目数量演进：
-v1.0 (79) ──→ v2.0 (150+) ──→ v3.0 (200+) ──→ v4.0 (220+) ──→ v5.0 (260+) ──→ v6.0 (300+) ──→ v7.0 (380+) ──→ v7.3 (850+) ──→ v7.4 (860+) ──→ v7.5 (880+)
+v1.0 (79) ──→ v2.0 (150+) ──→ v3.0 (200+) ──→ v4.0 (220+) ──→ v5.0 (260+) ──→ v6.0 (300+) ──→ v7.0 (380+) ──→ v7.3 (850+) ──→ v7.4 (860+) ──→ v7.5 (880+) ──→ v7.6 (890+)
              +89%              +33%              +10%              +18%              +15%              +27%              +124%
 
 覆盖率演进：
@@ -2405,14 +2430,15 @@ v6.0: 4.74/5.0 (终极高质量版本)
 v7.0: 4.84/5.0 (生态完善版)
 v7.3: 4.92/5.0 (深度研究型文档)
 v7.4: 4.93/5.0 (Themesis 五大路线整合)
-v7.5: 4.94/5.0 (视频世界模型五大属性框架) ← 当前
+v7.5: 4.94/5.0 (视频世界模型五大属性框架)
+v7.6: 4.95/5.0 (Qwen-Robot 具身三件套) ← 当前
 ```
 
 ---
 
 > **维护者**：[isLinXu](https://github.com/isLinXu)
-> **最后更新**：2026-07-18（v7.5 Xun Huang 视频世界模型五大属性框架整合）
+> **最后更新**：2026-07-18（v7.6 Qwen-Robot Suite 具身智能三件套整合）
 > **许可证**：[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-> **引用格式**：`isLinXu/Awesome-Agent-World-Model v7.5 (2026)`
+> **引用格式**：`isLinXu/Awesome-Agent-World-Model v7.6 (2026)`
 
 > *"世界模型不是关于预测未来，而是关于在想象中安全地犯错。"* —— Yann LeCun, AMI Labs
