@@ -113,99 +113,129 @@ SOURCE_BADGES = {
 # ─── Data Source 1: arXiv API ────────────────────────────────────────────────
 
 def fetch_arxiv_papers(start_date: str, end_date: str, max_results: int = 50) -> List[Dict]:
-    """Fetch papers from arXiv API with retry logic."""
+    """Fetch papers from arXiv API with retry logic and pagination.
+
+    For long date ranges, arXiv returns at most max_results per request.
+    We paginate with increasing offset until we've exhausted results or
+    reached the global cap (500 papers to avoid excessive API load).
+    """
     query = " OR ".join([f'"{q}"' for q in SEARCH_QUERIES])
+    all_papers: List[Dict] = []
+    offset = 0
+    global_cap = 2000  # safety cap for large date ranges (expanded for 18-month full coverage)
 
-    params = {
-        "search_query": f"all:({query})",
-        "start": 0,
-        "max_results": max_results,
-        "sortBy": "submittedDate",
-        "sortOrder": "descending",
-    }
+    while offset < global_cap:
+        params = {
+            "search_query": f"all:({query})",
+            "start": offset,
+            "max_results": max_results,
+            "sortBy": "submittedDate",
+            "sortOrder": "descending",
+        }
 
-    max_retries = 3
-    for attempt in range(max_retries):
+        response = None
+        max_retries = 3
+        for attempt in range(max_retries):
+            try:
+                if attempt > 0:
+                    wait = 2 ** attempt
+                    print(f"  [arXiv] Retrying page offset={offset} in {wait}s... (attempt {attempt + 1}/{max_retries})")
+                    time.sleep(wait)
+
+                response = requests.get(ARXIV_API, params=params, timeout=30)
+                response.raise_for_status()
+                break
+            except requests.RequestException as e:
+                print(f"  [arXiv] Error offset={offset} (attempt {attempt + 1}): {e}", file=sys.stderr)
+                if attempt == max_retries - 1:
+                    return all_papers
+
         try:
-            if attempt > 0:
-                wait = 2 ** attempt
-                print(f"  [arXiv] Retrying in {wait}s... (attempt {attempt + 1}/{max_retries})")
-                time.sleep(wait)
+            root = ET.fromstring(response.content)
+        except ET.ParseError as e:
+            print(f"  [arXiv] XML parse error offset={offset}: {e}", file=sys.stderr)
+            return all_papers
 
-            response = requests.get(ARXIV_API, params=params, timeout=30)
-            response.raise_for_status()
+        ns = {
+            "atom": "http://www.w3.org/2005/Atom",
+            "arxiv": "http://arxiv.org/schemas/atom",
+        }
+
+        batch_papers = []
+        for entry in root.findall("atom:entry", ns):
+            title_elem = entry.find("atom:title", ns)
+            published_elem = entry.find("atom:published", ns)
+            summary_elem = entry.find("atom:summary", ns)
+            id_elem = entry.find("atom:id", ns)
+
+            title = title_elem.text.strip() if title_elem is not None and title_elem.text else ""
+            published = published_elem.text[:10] if published_elem is not None and published_elem.text else ""
+            summary = summary_elem.text.strip() if summary_elem is not None and summary_elem.text else ""
+            entry_id = id_elem.text if id_elem is not None and id_elem.text else ""
+
+            # Extract arXiv ID
+            arxiv_id = ""
+            arxiv_match = re.search(r'arXiv:(\d+\.\d+)', entry_id)
+            if arxiv_match:
+                arxiv_id = arxiv_match.group(1)
+            else:
+                url_match = re.search(r'/(\d+\.\d+)', entry_id)
+                arxiv_id = url_match.group(1) if url_match else ""
+
+            # Categories
+            categories = []
+            primary_category = ""
+            for cat in entry.findall("atom:category", ns):
+                term = cat.get("term", "")
+                categories.append(term)
+                if not primary_category:
+                    primary_category = term
+
+            # Authors
+            authors = []
+            for author in entry.findall("atom:author", ns):
+                name_elem = author.find("atom:name", ns)
+                if name_elem is not None and name_elem.text:
+                    authors.append(name_elem.text)
+
+            # Filter by date range
+            if start_date <= published <= end_date:
+                batch_papers.append({
+                    "title": title,
+                    "authors": authors,
+                    "published": published,
+                    "summary": summary,
+                    "arxiv_id": arxiv_id,
+                    "primary_category": primary_category,
+                    "categories": categories,
+                    "source": "arxiv",
+                    "upvotes": 0,
+                    "github_repo": "",
+                    "github_stars": 0,
+                })
+
+        print(f"  [arXiv] Page offset={offset}: {len(batch_papers)} papers in range")
+        all_papers.extend(batch_papers)
+
+        # Pagination stop conditions
+        if len(batch_papers) == 0:
+            # No more papers in date range
             break
-        except requests.RequestException as e:
-            print(f"  [arXiv] Error (attempt {attempt + 1}): {e}", file=sys.stderr)
-            if attempt == max_retries - 1:
-                return []
 
-    try:
-        root = ET.fromstring(response.content)
-    except ET.ParseError as e:
-        print(f"  [arXiv] XML parse error: {e}", file=sys.stderr)
-        return []
+        # Check if the oldest paper in this batch is before start_date
+        # If so, subsequent pages will be even older, stop here
+        if batch_papers:
+            oldest_in_batch = min(p["published"] for p in batch_papers)
+            if oldest_in_batch < start_date:
+                break
 
-    ns = {
-        "atom": "http://www.w3.org/2005/Atom",
-        "arxiv": "http://arxiv.org/schemas/atom",
-    }
+        offset += max_results
 
-    papers = []
-    for entry in root.findall("atom:entry", ns):
-        title_elem = entry.find("atom:title", ns)
-        published_elem = entry.find("atom:published", ns)
-        summary_elem = entry.find("atom:summary", ns)
-        id_elem = entry.find("atom:id", ns)
+        # Polite rate limiting between pages
+        time.sleep(3)
 
-        title = title_elem.text.strip() if title_elem is not None and title_elem.text else ""
-        published = published_elem.text[:10] if published_elem is not None and published_elem.text else ""
-        summary = summary_elem.text.strip() if summary_elem is not None and summary_elem.text else ""
-        entry_id = id_elem.text if id_elem is not None and id_elem.text else ""
-
-        # Extract arXiv ID
-        arxiv_id = ""
-        arxiv_match = re.search(r'arXiv:(\d+\.\d+)', entry_id)
-        if arxiv_match:
-            arxiv_id = arxiv_match.group(1)
-        else:
-            url_match = re.search(r'/(\d+\.\d+)', entry_id)
-            arxiv_id = url_match.group(1) if url_match else ""
-
-        # Categories
-        categories = []
-        primary_category = ""
-        for cat in entry.findall("atom:category", ns):
-            term = cat.get("term", "")
-            categories.append(term)
-            if not primary_category:
-                primary_category = term
-
-        # Authors
-        authors = []
-        for author in entry.findall("atom:author", ns):
-            name_elem = author.find("atom:name", ns)
-            if name_elem is not None and name_elem.text:
-                authors.append(name_elem.text)
-
-        # Filter by date
-        if start_date <= published <= end_date:
-            papers.append({
-                "title": title,
-                "authors": authors,
-                "published": published,
-                "summary": summary,
-                "arxiv_id": arxiv_id,
-                "primary_category": primary_category,
-                "categories": categories,
-                "source": "arxiv",
-                "upvotes": 0,
-                "github_repo": "",
-                "github_stars": 0,
-            })
-
-    print(f"  [arXiv] Fetched {len(papers)} papers")
-    return papers
+    print(f"  [arXiv] Total fetched: {len(all_papers)} papers across {(offset // max_results) + 1} pages")
+    return all_papers
 
 
 # ─── Data Source 2: HuggingFace Papers API ───────────────────────────────────
