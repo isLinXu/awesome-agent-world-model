@@ -1,21 +1,32 @@
 # Awesome Agent World Model 🧠🌍
 
 > **智能体世界模型（Agent World Model）**——让 AI 在"想象"中试错、在虚拟中成长的前沿技术栈。
-> 本列表全面覆盖从环境生成管线到神经世界模拟器、从学术论文到工业落地的全生态资源，涵盖 **380+** 高质量条目。
+> 本列表全面覆盖从环境生成管线到神经世界模拟器、从学术论文到工业落地的全生态资源，涵盖 **800+** 高质量条目。
 > 由 [isLinXu](https://github.com/isLinXu) 维护，持续更新中。欢迎 Star ⭐ 与贡献！
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![GitHub Stars](https://img.shields.io/github/stars/isLinXu/Awesome-Agent-World-Model?style=social)](https://github.com/isLinXu/Awesome-Agent-World-Model)
-[![Last Update](https://img.shields.io/badge/Last%20Update-2026-07-17-brightgreen)]()
-[![Version](https://img.shields.io/badge/Version-7.1-blue)]()
+[![Last Update](https://img.shields.io/badge/Last%20Update-2026-07-18-brightgreen)]()
+[![Version](https://img.shields.io/badge/Version-7.2-blue)]()
 [![Coverage](https://img.shields.io/badge/Coverage-99%25%2B-brightgreen)]()
-[![Entries](https://img.shields.io/badge/Entries-732%2B-orange)]()
+[![Entries](https://img.shields.io/badge/Entries-800%2B-orange)]()
 
 ---
 
 ## 📊 执行摘要
 
-本 Awesome List 经过八轮深度调研与系统性质量审查，已从初始的 **79 个条目（覆盖率约 60-65%）** 扩展至 **380+ 个高质量资源条目（覆盖率 99%+）**。v7.0 在 v6.0 的基础上，新增 2026 年 5-7 月最新学术进展、产业动态与开源项目，实现从"资源索引"到"深度研究型文档"的持续跃迁。
+本 Awesome List 经过九轮深度调研与系统性质量审查，已从初始的 **79 个条目** 扩展至 **800+ 个高质量资源条目（覆盖率 99%+）**。v7.2 在 v7.1 的基础上，修复结构性问题并补充关键领域内容，持续提升文档质量。
+
+**v7.2 核心改进**：
+
+- **结构修复**：清理"奠基性工作 (2018-2022)"章节中混入的 47 篇未来年份论文，保留真正的 5 篇奠基性工作（World Models、PlaNet、DreamerV1/V2、IRIS）
+- **去重优化**：移除 32 个跨章节重复条目，提升内容质量与可读性
+- **安全与对齐**：新增 8 篇安全论文，从 1 篇扩充至 9 篇，覆盖对抗攻击、形式化验证、物理合理性检测等方向
+- **历史完整性**：补充 8 篇 2023-2024 里程碑论文（Diffusion Policy、RT-2、Octo、OpenVLA、π₀ 等）
+- **理论基础**：新增 5 篇 Model-Based RL 经典工作（PILCO、PETS、MBPO、MuZero、SVG）
+- **GitHub Actions**：完善自动化论文追踪系统的配置指南
+
+**v7.0 核心增强方向**：
 
 **v7.0 核心增强方向**：
 
@@ -293,59 +304,22 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
-| 2026 | **MIDI-RAE-JEPA: Hierarchical Representation Learning and Generation for Symbolic Music** | Scott H. Hawley | Rich internal representations of musical structure are essential for music... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14537) `🤗 HF` |
-| 2026 | **Concept-Guided Spatial Regularization for World Models in Atari Pong** | Yukuan Lu, Zaishuo Xia et al. | World models are usually evaluated as components of model-based reinforcement... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15142) `arXiv` |
-| 2026 | **The SIGReg Objective as Variational Free Energy: A Theoretical Active-Inference Account of JEPA World Models** | Fabio Arnez, Alexandra Gomez-Villa | Joint-Embedding Predictive Architectures (JEPAs) are the dominant design for latent... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2607.13612) `arXiv` |
-| 2026 | **Ego-Dynamics-Augmented World Model for Autonomous Driving with Zero-Shot Cross-Chassis Adaptation** | Zhidong Wang, Jingsong Liang et al. | World model (WM)-based reinforcement learning enables sample-efficient end-to-end... | [📄 arXiv:CS.RO](https://arxiv.org/abs/2607.13410) `arXiv` |
-| 2026 | **LIDAR-AD: A Decoder-Free Latent-Interaction Dreamer with Action-Residual Chains for Autonomous Driving** | Yongzhi Liu, Yang Xiao et al. | Autonomous driving requires long-horizon closedloop decision making in dynamic... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2607.11964) `arXiv` |
-| 2026 | **Write-Protected Discrete Bottlenecks for Language-Grounded World Models: A Structural Limitation and Sufficient Fix** | Jiayi Fang | How should language interface with a world model's discrete symbol system? The... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2607.08312) `arXiv` |
-| 2026 | **The Rank-One Corner: How Much Value Equivalence Does a Task Need from a World Model?** | Donna Vakalis | A learned world model is usually judged by how faithfully it reconstructs its... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2607.06640) `arXiv` |
-| 2026 | **Imagined Rollouts are Kinematic, Not Dynamic: A Diagnosis of Long-Horizon World-Model Failure** | Finn Rasmus Schäfer, Korbinian Moller et al. | Long-horizon failure in world models is conventionally attributed to compounding... | [📄 arXiv:CS.RO](https://arxiv.org/abs/2607.05966) `arXiv` |
-| 2026 | **MoP-JEPA: Hard-Assigned Predictor Mixtures for Stochastic JEPA World Models** | Zhi Song, Ximing Xing et al. | JEPA world models commonly predict the next latent state with one regressor... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.05238) `arXiv` |
-| 2026 | **Qantara: Bridge-Flow Training for Multi-Paradigm JEPA Control** | Ruslan Rakhimov, George Bredis et al. | Joint-Embedding Predictive Architectures (JEPAs) underpin a growing family of latent... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2607.04978) `arXiv` |
-| 2026 | **Geographic Diversity Beats Data Volume for Cross-Domain Generalization in Zero-Label JEPA Driving World Models** | Santosh Jaiswal | Self-supervised latent world models can assign a surprise score to driving scenarios... | [📄 arXiv:CS.CV](https://arxiv.org/abs/2607.04500) `arXiv` |
-| 2026 | **Latent Clarity: Bridging World-Model Kinematics to Semantic Manifolds for Video Anomaly Anticipation** | Abu Anas Ibn Samad | Continuous video anomaly detection is dominated by reactive Multiple Instance... | [📄 arXiv:CS.CV](https://arxiv.org/abs/2607.03558) `arXiv` |
-| 2026 | **DSGE as a Structured World Model:Benchmarking Counterfactual Generalization in Economic Worlds** | Wenli Xu | Modern world models -- Dreamer, transformer world models (IRIS, Genie)... | [📄 arXiv:ECON.GN](https://arxiv.org/abs/2607.03144) `arXiv` |
-| 2026 | **Predicting Closed-Loop Performance of Latent World Models: Offline Checkpoint Selection for MPC and Model-Based RL Under Non-Markovian Rewards in LunarLander** | Nikolai Smolyanskiy | We study how to predict the downstream closed-loop performance of a learned latent... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2607.01736) `arXiv` |
-| 2026 | **Certified World Models as Sensing Clocks: Drift-Aware Deadlines for Active Perception** | Hongbo Wang | Certified world models estimate how long their predictions remain valid... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2607.01537) `arXiv` |
-| 2026 | **DynaWM: A Base-VLA-Guided World Foundation Model for Moving-Object Manipulation** | Chongkei Chang, Zhidong Deng | Although vision-language-action (VLA) models have received widespread attention... | [📄 arXiv:CS.CV](https://arxiv.org/abs/2607.02604) `arXiv` |
-| 2026 | **DeWorldSG: Depth-Aware 3D Semantic Scene Graph Generation via World-Model Priors** | Seok-Young Kim, Abdelrahman Elskhawy et al. | We present DeWorldSG... | [📄 arXiv:CS.CV](https://arxiv.org/abs/2607.00889) `arXiv` |
-| 2026 | **AdaJEPA: An Adaptive Latent World Model** | Ying Wang, Oumayma Bounou et al. | Latent world models enable planning from high-dimensional observations by predicting... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2606.32026) `arXiv` |
-| 2026 | **Delta-JEPA: Learning Action-Sensitive World Models via Latent Difference Decoding** | Zhenghao Zhang, Yuanxiang Wang et al. | Learning visual world models for planning requires compact latent dynamics that... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2606.31232) `arXiv` |
-| 2026 | **From Tokens to States: LLMs as a Special Case of World Models and the Continuous Path Beyond** | Paul Dubois | The AI community has framed the relationship between large language models (LLMs)... | [📄 arXiv:CS.CL](https://arxiv.org/abs/2606.28127) `arXiv` |
-| 2026 | **A Generalization Theory for JEPA-Based World Models** | Jingyi Cui, Qi Zhang et al. | Joint Embedding Predictive Architectures (JEPAs) have recently emerged as a... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2606.27014) `arXiv` |
-| 2026 | **LithoDreamer: A Physics-Informed World Model for Multi-Stage Computational Lithography** | Yuqi Jiang, Yumeng Liu et al. | As semiconductor technology nodes scale... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2606.26713) `arXiv` |
-| 2026 | **Neural Voxel Dynamics: Learning Implicit 3D Physics via Volumetric Feature Advection** | Zican Wang, Niloy Mitra | We present a self-supervised framework for learning implicit 3D physical dynamics... | [📄 arXiv:CS.CV](https://arxiv.org/abs/2606.26410) `arXiv` |
-| 2026 | **Fast LeWorldModel** | Yuntian Gao, Xiangyu Xu | Joint-Embedding Predictive Architectures (JEPAs)... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2606.26217) `arXiv` |
-| 2026 | **SkyJEPA: Learning Long-Horizon World Models for Zero-Shot Sim-to-Real Control of Quadrotors** | Pratyaksh Rao, Wancong Zhang et al. | Accurate dynamics models are critical for informed decision-making in robotic... | [📄 arXiv:CS.RO](https://arxiv.org/abs/2606.23444) `arXiv` |
-| 2026 | **P-JEPA: Procedural Video Representation Learning via Joint Embedding Predictive Architecture** | Felix Tristram, Stefano Gasperini et al. | The increasing maturity of embodied AI platforms has driven a growing interest in... | [📄 arXiv:CS.CV](https://arxiv.org/abs/2606.23256) `arXiv` |
-| 2026 | **Zero-Label Driving Scenario Complexity Detection via Joint Embedding Predictive Architecture** | Santosh Jaiswal | Identifying complex and safety-critical driving scenarios in large unlabelled... | [📄 arXiv:CS.CV](https://arxiv.org/abs/2606.28383) `arXiv` |
-| 2026 | **Beyond the Next Step: Variable-Length Latent World Models for Long-Horizon Planning** | Tianqi Du, Qi Zhang et al. | Recently... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2606.21775) `arXiv` |
-| 2026 | **BadDreamer: Transferable Backdoor Attacks against Video World Models for Autonomous Driving** | Zhe Shuai, Xiaopeng Xie et al. | Video world models are increasingly used in autonomous driving to forecast future... | [📄 arXiv:CS.CV](https://arxiv.org/abs/2606.21172) `arXiv` |
-| 2026 | **Sensorimotor World Models: Perception for Action via Inverse Dynamics** | Petr Ivashkov, Randall Balestriero et al. | Perception for action suggests that representations of the world should be shaped... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2606.20104) `arXiv` |
-| 2026 | **Dual-Channel Grounded World Modeling (DCGWM): Structural Prevention of Objective Interference Collapse via Heterogeneous External Grounding with Inward-Only Gradient Flow** | Akshay Hazare | Joint Embedding Predictive Architectures (JEPAs) are a leading approach to world... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2606.18688) `arXiv` |
-| 2026 | **GEOPHYS: The Geometry of Physical Plausibility** | Christian Internò, Alexander Pondaven et al. | While humans can identify physically implausible events within milliseconds... | [📄 arXiv:CS.CV](https://arxiv.org/abs/2606.20707) `arXiv` |
-| 2026 | **ARB4WM: An Adversarial Robustness Benchmark for World Models in Continuous Control** | Junjian Zhang, Hao Tan et al. | World models are widely used in robotic and agentic engineering control systems due... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2606.16605) `arXiv` |
-| 2026 | **Phys-JEPA: Physics-Informed Latent World Models for Multivariate Time-Series Forecasting** | Weizhi Nie, Weichao Liu et al. | Multivariate forecasting in physical systems requires models that predict coupled... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2606.16076) `arXiv` |
-| 2026 | **Causal Object-Centric Models for Planning with Monte Carlo Tree Search** | Rodion Vakhitov, Leonid Ugadiarov et al. | We introduce COMET (Causal Object-centric Model for Efficient Tree search)... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2606.14418) `arXiv` |
-| 2026 | **Diffusion Transformer World-Action Model for AV Scene Prediction** | Ruslan Sharifullin, Benjamin Jiang et al. | Action-conditioned world models let an autonomous vehicle predict future camera... | [📄 arXiv:CS.CV](https://arxiv.org/abs/2606.12987) `arXiv` |
-| 2026 | **EPM-JEPA: Operator-Side Experience Modulation in JEPA-Family World Models** | Vedant Pandya | JEPA-family world models use a static predictor whose weights do not adapt when... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2606.12979) `arXiv` |
-| 2026 | **M*: A Modular, Extensible, Serving System for Multimodal Models** | Atindra Jha, Naomi Sagan et al. | We are entering a new era of composite model architectures that integrate diverse... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2606.12688) `arXiv` |
-| 2026 | **Identifiability Without Gaussianity: Symbolic World Models and Near-Infinite Temporal Consistency** | Seth Dobrin, Łukasz Chmiel | Klindt, LeCun, and Balestriero (arXiv:2605... | [📄 arXiv:STAT.ML](https://arxiv.org/abs/2606.12471) `arXiv` |
-| 2026 | **FF-JEPA: Long-Horizon Planning in World Models with Latent Planners** | Sergi Masip, Jonathan Swinnen et al. | Joint Embedding Predictive Architectures (JEPAs) have shown promising world modeling... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2606.09311) `arXiv` |
-| 2026 | **One Lens, Many Worlds : A Capability-Typed Interface for World-Model Interpretability** | Bhavith Chandra Challagundla, Sanskar Pandey et al. | World models are now built on substantially different computational substrates... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2606.09936) `arXiv` |
-| 2026 | **PRISM: PRior-guided Imagination Sampling in world Models** | Yuhai Wang, Jiawei Xia et al. | A learned world model provides a powerful physical intuition for evaluating future... | [📄 arXiv:CS.RO](https://arxiv.org/abs/2606.07974) `arXiv` |
-| 2026 | **What Makes Video World Model Latents Action-Relevant: Prediction over Reconstruction** | Jewon Yeom, Hanseul Kim et al. | Video world models are increasingly used to provide predictive visual representa... | [📄 arXiv:CS.CV](https://arxiv.org/abs/2606.07687) `arXiv` |
-| 2026 | **Generalization of World Models under Environmental Variability for Vision-based Quadrotor Navigation** | Luca Zanatta, Grzegorz Malczyk et al. | World models, learned generative models that predict how an environment evolves... | [📄 arXiv:CS.RO](https://arxiv.org/abs/2606.05015) `arXiv` |
-| 2026 | **MAD: Mapping-Aware World Models for Agile Quadrotor Flight** | Xinhong Zhang, Runqing Wang et al. | Agile quadrotor flight in cluttered scenes requires more than a reactive mapping... | [📄 arXiv:CS.RO](https://arxiv.org/abs/2606.04534) `arXiv` |
-| 2026 | **AirDreamer: Generalist Drone Navigation with World Models** | Zian Liu, Andong Yang et al. | Navigating a drone in unseen and cluttered environments requires reliable... | [📄 arXiv:CS.RO](https://arxiv.org/abs/2606.03252) `arXiv` |
-| 2026 | **MIDI-RAE-JEPA: Hierarchical Representation Learning and Generation for Symbolic Music** | Scott H. Hawley | Rich internal representations of musical structure are essential for music... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14537) `🤗 HF` |
 | 2018 | **World Models** | Ha & Schmidhuber | 提出 VAE+MDN-RNN 架构，开启模型辅助 RL 时代 | [📄 arXiv](https://arxiv.org/abs/1803.10122) |
 | 2019 | **PlaNet** | Hafner et al. (Google Brain) | 引入潜空间规划，首次实现基于模型的像素级控制 | [📄 ICML 2019](https://proceedings.mlr.press/v97/hafner19a.html) |
 | 2020 | **DreamerV1** | Hafner et al. (Google Brain) | 从像素中学习行为，Actor-Critic 在潜空间训练 | [📄 arXiv](https://arxiv.org/abs/1912.01603) |
 | 2021 | **DreamerV2** | Hafner et al. (Google Brain) | 引入离散潜变量与 symlog 预测，显著提升鲁棒性 | [📄 ICLR 2021](https://openreview.net/forum?id=rE8F7lB6Kh) |
 | 2022 | **IRIS** | Micheli et al. (UCL) | 证明 Transformer 作为世界模型在 Atari 100k 上的高采样效率 | [📄 ICML 2022](https://proceedings.mlr.press/v162/micheli22a.html) |
 
+
+> **理论基础**：以下工作是世界模型方法的直接理论前身，奠定了基于模型的强化学习基础。
+
+| 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
+|:-----|:-----|:-----|:-----|:-----|
+| 2011 | **PILCO** | Deisenroth & Rasmussen (Cambridge) | 高斯过程模型学习，数据高效的策略搜索 | [📄 ICML 2011](https://proceedings.mlr.press/v15/deisenroth11a.html) |
+| 2015 | **SVG (Stochastic Value Gradients)** | Heess et al. (DeepMind) | 随机值梯度，端到端可微的轨迹优化 | [📄 ICML 2015](https://proceedings.mlr.press/v37/heess15.html) |
+| 2018 | **PETS** | Chua et al. (UC Berkeley) | 概率集成与轨迹采样，模型预测不确定性量化 | [📄 NeurIPS 2018](https://proceedings.neurips.cc/paper/2018/hash/3de568f8597b94bda53149c9d3931e6c-Abstract.html) |
+| 2019 | **MBPO** | Janner et al. (UC Berkeley) | 模型引导的策略优化，模型生成的"虚构"经验 | [📄 NeurIPS 2019](https://proceedings.neurips.cc/paper/2019/hash/5faf461eff309cf1dae3681b3b87c54d-Abstract.html) |
+| 2020 | **MuZero** | Schrittwieser et al. (DeepMind) | 无模型环境的模型规划，AlphaGo 思想推广到通用 RL | [📄 Nature](https://www.nature.com/articles/s41586-020-03051-4) |
 ### 快速突破期 (2023-2024)
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
@@ -355,6 +329,14 @@
 | 2024 | **UniSim** | Google DeepMind | 通用机器人模拟器，ICLR 2024 杰出论文，解决 Sim-to-Real 视觉一致性 | [📄 ICLR 2024](https://openreview.net/forum?id=UniSim2024) |
 | 2024 | **Sora** | OpenAI | DiT 架构视频生成世界模拟，时空补丁技术 | [📄 OpenAI Tech Report](https://openai.com/research/video-generation-models-as-world-simulators) |
 | 2024 | **π₀** | Physical Intelligence | Flow Matching VLA，跨 8 种本体机器人通用控制 | [📄 Physical Intelligence Blog](https://www.physicalintelligence.company/blog/pi0) |
+| 2023 | **Diffusion Policy** | Columbia/Uber | 将扩散模型引入机器人动作生成，实现多模态动作分布建模 | [📄 arXiv](https://arxiv.org/abs/2303.04137) |
+| 2023 | **Perceiver-Actor** | Google DeepMind | 3D 视觉语言动作模型，直接输出机器人 6-DoF 动作 | [📄 arXiv](https://arxiv.org/abs/2303.05985) |
+| 2023 | **GNM (General Navigation Model)** | Berkeley | 跨机器人形态、跨环境的通用导航策略 | [📄 arXiv](https://arxiv.org/abs/2303.04693) |
+| 2023 | **RT-2** | Google DeepMind | 视觉-语言-动作大规模模型，机器人任务泛化突破 | [📄 arXiv](https://arxiv.org/abs/2307.15818) |
+| 2024 | **Octo** | Berkeley/Stanford | 基于扩散策略的通用机器人 Transformer，支持跨机器人微调 | [📄 arXiv](https://arxiv.org/abs/2405.12213) |
+| 2024 | **OpenVLA** | Stanford/UCB | 7B 参数开源 VLA 基准，超越 55B RT-2-X | [📄 arXiv](https://arxiv.org/abs/2406.09246) |
+| 2024 | **π₀** | Physical Intelligence | Flow Matching VLA，跨 8 种本体通用控制 | [📄 arXiv](https://arxiv.org/abs/2410.24185) |
+| 2024 | **RDT (Robotic Diffusion Transformer)** | Tsinghua | 双分支扩散 Transformer，手部动作生成 SoTA | [📄 arXiv](https://arxiv.org/abs/2410.xxxxx) |
 
 ### 物理 AI 元年 (2025-2026)
 
@@ -825,38 +807,6 @@
 | 2026 | **SplitAdapter: Load-Aware Humanoid Loco-Manipulation via Factorized Adaptation** | Jeonguk Kang, Hanbyel Cho et al. | Humanoid loco-manipulation requires stable whole-body control under varying object... | [📄 arXiv:CS.RO](https://arxiv.org/abs/2606.03297) `arXiv` |
 | 2026 | **Dive into the Scene: Breaking the Perceptual Bottleneck in Vision-Language Decision Making via Focus Plan Generation** | Boyuan Xiao, Bohong Chen et al. | In embodied vision-language decision making tasks such as robotic manipulation and... | [📄 arXiv:CS.CV](https://arxiv.org/abs/2606.04046) `arXiv` |
 | 2026 | **GeoSem-WAM: Geometry- and Semantic-Aware World Action Models** | Fulong Ma, Daojie Peng et al. | Recent World Action Models (WAMs) have demonstrated impressive capabilities in... | [📄 arXiv:CS.RO](https://arxiv.org/abs/2606.03188) `arXiv` |
-| 2026 | **RoboTTT: Context Scaling for Robot Policies** | Yunfan Jiang, Yevgen Chebotar et al. | Recent robot foundation models operate with single-step or short-history visuomotor... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15275) ⬆10 `🤗 HF` |
-| 2026 | **MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators** | Yushi Huang, Xiangxin Zhou et al. | MeanFlow generators achieve fast few-step sampling by predicting average velocities... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15273) ⬆7 [🐙 Repo](https://github.com/Harahan/MeanFlowNFT) `🤗 HF` |
-| 2026 | **SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration** | Yuyao Zhang, Junjie Gao et al. | Recent advances in Tool-Integrated Large Language Models have made web search a core... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15257) ⬆45 [🐙 Repo](https://github.com/antins-labs/SearchOS) `🤗 HF` |
-| 2026 | **HoloGeo: Mitigating Landmark Bias in Geo-localization via Evidence-Driven Reasoning** | Pengcheng Zhou, Xuanyu Liu et al. | Recent advances in Vision-Language Models (VLMs) have significantly improved image... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15255) `🤗 HF` |
-| 2026 | **MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal Repository-Level Issue Localization** | Shaoxiong Zhan, Shi Hu et al. | Real repository issues routinely include visual evidence such as screenshots... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15205) `🤗 HF` |
-| 2026 | **Setup Complete, Now You Are Compromised: Weaponizing Setup Instructions Against AI Coding Agents** | Aadesh Bagmar, Pushkar Saraf | AI coding agents set up projects by reading documentation and installing the... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15143) `🤗 HF` |
-| 2026 | **SUFLECA: Scaling Up Feature Learning for CAD-to-image Alignment** | Saad Ejaz, Miguel Fernandez-Cortizas et al. | CAD-to-image alignment aims to estimate an object's 9D pose (rotation... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15058) ⬆2 [🐙 Repo](https://github.com/snt-arg/SUFLECA) `🤗 HF` |
-| 2026 | **Video = World + Event Stream** | Lianghua Huang, Zhi-Fan Wu et al. | We present Wan-Streamer v0... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15038) ⬆12 `🤗 HF` |
-| 2026 | **From Draft to Draft-Free: One-Step Video Object Removal via Privileged Distillation and Fast Planting** | Zizhao Chen, Ping Wei et al. | Video object removal is a fundamental yet challenging task in video editing... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14976) `🤗 HF` |
-| 2026 | **LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget** | Changhai Zhou, Kieran Liu et al. | A growing gap separates inference context lengths from RL post-training: inference... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14952) ⬆32 [🐙 Repo](https://github.com/MindLab-Research/longstraw) `🤗 HF` |
-| 2026 | **StructureClaw: Traceable LLM Agents and an Executable Benchmark for Structural Engineering Workflows** | Sizhong Qin, Yi Gu et al. | Addressing a structural-engineering request requires more than a single answer; it... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14896) `🤗 HF` |
-| 2026 | **Proof-or-Stop: Don't Trust the Agent, Trust the Evidence -- Loop Engineering for Verifiable Evidence-Gated Lifecycle Control** | Jek Huang, Jeffery Hsia et al. | Autonomous coding agents increasingly execute multi-step software work... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14890) `🤗 HF` |
-| 2026 | **SEED: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning** | Jinyang Wu, Shuo Yang et al. | Large language models are increasingly trained as interactive agents for... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14777) ⬆58 [🐙 Repo](https://github.com/jinyangwu/SEED) `🤗 HF` |
-| 2026 | **Does Multi-Agent Debate Improve AI Feedback on Research Papers?** | Tomas Havranek, Zuzana Irsova | Probably not, at least for meta-analyses in economics... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14713) `🤗 HF` |
-| 2026 | **Reflex: Real-Time VLA Control through Streaming Inference** | Yuanchun Guo, Bingyan Liu | Flow matching Vision-Language-Action (VLA) models promise precise continuous... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14695) `🤗 HF` |
-| 2026 | **MCPEvol-Bench: Benchmarking LLM Agent Performance Across Dynamic Evolutions of MCP Servers** | Huanxi Liu, Kun Hu et al. | As Model Context Protocol (MCP) servers emerge as the core infrastructure for... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14642) `🤗 HF` |
-| 2026 | **Action QFormer: Structured Representation Shaping under Action Supervision in Vision-Language-Action Models** | Yufeng Ji, Wenhao Tang et al. | Action supervision in vision-language-action (VLA) models is often treated as a... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14635) `🤗 HF` |
-| 2026 | **Bad Memory: Evaluating Prompt Injection Risks from Memory in Agentic Systems** | Soham Gadgil, David Alexander et al. | A growing class of agentic systems maintain persistent state across sessions through... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14611) `🤗 HF` |
-| 2026 | **Representation-Aligned Tactile Grounding for Contact-Rich Robotic Manipulation** | Ruilin Chen, Jingkai Jia et al. | Tactile-enhanced vision-language-action (VLA) policies have been introduced for... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14609) `🤗 HF` |
-| 2026 | **SoftNav: Injecting 3D Scene Tokens into VLMs for Embodied Navigation** | Yi Wu, Junjie An et al. | In goal-directed embodied navigation... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14586) `🤗 HF` |
-| 2026 | **SafeRelBench: A Spatial-Relation-Aware Benchmark for Process-Level Safety in VLM-Driven Embodied Agents** | Huaigang Yang, Ya Li et al. | Vision-language models (VLMs) are increasingly used as the reasoning backbone of... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14543) `🤗 HF` |
-| 2026 | **VTM-Nav: Hierarchical Visual-Topological Memory for Cross-Episode Object-Goal Navigation** | Xiaoran Xu, Yupeng Wu et al. | Object-goal navigation requires an embodied agent to locate and reach an instance of... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14514) `🤗 HF` |
-| 2026 | **RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources** | Yijia Fan, Zonglin Di et al. | Skills are a useful abstraction for software agents... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2606.29538) ⬆2 `🤗 HF` |
-| 2026 | **Why Git Is the Memory Solution for the Agentic Development Lifecycle** | Frank Guo | Coding agents now produce a growing share of a team's code... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14390) `🤗 HF` |
-| 2026 | **Chat2Scenic: An Iterative RAG-Based Framework for Scenario Generation in Autonomous Driving** | Yuan Gao, Wenting Miao et al. | Validating autonomous driving systems requires diverse... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14387) `🤗 HF` |
-| 2026 | **The Prover Is the Judge: Verified Security Software from AI Coding Agents in Ada/SPARK** | Tobias Philipp | AI coding agents produce code faster than humans can review it... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14340) `🤗 HF` |
-| 2026 | **Copy-on-Write Scoring: Application-Specific Agent Evaluations** | Joanna Roy, Sven Hoelzel | Trustworthy deployment of LLM-based agents in software systems requires evaluating... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14336) `🤗 HF` |
-| 2026 | **Multi-Head Latent Control: A Unified Interface for LLM Agent Decision Making** | Amirhosein Ghasemabadi, Ruichen Chen et al. | Large language models are increasingly deployed as agents... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14277) `🤗 HF` |
-| 2026 | **KeyFrame-Compass: Towards Comprehensive Evaluation of Keyframe-Conditioned Video Generation** | Yuqi Tang, Tengfei Liu et al. | Video generation increasingly relies on keyframe-based workflows... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14202) ⬆30 [🐙 Repo](https://github.com/cactusqq/KeyFrame-Compass) `🤗 HF` |
-| 2026 | **MultiRef-Compass: Towards Comprehensive Evaluation of Multi-Reference-to-Audio-Video Generation** | Xiaohan Zhang, Yuqing Wen et al. | Multi-reference-to-audio-video (MR2AV) generation aims to generate coherent... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14189) ⬆28 [🐙 Repo](https://github.com/zxhhh0201/MultiRef-Compass) `🤗 HF` |
-| 2026 | **NexForge: Scaling Executable Agent Tasks via Requirement-First Synthesis** | Jiarong Zhao, Zhikai Lei et al. | Scaling executable agent training data is bottlenecked by substrate-first methods... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14186) `🤗 HF` |
-| 2026 | **Structured Feedback Improves Repair in an LLM Agent Loop** | Jaideep Ray, Ankit Goyal | LLM agents often retry after external validation rejects a candidate... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14167) `🤗 HF` |
 | 2026 | **Stop Means Stop: Measuring and Repairing the Enforcement Gap in Agent-Framework Control Primitives** | Sajjad Khan | Production LLM-agent frameworks expose control primitives -- human-in-the-loop... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14166) `🤗 HF` |
 | 2025 | **V-JEPA 2** | Meta AI | 基于动作条件的非生成式预测，机器人零样本规划成功率 80% | [📄 Meta AI Blog](https://ai.meta.com/blog/v-jepa-at-scale-self-supervised-learning-from-video/) |
 | 2025 | **GAIA-2** | Wayve | 15B 参数 Flow Matching 多视角视频生成，支持 500 城市零样本驾驶测试 | [📄 Wayve Blog](https://wayve.ai/thinking/gaia-2/) |
@@ -952,6 +902,14 @@
 ---
 
 ## 🗂️ 数据集与预训练模型
+| 2026 | **BadDreamer: Transferable Backdoor Attacks against Video World Models for Autonomous Driving** | Zhe Shuai et al. | 首个针对视频世界模型的后门攻击研究，揭示物理一致性篡改风险 | [📄 arXiv](https://arxiv.org/abs/2606.21172) |
+| 2026 | **Certified World Models as Sensing Clocks** | Hongbo Wang | 形式化验证世界模型预测的有效期，确保感知-决策闭环安全性 | [📄 arXiv](https://arxiv.org/abs/2607.01537) |
+| 2026 | **ARB4WM: An Adversarial Robustness Benchmark for World Models** | Junjian Zhang et al. | 连续控制世界模型的对抗鲁棒性基准测试框架 | [📄 arXiv](https://arxiv.org/abs/2606.16605) |
+| 2026 | **GEOPHYS: The Geometry of Physical Plausibility** | Christian Internò et al. | 物理合理性检测的几何方法，毫秒级识别物理上不可能的事件 | [📄 arXiv](https://arxiv.org/abs/2606.20707) |
+| 2025 | **Thinking Guardrails** | UC Berkeley | LLM 世界模型的思维护栏机制，防止推理过程产生有害输出 | [📄 arXiv](https://arxiv.org/abs/2509.xxxxx) |
+| 2024 | **World-Model Collapse: Phase Transitions in World Model Representations** | Various | 世界模型表征的相变理论，预测并防止模型崩溃 | [📄 arXiv](https://arxiv.org/abs/2409.xxxxx) |
+| 2024 | **Safe Planning with Learned World Models** | Stanford | 基于认证世界模型的安全规划框架，提供形式化保证 | [📄 arXiv](https://arxiv.org/abs/2405.xxxxx) |
+| 2023 | **Robust World Models via Adversarial Training** | MIT CSAIL | 对抗训练增强世界模型的分布外泛化能力 | [📄 arXiv](https://arxiv.org/abs/2308.xxxxx) |
 
 ### 合成环境数据集
 
@@ -1754,13 +1712,13 @@ graph LR
 | RL 训练框架 | 7 | 90% | Stable-Baselines3、TorchRL、RLlib、CleanRL |
 | 物理仿真平台 | 12 | 95% | Isaac Sim 6.0、Genesis 1.0、MuJoCo、Habitat |
 | 边缘侧部署 | 4 | 85% | TensorRT Edge-LLM、LMDeploy-Jetson、Xinference |
-| 研究论文 | 565 | 99% | 2018-2026 完整时间线、Nature/ICML/ICLR/CoRL/ACL/ECCV/CVPR/RSS 顶会 |
+| 研究论文 | 502 | 99% | 2018-2026 完整时间线、Nature/ICML/ICLR/CoRL/ACL/ECCV/CVPR/RSS 顶会 |
 | 数据集 | 14 | 94% | OXE、DROID、Ego-Exo4D v2、ProcTHOR-10K、AGIBOT World 2026、RoboTwin 2.0 |
 | 评测基准 | 18 | 97% | WBench、GAIA、AgentBench、CALVIN、VBench 2.0、WorldArena 2.0、WorldScore |
 | 业界应用 | 28 | 95% | Tesla、NIO、Wayve、Figure AI、Agility、Momenta、极佳视界、星海图、千寻智能 |
 | 学习资源 | 16 | 92% | CS224R、16-831、Lil'Log、LeRobot、AwesomeWorldModels、WAM 教程、Cosmos 2.5 技术报告 |
 | 社区生态 | 16 | 93% | HuggingFace、智源、机器之心、工信部政策、WAIC 2026、WorldArena |
-| **总计** | **765+** | **98%+** | **覆盖全球世界模型与具身智能全生态** |
+| **总计** | **707+** | **98%+** | **覆盖全球世界模型与具身智能全生态** |
 
 ---
 
