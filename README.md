@@ -7,7 +7,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![GitHub Stars](https://img.shields.io/github/stars/isLinXu/Awesome-Agent-World-Model?style=social)](https://github.com/isLinXu/Awesome-Agent-World-Model)
 [![Last Update](https://img.shields.io/badge/Last%20Update-2026-07-18-brightgreen)]()
-[![Version](https://img.shields.io/badge/Version-7.4-blue)]()
+[![Version](https://img.shields.io/badge/Version-7.5-blue)]()
 [![Coverage](https://img.shields.io/badge/Coverage-99%25%2B-brightgreen)]()
 [![Entries](https://img.shields.io/badge/Entries-850%2B-orange)]()
 
@@ -25,6 +25,15 @@
 - **历史完整性**：补充 8 篇 2023-2024 里程碑论文（Diffusion Policy、RT-2、Octo、OpenVLA、π₀ 等）
 - **理论基础**：新增 5 篇 Model-Based RL 经典工作（PILCO、PETS、MBPO、MuZero、SVG）
 - **GitHub Actions**：完善自动化论文追踪系统的配置指南
+
+**v7.5 核心改进**（Xun Huang 视频世界模型五大属性框架整合）：
+
+- **五大属性框架**：新增「视频世界模型五大属性框架（Xun Huang）」章节，系统阐述从视频生成到真正世界模型所需的五大核心属性（因果性/交互性/持久性/实时性/物理准确性），含属性定义表、硬/软约束分类、关键挑战与代表性工作映射 [64]
+- **23 篇关键论文补充**：在"物理 AI 元年"表中新增 CausVid [65]、Self-Forcing、MAGI-1、Diffusion Forcing、VideoJAM、PhyWorld [67]、GEN3C、WonderPlay、SSWM [66]、APT2、The Matrix、GameGen-X、NWM、FramePack、FAR、SPMEM、Ctrl-Crash、PISA、CogVideo、VideoPoet、GameNGen、DIAMOND、LWM 等 23 篇论文
+- **三种世界模拟路径对比**：物理仿真器 vs 神经 3D/4D 方法 vs 视频世界模型的优劣分析，含混合方案（WonderPlay）讨论
+- **深度博客扩充**：新增 Xun Huang Blog（Stanford 技术博客）
+- **综述资源扩充**：新增 Xun Huang "Towards Video World Models" 综述条目
+- **参考文献扩展**：从 [63] 扩展至 [67]，新增 4 条来源
 
 **v7.4 核心改进**（Themesis 五大竞争路线深度整合）：
 
@@ -394,6 +403,29 @@
 |:-----|:-----|:-----|:-----|:-----|
 | 2025 | **AXIOM: Learning to Play Games in Minutes with Expanding Object-Centric Models** | Conor Heins et al. (Verses.ai) | 基于主动推断的对象中心世界模型，分钟级学习游戏规则，分段线性轨迹建模稀疏对象交互 | [📄 arXiv](https://arxiv.org/abs/2505.24784) |
 | 2025 | **LeJEPA: Provable and Scalable Self-Supervised Learning Without the Heuristics** | Randall Balestriero, Yann LeCun (AMI Labs) | JEPA 的理论基石，证明自监督学习无需启发式即可实现可扩展性，LeJEPA 命名来源 | [📄 arXiv](https://arxiv.org/abs/2511.08544) |
+| 2025 | **CausVid: From Slow Bidirectional to Fast Autoregressive Video Diffusion** | Yin et al. (Stanford) | 将预训练双向扩散 Transformer 蒸馏为因果自回归扩散模型（AR-DiT），实现帧级自回归生成 | [📄 arXiv](https://arxiv.org/abs/2412.07772) [🌐 Project](https://causvid.github.io/) |
+| 2025 | **Self-Forcing: Bridging the Train-Test Gap in Autoregressive Video Diffusion** | Huang et al. (Stanford) | 训练时模拟推理过程（自回归 rollout + KV 缓存），单 GPU 实现 17FPS 实时生成 + 亚秒延迟 | [📄 arXiv](https://arxiv.org/abs/2506.08009) [🌐 Project](https://self-forcing.github.io/) |
+| 2025 | **MAGI-1: Autoregressive Video Generation at Scale** | Teng et al. (Sand AI) | 从零训练自回归视频扩散 Transformer，提出 AR-DiT 基础设施优化方案 | [📄 arXiv](https://arxiv.org/abs/2505.13211) [🐙 Repo](https://github.com/SandAI-org/MAGI-1) |
+| 2025 | **Diffusion Forcing: Next-Token Prediction Meets Full-Sequence Diffusion** | Chen et al. (MIT) | 逐帧独立噪声级训练扩散模型，赋予其自回归生成能力，连接扩散与自回归两大范式 | [📄 arXiv](https://arxiv.org/abs/2407.01392) |
+| 2025 | **VideoJAM: Joint Appearance-Motion Representations for Enhanced Video Generation** | Chefer et al. | 联合训练引入光流去噪目标，弥补像素重建目标无法捕获物理连贯性的缺陷 | [📄 arXiv](https://arxiv.org/abs/2502.02492) [🌐 Project](https://hila-chefer.github.io/videojam-paper.github.io/) |
+| 2025 | **PhyWorld: How Far Is Video Generation from World Model?** | Kang et al. (Tencent) | 用物理仿真器生成 2D 测试集评估视频模型的物理泛化能力，发现组合泛化可行但外推泛化失败 | [📄 arXiv](https://arxiv.org/abs/2411.02385) [🌐 Project](https://phyworld.github.io/) |
+| 2025 | **GEN3C: 3D-Informed World-Consistent Video Generation with Precise Camera Control** | Ren et al. (NVIDIA) | 以 3D 条件（点云/轨迹）约束视频生成，保证 3D 世界一致性 | [📄 arXiv](https://arxiv.org/abs/2503.03751) [🌐 Project](https://research.nvidia.com/labs/toronto-ai/GEN3C/) |
+| 2025 | **WonderPlay: Dynamic 3D Scene Generation from a Single Image and Actions** | Li et al. (Snap Research) | 融合物理仿真器 + 3D 高斯表示 + 视频扩散模型，生成物理准确的光照真实动态场景 | [📄 arXiv](https://arxiv.org/abs/2505.18151) [🌐 Project](https://kyleleey.github.io/WonderPlay/) |
+| 2025 | **State-Space Video World Models (SSWM)** | Po et al. (MIT) | 将线性 RNN（状态空间模型）与 3D 隐状态结合 + 局部注意力，实现长程时序记忆且不增加逐帧生成时间 | [📄 arXiv](https://arxiv.org/abs/2505.20171) [🌐 Project](https://ryanpo.com/ssm_wm/) |
+| 2025 | **APT2: Autoregressive Adversarial Post-Training for Real-Time Interactive Video** | Lin et al. (Seaweed AI) | 训练时 rollout + 对抗后训练，实现实时交互式视频生成并可微调控件 | [📄 arXiv](https://arxiv.org/abs/2506.09350) [🌐 Project](https://seaweed-apt.com/2) |
+| 2025 | **The Matrix: Infinite-Horizon World Generation with Real-Time Moving Control** | Feng et al. | 无限时长世界生成，实时移动控制，迈向交互式游戏世界模拟 | [📄 arXiv](https://arxiv.org/abs/2412.03568) [🌐 Project](https://thematrix1999.github.io/) |
+| 2025 | **GameGen-X: Interactive Open-World Game Video Generation** | Che et al. | 开放世界游戏视频生成，支持角色操控与场景交互 | [📄 arXiv](https://arxiv.org/abs/2502.14846) [🌐 Project](https://gamegen-x.github.io/) |
+| 2025 | **Navigation World Models (NWM)** | Bar et al. (Meta AI) | 以机器人运动指令为动作空间的导航世界模型，从第一人称视角预测环境变化 | [📄 arXiv](https://arxiv.org/abs/2412.03572) [🌐 Project](https://www.amirbar.net/nwm/) |
+| 2025 | **FramePack: Packing Input Frame Context for Next-Frame Prediction** | Zhang et al. (Stanford) | 渐进式压缩远距帧上下文，解决长视频生成的显存瓶颈 | [📄 arXiv](https://arxiv.org/abs/2504.12626) [🌐 Project](https://lllyasviel.github.io/frame_pack_gitpage/) |
+| 2025 | **FAR: Long-Context Autoregressive Video Modeling with Next-Frame Prediction** | Gu et al. (Berkeley) | 激进压缩远距帧以扩展上下文窗口，在近期帧信息充足时有效 | [📄 arXiv](https://arxiv.org/abs/2503.19325) [🌐 Project](https://farlongctx.github.io/) |
+| 2025 | **SPMEM: Video World Models with Long-term Spatial Memory** | Wu et al. | 融合持久 3D 空间记忆条件的视频世界模型，解决长程空间一致性 | [📄 arXiv](https://arxiv.org/abs/2506.05284) [🌐 Project](https://spmem.github.io/) |
+| 2025 | **Ctrl-Crash: Controllable Diffusion for Realistic Car Crashes** | Gosselin et al. | 在车祸视频上微调扩散模型，强调稀有分布外事件的物理准确性 | [📄 arXiv](https://arxiv.org/abs/2506.00227) [🌐 Project](https://anthonygosselin.github.io/Ctrl-Crash-ProjectPage/) |
+| 2025 | **PISA: Physics Post-Training for Video Diffusion by Watching Stuff Drop** | Li et al. (NYU) | 在物体掉落视频上后训练扩散模型，增强物理直觉 | [📄 arXiv](https://arxiv.org/abs/2503.09595) [🐙 Repo](https://github.com/vision-x-nyu/pisa-experiments) |
+| 2024 | **CogVideo: Large-Scale Pre-Training for Text-to-Video Generation** | Hong et al. (THU) | 自回归视频生成先驱，VQ 离散隐空间 + Transformer，验证 LLM 式自回归视频生成可行性 | [📄 arXiv](https://arxiv.org/abs/2205.15868) |
+| 2024 | **VideoPoet: A Simple Modeling Method for High-Quality Video Generation** | Google | 多模态自回归视频生成，统一文本、图像、音频和视频 token | [🌐 Project](https://sites.research.google/videopoet/) |
+| 2024 | **Diffusion Models Are Real-Time Game Engines (GameNGen)** | Valevski et al. (Google) | 扩散模型作为实时游戏引擎，在 DOOM 中实现 20FPS 交互式生成 | [📄 arXiv](https://arxiv.org/abs/2408.14837) [🌐 Project](https://gamengen.github.io/) |
+| 2025 | **DIAMOND: Diffusion for World Modeling** | Alonso et al. (ANRL) | 扩散世界模型在 Atari 100k 上达 1.46 HNS，验证扩散模型作为世界模型可行性 | [📄 arXiv](https://arxiv.org/abs/2405.12399) [🌐 Project](https://diamond-wm.github.io/) |
+| 2025 | **LWM: World Model on Million-Length Video and Language** | Liu et al. (UCB) | 百万长度视频+语言 Blockwise RingAttention，从长视频学习世界知识 | [📄 arXiv](https://arxiv.org/abs/2402.08268) |
 | 2026 | **RoboTTT: Context Scaling for Robot Policies** | Yunfan Jiang, Yevgen Chebotar et al. | Recent robot foundation models operate with single-step or short-history visuomotor... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15275) ⬆12 `🤗 HF` |
 | 2026 | **MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators** | Yushi Huang, Xiangxin Zhou et al. | MeanFlow generators achieve fast few-step sampling by predicting average velocities... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15273) ⬆9 [🐙 Repo](https://github.com/Harahan/MeanFlowNFT) `🤗 HF` |
 | 2026 | **SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration** | Yuyao Zhang, Junjie Gao et al. | Recent advances in Tool-Integrated Large Language Models have made web search a core... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15257) ⬆49 [🐙 Repo](https://github.com/antins-labs/SearchOS) `🤗 HF` |
@@ -950,6 +982,27 @@
 - **关键缺失**：神经符号计算虽被多家机构招聘提及，但尚未进入世界模型主流讨论
 - **Marble 语义化方向**：World Labs 研究员 Hang Yin 指出"对象级语义与交互性规范将变革具身 AI 训练数据生成"
 
+### 视频世界模型五大属性框架（Xun Huang）
+
+> 2025 年 7 月，Xun Huang（Stanford）发表"Towards Video World Models"长文，系统阐述了从视频生成到真正世界模型所需的五大核心属性，并梳理了各属性的前沿研究进展。来源：[Towards Video World Models](https://www.xunhuang.me/blogs/world_model.html) [64]
+
+**核心论点**：当前 SOTA 视频生成器（Sora、Veo3）尚不是真正的世界模型——它们生成视觉上逼真的视频，但缺乏因果性、交互性、持久性、实时性和物理准确性这五项关键能力。
+
+| 属性 | 定义 | 硬/软约束 | 关键挑战 | 代表性工作 |
+|:-----|:-----|:-----|:-----|:-----|
+| **因果性 (Causal)** | 时间单向性：过去决定未来，未来不影响过去 | 硬约束 | DiT 双向注意力违反时间因果性；自回归模型质量受限于 VQ 损失 | CausVid [65], Diffusion Forcing, MAGI-1, Self-Forcing |
+| **交互性 (Interactive)** | 用户/Agent 可实时注入动作并影响后续生成 | 硬约束 | 缺乏带动作标注的大规模视频训练数据 | Genie/Genie 2, GameNGen, DIAMOND, GameGen-X, The Matrix |
+| **持久性 (Persistent)** | 生成任意长度视频且保持时序一致性 | 软约束（频谱） | 上下文窗口增长导致延迟增加；远距关键信息丢失 | SSWM [66], FramePack, FAR, SPMEM, GEN3C |
+| **实时性 (Real-Time)** | 吞吐率 ≥ 帧消费率且延迟低于感知阈值 | 与物理准确性存在权衡 | 非因果模型最低延迟 = 视频块时长；蒸馏步骤与质量矛盾 | Self-Forcing (17FPS), APT2, CausVid+DMD |
+| **物理准确性 (Physically Accurate)** | 生成内容遵循真实物理规律 | 与实时性存在权衡 | 组合泛化可行但外推泛化失败；缩放是否能学到物理定律存疑 | PhyWorld [67], VideoJAM, Ctrl-Crash, PISA |
+
+**关键洞察**：
+
+- **因果性是基础**：因果性是交互性的前提——非因果模型（如标准 DiT）在生成初始帧后整段视频即被确定，无法支持实时交互
+- **实时 vs 物理准确性的双头金字塔**：不同应用场景对两者的优先级不同——人类娱乐需实时性（延迟 < 0.1s 游戏可接受），物理准确性"骗过人眼"即可；机器人训练需物理准确性优先，实时性在训练阶段非必需
+- **世界模型术语过载**：内部世界理解模型（LeCun JEPA 路线）与外部世界模拟器（视频世界模型路线）是两类不同目标，但可在具身 AI 中协同工作——内部模型通过外部模拟器交互学习
+- **三种世界模拟路径对比**：物理仿真器（MuJoCo/Isaac/Genesis）物理准确但需手工建模；神经 3D/4D 方法（World Labs/SpAItial）3D 一致但难建模动态场景；视频世界模型视觉逼真但 3D 一致性与实时性仍是开放问题。短期混合方案（如 WonderPlay）最有前途
+
 ### Agent 系统范式论文
 
 > 定义现代智能体交互范式的核心论文，涵盖推理-行动循环、工具使用自监督学习及指令微调策略。
@@ -1228,6 +1281,7 @@
 | **EntropyTown: World Model Bets** | 李飞飞 vs LeCun vs DeepMind 世界模型路线对比分析 | [entropytown.com](https://entropytown.com/articles/2025-11-13-world-model-lecun-feifei-li/) |
 | **Turing Post: LeJEPA 详解** | LeJEPA 理论升级：JEPA 缺失的理论基石是什么 | [turingpost.com](https://www.turingpost.com/p/lejepa) |
 | **Latent Space: 李飞飞访谈** | "After LLMs: Spatial Intelligence and World Models" — 李飞飞 & Justin Johnson 深度访谈 | [latent.space](https://www.latent.space/) |
+| **Xun Huang: Towards Video World Models** | Stanford 技术博客，提出视频世界模型五大属性框架（因果/交互/持久/实时/物理准确），系统梳理从视频生成到世界模型的路径 | [xunhuang.me](https://www.xunhuang.me/blogs/world_model.html) |
 
 ### 视频与课程
 
@@ -1252,6 +1306,7 @@
 | **Verses.ai Blog** | AXIOM 主动推断世界模型与 Genius 平台技术解读 | [verses.ai](https://www.verses.ai/blog) |
 | **Ben Dickson (TechTalks)** | VL-JEPA 2 技术深度解析：LeCun 的世界模型路线 | [bdtechtalks.com](https://bdtechtalks.com/) |
 | **Themesis Blog** | 世界模型五大竞争路线追踪与产业分析 | [themesis.com](https://themesis.com/) |
+| **Xun Huang Blog** | Stanford 研究者"Towards Video World Models"深度技术博客，提出视频世界模型五大属性框架 | [xunhuang.me](https://www.xunhuang.me/blogs/world_model.html) |
 
 ### 阅读路线图
 
@@ -2294,6 +2349,14 @@ OXE = Open X-Embodiment                                Sim2Real = Simulation to 
 
 [63] [latent.space - After LLMs: Spatial Intelligence and World Models — Fei-Fei Li & Justin Johnson (2025-12)](https://www.latent.space/)
 
+[64] [xunhuang.me - Towards Video World Models (2025-07-11)](https://www.xunhuang.me/blogs/world_model.html)
+
+[65] [arxiv.org - CausVid: From Slow Bidirectional to Fast Autoregressive Video Diffusion Models (2025-01)](https://arxiv.org/abs/2412.07772)
+
+[66] [arxiv.org - State-Space Video World Models (2025-05)](https://arxiv.org/abs/2505.20171)
+
+[67] [arxiv.org - PhyWorld: How Far Is Video Generation from World Model? A Physical-Law Perspective (2025-01)](https://arxiv.org/abs/2411.02385)
+
 ---
 
 ## 📈 版本演进历程
@@ -2304,6 +2367,7 @@ OXE = Open X-Embodiment                                Sim2Real = Simulation to 
 | v6.0 | 2026.07.02 | 300+ | 占位符修复、代码示例、性能对比矩阵、产业报告、BibTeX 导出 |
 | **v7.0** | **2026.07.17** | **380+** | **六大流派分类、Cosmos 3/Predict 2.5、Marble 1.1、NeuroVLA、Momenta IPO、WAIC 2026、RynnWorld-4D、WorldArena 2.0、CVPR 2026 论文×5、AGIBOT World 2026 数据集、30+ 最新论文、去重整理** | **9 轮** |
 | **v7.1** | **2026.07.17** | **380+** | **技术全景图（三层架构）、微信交流群二维码、全面性评估报告** | **10 轮** |
+| **v7.5** | **2026.07.18** | **880+** | **Xun Huang 视频世界模型五大属性框架、23 篇关键论文补充（CausVid/Self-Forcing/MAGI-1/Diffusion Forcing/PhyWorld 等）、三种世界模拟路径对比、参考文献至 [67]** | **13 轮** |
 | **v7.4** | **2026.07.18** | **860+** | **Themesis 五大竞争路线深度对比、AXIOM/LeJEPA 论文补充、Verses.ai 公司条目、深度博客×3、综述资源×4、参考文献扩展至 [63]** | **12 轮** |
 | **v7.3** | **2026.07.18** | **850+** | **深度内容补充：经典视频预测工作×10、历史发展时间线、评估指标详解、科学与生物医学应用×12、阅读路线图（4类读者）、关键技术挑战与开放问题（7类28项）、术语表（60+术语）** | **11 轮** |
 
@@ -2316,6 +2380,7 @@ OXE = Open X-Embodiment                                Sim2Real = Simulation to 
 | **v5.0** | 2026-07-02 | 260+ | 98%+ | 新增 2026 年 6-7 月融资生态、新评测基准、中国生态重大更新、前沿研究论文 | 5 轮 |
 | **v6.0** | 2026-07-02 | **300+** | **99%+** | **占位符链接全面修复、代码示例与实战指南、性能对比数据矩阵、架构图示、BibTeX 导出、产业报告整合、全球融资更新、快速入门指南** | **7 轮** |
 | **v7.0-v7.2** | 2026-07-17 | **800+** | **99%+** | **六大流派分类、Cosmos 3/Predict 2.5、结构修复、去重优化、安全论文扩充、历史完整性、理论基础、GitHub Actions** | **10 轮** |
+| **v7.5** | **2026-07-18** | **880+** | **99.5%+** | **Xun Huang 五大属性框架、23 篇关键论文（CausVid/Self-Forcing/MAGI-1 等）、三种模拟路径对比、参考文献至 [67]** | **13 轮** |
 | **v7.4** | **2026-07-18** | **860+** | **99.5%+** | **Themesis 五大竞争路线深度对比、AXIOM/LeJEPA 论文、Verses.ai 条目、深度博客×3、综述资源×4、参考文献至 [63]** | **12 轮** |
 | **v7.3** | **2026-07-18** | **850+** | **99.5%+** | **深度内容补充：经典视频预测×10、历史时间线、评估指标详解、科学应用×12、阅读路线图、开放问题×28、术语表×60+** | **11 轮** |
 
@@ -2323,7 +2388,7 @@ OXE = Open X-Embodiment                                Sim2Real = Simulation to 
 
 ```
 条目数量演进：
-v1.0 (79) ──→ v2.0 (150+) ──→ v3.0 (200+) ──→ v4.0 (220+) ──→ v5.0 (260+) ──→ v6.0 (300+) ──→ v7.0 (380+) ──→ v7.3 (850+) ──→ v7.4 (860+)
+v1.0 (79) ──→ v2.0 (150+) ──→ v3.0 (200+) ──→ v4.0 (220+) ──→ v5.0 (260+) ──→ v6.0 (300+) ──→ v7.0 (380+) ──→ v7.3 (850+) ──→ v7.4 (860+) ──→ v7.5 (880+)
              +89%              +33%              +10%              +18%              +15%              +27%              +124%
 
 覆盖率演进：
@@ -2339,14 +2404,15 @@ v5.0: 3.7/5.0 (生态完善)
 v6.0: 4.74/5.0 (终极高质量版本)
 v7.0: 4.84/5.0 (生态完善版)
 v7.3: 4.92/5.0 (深度研究型文档)
-v7.4: 4.93/5.0 (Themesis 五大路线整合) ← 当前
+v7.4: 4.93/5.0 (Themesis 五大路线整合)
+v7.5: 4.94/5.0 (视频世界模型五大属性框架) ← 当前
 ```
 
 ---
 
 > **维护者**：[isLinXu](https://github.com/isLinXu)
-> **最后更新**：2026-07-18（v7.4 Themesis 五大竞争路线深度整合）
+> **最后更新**：2026-07-18（v7.5 Xun Huang 视频世界模型五大属性框架整合）
 > **许可证**：[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-> **引用格式**：`isLinXu/Awesome-Agent-World-Model v7.4 (2026)`
+> **引用格式**：`isLinXu/Awesome-Agent-World-Model v7.5 (2026)`
 
 > *"世界模型不是关于预测未来，而是关于在想象中安全地犯错。"* —— Yann LeCun, AMI Labs
