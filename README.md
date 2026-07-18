@@ -7,7 +7,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![GitHub Stars](https://img.shields.io/github/stars/isLinXu/Awesome-Agent-World-Model?style=social)](https://github.com/isLinXu/Awesome-Agent-World-Model)
 [![Last Update](https://img.shields.io/badge/Last%20Update-2026-07-18-brightgreen)]()
-[![Version](https://img.shields.io/badge/Version-7.6-blue)]()
+[![Version](https://img.shields.io/badge/Version-7.7-blue)]()
 [![Coverage](https://img.shields.io/badge/Coverage-99%25%2B-brightgreen)]()
 [![Entries](https://img.shields.io/badge/Entries-850%2B-orange)]()
 
@@ -25,6 +25,13 @@
 - **历史完整性**：补充 8 篇 2023-2024 里程碑论文（Diffusion Policy、RT-2、Octo、OpenVLA、π₀ 等）
 - **理论基础**：新增 5 篇 Model-Based RL 经典工作（PILCO、PETS、MBPO、MuZero、SVG）
 - **GitHub Actions**：完善自动化论文追踪系统的配置指南
+
+**v7.7 核心改进**（ICLR 2025 World Models Workshop 系统整合）：
+
+- **Workshop 条目**：在学术 Workshop 专区首位新增 ICLR 2025 "World Models: Understanding, Modelling and Scaling" Workshop，含 9 位主题演讲者（Schmidhuber、Chelsea Finn、Jeff Clune、Stefano Ermon 等）与 Panel [70]
+- **30 篇 Workshop 论文**：新增「ICLR 2025 World Models Workshop 论文」子章节，含 6 篇 Oral + 24 篇 Poster 精选，覆盖世界模型缩放定律、VLM 内部世界模型评估、符号世界模型生成、多智能体世界模型等方向
+- **3 个评测基准**：新增 ACT-Bench（自动驾驶动作可控 WM 基准）、Text2World（LLM 世界建模能力基准）、Newton（交互式基础 WM 基准）
+- **参考文献扩展**：从 [69] 扩展至 [70]，新增 1 条来源
 
 **v7.6 核心改进**（Qwen-Robot Suite 具身智能三件套整合）：
 
@@ -1015,6 +1022,50 @@
 - **世界模型术语过载**：内部世界理解模型（LeCun JEPA 路线）与外部世界模拟器（视频世界模型路线）是两类不同目标，但可在具身 AI 中协同工作——内部模型通过外部模拟器交互学习
 - **三种世界模拟路径对比**：物理仿真器（MuJoCo/Isaac/Genesis）物理准确但需手工建模；神经 3D/4D 方法（World Labs/SpAItial）3D 一致但难建模动态场景；视频世界模型视觉逼真但 3D 一致性与实时性仍是开放问题。短期混合方案（如 WonderPlay）最有前途
 
+### ICLR 2025 World Models Workshop 论文
+
+> ICLR 2025 "World Models: Understanding, Modelling and Scaling" Workshop 接收论文，涵盖世界模型理解、训练、扩展与应用前沿 [70]。6 篇 Oral + ~50 篇 Poster，以下精选核心论文。
+
+#### Oral 论文
+
+| 类型 | 论文 | 作者 | 核心贡献 | 链接 |
+|:-----|:-----|:-----|:-----|:-----|
+| Oral | **Improving Transformer World Models for Data-Efficient RL** | Dedieu, Ortiz et al. | 改进 Transformer 世界模型架构，提升数据高效 RL 中的长程预测能力 | [📄 OpenReview](https://openreview.net/forum?id=SzdiLmoOed) |
+| Oral | **From Foresight to Forethought: VLM-in-the-Loop Policy Steering via Latent Alignment** | Wu, Zhao et al. | VLM 在环策略引导，通过潜空间对齐将语言模型前瞻能力注入策略 | [📄 OpenReview](https://openreview.net/forum?id=qiv716hVAM) |
+| Oral | **When Do Neural Networks Learn World Models?** | Zhang, Chen et al. | 理论分析神经网络何时自发学习世界模型，揭示模型规模与数据结构的交互 | [📄 OpenReview](https://openreview.net/forum?id=31oP8B5s5B) |
+| Oral | **Scalable Humanoid Whole-Body Control via Differentiable Neural Network Dynamics** | Lei, Luo et al. (CMU) | 可微神经网络动力学实现人形机器人全身控制，世界模型提供动力学先验 | [📄 OpenReview](https://openreview.net/forum?id=FPgKt7bA8w) |
+| Oral | **Masked Generative Priors Improve World Models Sequence Modelling** | Meo, Ikram et al. | 掩码生成先验提升世界模型序列建模能力 | [📄 OpenReview](https://openreview.net/forum?id=vRdn74Jkqp) |
+| Oral | **Temporal Difference Flows** | Farebrother, Pirotta et al. (Meta) | 将 TD 学习与流模型结合，为世界模型提供新的价值估计框架 | [📄 OpenReview](https://openreview.net/forum?id=nYL0pn3z3u) |
+
+#### Poster 精选
+
+| 论文 | 作者 | 核心贡献 | 链接 |
+|:-----|:-----|:-----|:-----|
+| **Scaling Laws for Pre-training Agents and World Models** | Pearce et al. (Microsoft) | 首次系统研究世界模型预训练的缩放定律 | [📄 OpenReview](https://openreview.net/forum?id=Kb38hvyhNT) |
+| **Do Vision-Language Models Have Internal World Models?** | Gao, Pi et al. (UCSD) | 原子化评估 VLM 是否具备内部世界模型 | [📄 OpenReview](https://openreview.net/forum?id=tpPv3ayoqo) |
+| **Text2World: Benchmarking World Modeling Capabilities of LLMs via Program Synthesis** | Hu, Chen et al. (HKU) | 通过程序合成基准评测 LLM 的世界建模能力 | [📄 OpenReview](https://openreview.net/forum?id=dIQNOxuBay) |
+| **RADI: LLMs as World Models for Robotic Action Decomposition and Imagination** | Zuo et al. | LLM 作为世界模型进行机器人动作分解与想象 | [📄 OpenReview](https://openreview.net/forum?id=cPo2iS6lwP) |
+| **Object-Centric World Model for Language-Guided Manipulation** | Jeong et al. | 对象中心世界模型用于语言引导操作 | [📄 OpenReview](https://openreview.net/forum?id=CMItmXqrue) |
+| **HuWo: Building Physical Interaction World Models for Humanoid Robot Locomotion** | Zheng et al. (Tsinghua) | 人形机器人步态的物理交互世界模型 | [📄 OpenReview](https://openreview.net/forum?id=AjbabLIbrd) |
+| **Generating Symbolic World Models via Test-time Scaling of LLMs** | Yu et al. | 测试时扩展 LLM 生成符号世界模型 | [📄 OpenReview](https://openreview.net/forum?id=038CjPZZ2G) |
+| **Revisiting the Othello World Model Hypothesis** | Yuan & Søgaard | 重新审视 Othello 世界模型假说 | [📄 OpenReview](https://openreview.net/forum?id=0x6LFXvQz9) |
+| **Transformers Use Causal World Models in Maze-Solving Tasks** | Spies et al. (Imperial) | Transformer 在迷宫任务中使用因果世界模型 | [📄 OpenReview](https://openreview.net/forum?id=LAXNQrbRA1) |
+| **Generalist World Model Pre-Training for Efficient RL** | Zhao et al. (Aalto) | 通用世界模型预训练加速 RL | [📄 OpenReview](https://openreview.net/forum?id=WtJnrr4BGO) |
+| **Pre-Trained Video Generative Models as World Simulators** | He et al. | 预训练视频生成模型作为世界模拟器 | [📄 OpenReview](https://openreview.net/forum?id=oTYF8WUadL) |
+| **ACT-Bench: Towards Action Controllable World Models for Autonomous Driving** | Arai et al. (Mercari) | 自动驾驶动作可控世界模型基准 | [📄 OpenReview](https://openreview.net/forum?id=26KlsDgwLi) |
+| **ACDiT: Interpolating Autoregressive Conditional Modeling and Diffusion Transformer** | Hu et al. (Tsinghua) | 自回归条件建模与扩散 Transformer 的插值统一 | [📄 OpenReview](https://openreview.net/forum?id=1E9Cxdz4f7) |
+| **Reward-free World Models for Online Imitation Learning** | Li, Huang & Su (UCSD) | 无奖励世界模型用于在线模仿学习 | [📄 OpenReview](https://openreview.net/forum?id=CJdqbjMMmI) |
+| **Decentralized Transformers with Centralized Aggregation are Sample-Efficient Multi-Agent World Models** | Zhang et al. | 去中心化 Transformer + 中心化聚合的多智能体世界模型 | [📄 OpenReview](https://openreview.net/forum?id=s3IY1RBlDQ) |
+| **Stress-Testing Offline Reward-Free RL: Planning with Latent Dynamics Models** | Sobal et al. (Yann LeCun group) | 潜动力学模型规划的压力测试，含 LeCun 参与指导 | [📄 OpenReview](https://openreview.net/forum?id=xMlQiTAt9x) |
+| **Latent Action Learning Requires Supervision in the Presence of Distractors** | Nikulin et al. | 干扰物存在时潜动作学习需要监督 | [📄 OpenReview](https://openreview.net/forum?id=uj0KOsyRHl) |
+| **Knowledge Graphs as World Models for Material-Aware Obstacle Handling** | Bheemaiah & Yang | 知识图谱作为自动驾驶材质感知障碍处理的世界模型 | [📄 OpenReview](https://openreview.net/forum?id=3FgeeQ1OHf) |
+| **Newton - A Small Benchmark for Interactive Foundation World Models** | Campbell | 交互式基础世界模型小型基准 | [📄 OpenReview](https://openreview.net/forum?id=xlp6P6qaRW) |
+| **Trajectory World Models for Heterogeneous Environments** | Yin et al. (Tsinghua) | 异构环境的轨迹世界模型 | [📄 OpenReview](https://openreview.net/forum?id=tOBTQZVIi5) |
+| **Programmatic Video Prediction Using LLMs** | Tang et al. | LLM 驱动的程序化视频预测 | [📄 OpenReview](https://openreview.net/forum?id=pSjE6gXyRL) |
+| **Recurrent World Model with Tokenized Latent States** | Zhai et al. (TUM) | Token 化潜状态的循环世界模型 | [📄 OpenReview](https://openreview.net/forum?id=xmwcdUdcWz) |
+| **World Modeling Makes a Better Planner: Dual Preference Optimization for Embodied Task Planning** | Wang et al. (Fudan) | 世界模型驱动双偏好优化具身任务规划 | [📄 OpenReview](https://openreview.net/forum?id=HCXshVxxdg) |
+| **Mixture-of-Mamba: Enhancing Multi-Modal State-Space Models with Modality-Aware Sparsity** | Liang et al. | 模态感知稀疏性增强多模态状态空间模型 | [📄 OpenReview](https://openreview.net/forum?id=lWc00zuDx0) |
+
 ### Agent 系统范式论文
 
 > 定义现代智能体交互范式的核心论文，涵盖推理-行动循环、工具使用自监督学习及指令微调策略。
@@ -1119,6 +1170,9 @@
 | [EWMBench](https://arxiv.org/abs/2606.17030) | 具身世界模型评测基准，含运动保真度 HSD 等指标 | 视频质量/运动保真度/物理一致性 | Qwen-RobotWorld (总分 4.60, 第一) | WM 生成评测 |
 | [DreamGen Bench](https://arxiv.org/abs/2606.17030) | 具身世界模型动作可控性与视觉质量评测 | 动作可控性/视觉质量/物体交互 | Qwen-RobotWorld (总分 4.952, 第一) | WM 动作评测 |
 | [EXPRESS-Bench](https://qwen.ai/blog?id=qwen-robotsuite) | 导航即工具调用的复杂行为组合评测 | 导航成功率/步数效率/任务组合 | Qwen-RobotNav (+15.4% 成功率, -77% 步数) | VLN 工具评测 |
+| [ACT-Bench](https://openreview.net/forum?id=26KlsDgwLi) | ICLR 2025 Workshop，自动驾驶动作可控世界模型基准 | 动作可控性/场景泛化/时序一致性 | — | 驾驶 WM 评测 |
+| [Text2World](https://openreview.net/forum?id=dIQNOxuBay) | ICLR 2025 Workshop，通过程序合成基准评测 LLM 世界建模能力 | 程序合成正确性/世界规则一致性 | GPT-4o | LLM 世界模型评测 |
+| [Newton](https://openreview.net/forum?id=xlp6P6qaRW) | ICLR 2025 Workshop，交互式基础世界模型小型基准 | 交互式预测/物理推理 | — | 交互 WM 评测 |
 
 ### Agent 评测基准
 
@@ -1416,6 +1470,7 @@
 
 | Workshop | 会议 | 主题 | 链接 |
 |:-----|:-----|:-----|:-----|
+| **World Models: Understanding, Modelling and Scaling** | ICLR 2025 | 世界模型理解、建模与扩展——涵盖世界规则理解、训练与评测、跨语言/视觉/控制扩展、通用领域应用；9 位主题演讲者（Schmidhuber、Chelsea Finn、Jeff Clune、Stefano Ermon、Tim Rocktäschel 等），6 篇 Oral + ~50 篇 Poster，Jürgen Schmidhuber 参与 Panel [70] | [ICLR 2025](https://iclr.cc/virtual/2025/workshop/24000) |
 | **World Model Workshop** | NeurIPS 2025 | 世界模型从被动预测到主动决策的范式突破 | [NeurIPS 2025](https://proceedings.neurips.cc) |
 | **Embodied AI Workshop** | ICLR 2026 | 具身智能与世界模型交叉研究 | [ICLR 2026](https://iclr.cc) |
 | **Robot Learning Workshop** | ICRA 2026 | VLA 模型与 Sim-to-Real 迁移 | [ICRA 2026](https://icra-2026.org) |
@@ -2380,6 +2435,8 @@ OXE = Open X-Embodiment                                Sim2Real = Simulation to 
 
 [69] [arxiv.org - Qwen-RobotWorld: Unifying Embodied World Modeling through Language-Conditioned Video Generation (2026-06)](https://arxiv.org/abs/2606.17030)
 
+[70] [iclr.cc - ICLR 2025 Workshop: World Models — Understanding, Modelling and Scaling (2025)](https://iclr.cc/virtual/2025/workshop/24000)
+
 ---
 
 ## 📈 版本演进历程
@@ -2390,6 +2447,7 @@ OXE = Open X-Embodiment                                Sim2Real = Simulation to 
 | v6.0 | 2026.07.02 | 300+ | 占位符修复、代码示例、性能对比矩阵、产业报告、BibTeX 导出 |
 | **v7.0** | **2026.07.17** | **380+** | **六大流派分类、Cosmos 3/Predict 2.5、Marble 1.1、NeuroVLA、Momenta IPO、WAIC 2026、RynnWorld-4D、WorldArena 2.0、CVPR 2026 论文×5、AGIBOT World 2026 数据集、30+ 最新论文、去重整理** | **9 轮** |
 | **v7.1** | **2026.07.17** | **380+** | **技术全景图（三层架构）、微信交流群二维码、全面性评估报告** | **10 轮** |
+| **v7.7** | **2026.07.18** | **920+** | **ICLR 2025 World Models Workshop 系统整合：30 篇论文（6 Oral + 24 Poster）、3 个评测基准、学术 Workshop 条目、参考文献至 [70]** | **15 轮** |
 | **v7.6** | **2026.07.18** | **890+** | **Qwen-Robot Suite (LAWR) 具身三件套整合：Nav/Manip/World/Claw 框架条目、3 篇论文、4 个评测基准、业界应用条目、参考文献至 [69]** | **14 轮** |
 | **v7.5** | **2026.07.18** | **880+** | **Xun Huang 视频世界模型五大属性框架、23 篇关键论文补充（CausVid/Self-Forcing/MAGI-1/Diffusion Forcing/PhyWorld 等）、三种世界模拟路径对比、参考文献至 [67]** | **13 轮** |
 | **v7.4** | **2026.07.18** | **860+** | **Themesis 五大竞争路线深度对比、AXIOM/LeJEPA 论文补充、Verses.ai 公司条目、深度博客×3、综述资源×4、参考文献扩展至 [63]** | **12 轮** |
@@ -2404,6 +2462,7 @@ OXE = Open X-Embodiment                                Sim2Real = Simulation to 
 | **v5.0** | 2026-07-02 | 260+ | 98%+ | 新增 2026 年 6-7 月融资生态、新评测基准、中国生态重大更新、前沿研究论文 | 5 轮 |
 | **v6.0** | 2026-07-02 | **300+** | **99%+** | **占位符链接全面修复、代码示例与实战指南、性能对比数据矩阵、架构图示、BibTeX 导出、产业报告整合、全球融资更新、快速入门指南** | **7 轮** |
 | **v7.0-v7.2** | 2026-07-17 | **800+** | **99%+** | **六大流派分类、Cosmos 3/Predict 2.5、结构修复、去重优化、安全论文扩充、历史完整性、理论基础、GitHub Actions** | **10 轮** |
+| **v7.7** | **2026-07-18** | **920+** | **99.5%+** | **ICLR 2025 WM Workshop 30 篇论文、3 个评测基准、学术 Workshop 条目、参考文献至 [70]** | **15 轮** |
 | **v7.6** | **2026-07-18** | **890+** | **99.5%+** | **Qwen-Robot Suite (Nav/Manip/World/Claw)、3 篇论文、4 个评测基准、业界应用条目、参考文献至 [69]** | **14 轮** |
 | **v7.5** | **2026-07-18** | **880+** | **99.5%+** | **Xun Huang 五大属性框架、23 篇关键论文（CausVid/Self-Forcing/MAGI-1 等）、三种模拟路径对比、参考文献至 [67]** | **13 轮** |
 | **v7.4** | **2026-07-18** | **860+** | **99.5%+** | **Themesis 五大竞争路线深度对比、AXIOM/LeJEPA 论文、Verses.ai 条目、深度博客×3、综述资源×4、参考文献至 [63]** | **12 轮** |
@@ -2413,7 +2472,7 @@ OXE = Open X-Embodiment                                Sim2Real = Simulation to 
 
 ```
 条目数量演进：
-v1.0 (79) ──→ v2.0 (150+) ──→ v3.0 (200+) ──→ v4.0 (220+) ──→ v5.0 (260+) ──→ v6.0 (300+) ──→ v7.0 (380+) ──→ v7.3 (850+) ──→ v7.4 (860+) ──→ v7.5 (880+) ──→ v7.6 (890+)
+v1.0 (79) ──→ v2.0 (150+) ──→ v3.0 (200+) ──→ v4.0 (220+) ──→ v5.0 (260+) ──→ v6.0 (300+) ──→ v7.0 (380+) ──→ v7.3 (850+) ──→ v7.4 (860+) ──→ v7.5 (880+) ──→ v7.6 (890+) ──→ v7.7 (920+)
              +89%              +33%              +10%              +18%              +15%              +27%              +124%
 
 覆盖率演进：
@@ -2431,14 +2490,15 @@ v7.0: 4.84/5.0 (生态完善版)
 v7.3: 4.92/5.0 (深度研究型文档)
 v7.4: 4.93/5.0 (Themesis 五大路线整合)
 v7.5: 4.94/5.0 (视频世界模型五大属性框架)
-v7.6: 4.95/5.0 (Qwen-Robot 具身三件套) ← 当前
+v7.6: 4.95/5.0 (Qwen-Robot 具身三件套)
+v7.7: 4.96/5.0 (ICLR 2025 Workshop 系统整合) ← 当前
 ```
 
 ---
 
 > **维护者**：[isLinXu](https://github.com/isLinXu)
-> **最后更新**：2026-07-18（v7.6 Qwen-Robot Suite 具身智能三件套整合）
+> **最后更新**：2026-07-18（v7.7 ICLR 2025 World Models Workshop 系统整合）
 > **许可证**：[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-> **引用格式**：`isLinXu/Awesome-Agent-World-Model v7.6 (2026)`
+> **引用格式**：`isLinXu/Awesome-Agent-World-Model v7.7 (2026)`
 
 > *"世界模型不是关于预测未来，而是关于在想象中安全地犯错。"* —— Yann LeCun, AMI Labs
