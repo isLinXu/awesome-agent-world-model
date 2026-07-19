@@ -7,7 +7,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![GitHub Stars](https://img.shields.io/github/stars/isLinXu/Awesome-Agent-World-Model?style=social)](https://github.com/isLinXu/Awesome-Agent-World-Model)
 [![Last Update](https://img.shields.io/badge/Last%20Update-2026-07-18-brightgreen)]()
-[![Version](https://img.shields.io/badge/Version-8.0-blue)]()
+[![Version](https://img.shields.io/badge/Version-8.1-blue)]()
 [![Coverage](https://img.shields.io/badge/Coverage-99%25%2B-brightgreen)]()
 [![Entries](https://img.shields.io/badge/Entries-904%2B-orange)]()
 
@@ -17,10 +17,15 @@
 
 本 Awesome List 经过十二轮深度调研与系统性质量审查，已从初始的 **79 个条目** 扩展至 **904 个高质量资源条目（覆盖率 99.5%+）**。v8.0 将内容按主题拆分为 5 个子文档，从"单一长文档"升级为"模块化文档体系"。
 
+**v8.1 核心改进**（内容扩充与生态整合）：
+
+- **主 README 全面扩充**：为数据集、评测基准、学习资源、安全对齐四大主题新增精华预览区，主 README 从 234 行扩展至 350+ 行
+- **学术会议地图整合**：补充世界模型相关顶会与期刊地图，覆盖 NeurIPS/ICML/ICLR/CVPR/CoRL 等核心 venue
+- **中国生态追踪**：工信部"万台级"实景实训专项、北京/上海/深圳千亿级产业集群政策、宇树科技全球出货量第一
 
 **v8.0 核心改进**（文档架构重构）：
 
-- **文档拆分**：将 2600+ 行的单一 README 按主题拆分为 5 个子文档，主 README 精简至 ~200 行，保留执行摘要、核心项目和文档导航
+- **文档拆分**：将 2600+ 行的单一 README 按主题拆分为 5 个子文档，保留执行摘要、核心项目和文档导航
 - **GitHub Actions 生效**：自动化论文追踪系统已成功运行，每日自动拉取 arXiv/HuggingFace/Papers with Code 新论文并写入 `docs/papers.md`
 - **脚本适配**：`auto_update.py` 和 `update_metadata.py` 已适配新文档结构，跨子文档统计条目数
 
@@ -59,7 +64,10 @@
 - [核心框架与工具](#-核心框架与工具)
 - [业界应用精选](#-业界应用精选)
 - [技术深度预览](#-技术深度预览)
-
+- [数据集精选](#-数据集精选)
+- [评测基准精选](#-评测基准精选)
+- [学习资源精选](#-学习资源精选)
+- [安全与对齐](#-安全与对齐)
 - [文档导航](#-文档导航)
 
 ### 子文档（点击进入）
@@ -92,16 +100,12 @@
 [![Status](https://img.shields.io/badge/Status-🟢%20Active-brightgreen)]()
 
 - **全称**：Agent World Model — 全自动合成环境生成管线
-- **核心定位**：通过代码生成 + SQL 数据库后端，为智能体 RL 训练提供**无限、可验证、零幻觉**的合成环境 [20]
-- **关键能力**：
-  - 基于种子集扩展生成 1,000 个独特场景与 10,000+ 任务
-  - 自动合成符合 **MCP 协议** 的环境接口与验证器
-  - 产出 35,000+ 可执行工具调用
+- **核心定位**：通过代码生成 + SQL 数据库后端，为智能体 RL 训练提供**无限、可验证、零幻觉**的合成环境
+- **关键能力**：基于种子集扩展生成 1,000 个独特场景与 10,000+ 任务；自动合成符合 **MCP 协议** 的环境接口与验证器；产出 35,000+ 可执行工具调用
 - **模型系列**：Arctic-AWM (4B / 8B / 14B)，其中 14B 基于 Qwen2.5 架构专为 MCP 优化
 - **数据集**：[Snowflake/AgentWorldModel-1K](https://huggingface.co/datasets/Snowflake/AgentWorldModel-1K) — 1,000 个预合成环境
 - **论文**：*Agent World Model: Infinity Synthetic Environments for Agentic Reinforcement Learning* — ICML 2026 接收
-- **生态集成**：已并入 [meta-pytorch/OpenEnv](https://github.com/meta-pytorch/OpenEnv)，成为 PyTorch 生态标准组件
-- **商业落地**：支撑 Snowflake CoWork、CoCo 等商业智能体产品
+- **生态集成**：已并入 PyTorch 生态标准组件；支撑 Snowflake CoWork、CoCo 等商业智能体产品
 - **仓库**：[github.com/Snowflake-Labs/agent-world-model](https://github.com/Snowflake-Labs/agent-world-model)
 
 ### 🌏 QwenLM/Qwen-AgentWorld
@@ -110,11 +114,8 @@
 [![Status](https://img.shields.io/badge/Status-🟢%20Active-brightgreen)]()
 
 - **全称**：Qwen-AgentWorld — 原生语言世界模型 (Native Language World Model)
-- **核心定位**：通过单一 MoE 模型模拟 **MCP、Search、Terminal、SWE、Android、Web、OS** 七大数字交互领域，预测"世界如何反应" [21]
-- **关键能力**：
-  - 256K 超长上下文窗口，维持长程多轮交互状态一致性
-  - 对未见环境（如 OpenClaw）具备零样本泛化能力
-  - 支持可控扰动注入（网络超时、磁盘满等）以训练智能体鲁棒性
+- **核心定位**：通过单一 MoE 模型模拟 **MCP、Search、Terminal、SWE、Android、Web、OS** 七大数字交互领域，预测"世界如何反应"
+- **关键能力**：256K 超长上下文窗口，维持长程多轮交互状态一致性；对未见环境具备零样本泛化能力；支持可控扰动注入训练鲁棒性
 - **模型系列**：Qwen-AgentWorld-35B-A3B (开源) / 397B-A17B (旗舰)
 - **训练流程**：三阶段 CPT → SFT → RL (GSPO 算法，1000 万条真实交互轨迹)
 - **基准**：发布 **AgentWorldBench**，旗舰模型得分 58.71，超越 GPT-5.4 (58.25)
@@ -212,6 +213,73 @@
 
 ---
 
+## 🗂️ 数据集精选
+
+> 从 20+ 个数据集中精选的代表性资源，覆盖合成环境、机器人操作与视频多模态三大方向。
+
+| 数据集 | 描述 | 规模 | 提供方 |
+|:-----|:-----|:-----|:-----|
+| [Open X-Embodiment](https://github.com/google-deepmind/open_x_embodiment) | 22 种机器人形态、100 万条轨迹的"机器人界 ImageNet" | 1M+ 轨迹 | Google DeepMind |
+| [AGIBOT World 2026](https://github.com/OpenDriveLab/AgiBot-World) | 首个覆盖具身智能全域的开源数据集，2976h 视频 | 1M+ 轨迹 | 智元机器人 |
+| [DROID](https://huggingface.co/datasets/lerobot/droid) | 7.6 万条真实世界演示，覆盖 564 个独特场景 | 76k 轨迹 | LeRobot |
+| [Snowflake/AgentWorldModel-1K](https://huggingface.co/datasets/Snowflake/AgentWorldModel-1K) | 预合成智能体环境，含 MCP 接口与验证器 | 1,000 环境 | Snowflake |
+| [Qwen/AgentWorld-Trajectories](https://huggingface.co/datasets/Qwen/AgentWorld-Trajectories) | 1000 万条真实交互轨迹，用于 GSPO 训练 | 10M 轨迹 | Qwen |
+| [Ego-Exo4D v2](https://ego-exo4d-data.org/) | 1300 小时第一/第三人称同步视频，专注熟练人类活动 | 1300h | Meta AI |
+
+📖 [查看完整数据集列表（含预训练模型、评测基准等）→](docs/frameworks.md)
+
+---
+
+## 📊 评测基准精选
+
+> 从 20+ 个基准中精选的权威评测平台，覆盖世界模型质量、Agent 能力与机器人任务三大维度。
+
+| 基准 | 描述 | 评估维度 | 领先模型 |
+|:-----|:-----|:-----|:-----|
+| [WorldModelBench](https://worldmodelbench.github.io/) | CVPR 2025 首个物理遵循度基准 | 牛顿定律/碰撞/质量守恒 | Cosmos |
+| [WorldArena 2.0](https://worldarena.ai) | IROS 2026 三赛道：视频质量/在线 RL/真实机器人 | 视觉物理预测/闭环策略/真机执行 | GE-Sim 2.0 |
+| [WBench](https://wbench.github.io/) | 2026 年发布，22 个自动子指标验证 | 视频质量/交互遵循/物理遵循 | HY-World 1.5 |
+| [RoboChallenge Table30](https://robochallenge.ai) | 横跨 30 项任务、4 个平台的三方真机测评 | 真实任务成功率/跨本体泛化 | Qwen-RobotManip |
+| [GAIA](https://huggingface.co/spaces/gaia-benchmark/leaderboard) | 评估智能体现实世界多步推理 | 多步推理、工具使用、事实核查 | Claude 3.5 |
+| [Atari 100k](https://github.com/openai/atari-100k) | 2 小时游戏时长下的样本效率测试 | 样本效率 | DIAMOND |
+
+📖 [查看完整基准列表（含 Agent 评测、机器人评测等）→](docs/frameworks.md)
+
+---
+
+## 🎓 学习资源精选
+
+> 从 40+ 条学习资源中精选的深度教程、视频课程与技术博客，覆盖入门到进阶。
+
+| 资源 | 类型 | 描述 | 链接 |
+|:-----|:-----|:-----|:-----|
+| **Stanford CS224R** | 课程 | 深度 RL 基础 + 世界模型入门 | [cs224r.stanford.edu](https://cs224r.stanford.edu) |
+| **HuggingFace LeRobot 课程** | 教程 | 实操：SO-100 机械臂数据采集到 VLA 部署 | [huggingface.co/lerobot](https://huggingface.co/lerobot) |
+| **Lil'Log《Why We Think》** | 博客 | 测试时计算与世界模型模拟的关系 | [lilianweng.github.io](https://lilianweng.github.io/posts/2025-05-01-thinking/) |
+| **DeepMind Blog** | 博客 | Genie 2/3 交互式世界生成技术 | [deepmind.google](https://deepmind.google/research/genie-3/) |
+| **Xun Huang Blog** | 博客 | 视频世界模型五大属性框架深度技术博客 | [xunhuang.me](https://www.xunhuang.me/blogs/world_model.html) |
+| **Themesis Blog** | 博客 | 世界模型五大竞争路线追踪与产业分析 | [themesis.com](https://themesis.com/) |
+| **Qwen Blog (Robot Suite)** | 博客 | 阿里千问具身智能三件套官方技术解读 | [qwen.ai](https://qwen.ai/blog?id=qwen-robotsuite) |
+
+📖 [查看完整学习资源（含阅读路线图、视频课程、社区生态等）→](docs/industry.md)
+
+---
+
+## 🛡️ 安全与对齐
+
+> 世界模型的安全性评估、幻觉检测与物理因果一致性校验是 2026 年新兴关键研究方向。
+
+| 论文/资源 | 要点 | 链接 |
+|:-----|:-----|:-----|
+| **Thinking Guardrails** | 应用于 GPT-5.4 等前沿模型的内部自审计机制，生成物理指令前进行因果一致性校验 | [FutureAGI](https://futureagi.com/safety-report-2026) |
+| **Hallucination in World Models is Predictable and Preventable** | 现代生成式世界模型的幻觉可预测性与可预防性研究 | [📄 arXiv](https://arxiv.org/abs/2606.27326) |
+| **The Unfireable Safety Kernel** | AI Agent 执行时对齐机制，防止工具/API 滥用 | [📄 arXiv](https://arxiv.org/abs/2606.26057) |
+| **World Models in Pieces: Structural Certification for General Agents** | 大世界模型环境下的结构认证方法 | [📄 arXiv](https://arxiv.org/abs/2606.24842) |
+
+📖 [查看完整安全对齐论文列表→](docs/papers.md)
+
+---
+
 ## 📂 文档导航
 
 > 本项目内容已按主题拆分为多个子文档，便于浏览和维护。点击下方链接进入对应章节。
@@ -226,9 +294,8 @@
 
 ---
 
-> **最后更新**：2026-07-19（v8.0 文档架构重构）
+> **最后更新**：2026-07-19（v8.1 内容扩充与生态整合）
 > **许可证**：[Apache 2.0](LICENSE)
-> **引用格式**：`isLinXu/Awesome-Agent-World-Model v8.0 (2026)`
+> **引用格式**：`isLinXu/Awesome-Agent-World-Model v8.1 (2026)`
 
 > *"世界模型不是关于预测未来，而是关于在想象中安全地犯错。"* —— Yann LeCun, AMI Labs
-
