@@ -423,6 +423,41 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **RoboTTT: Context Scaling for Robot Policies** | Yunfan Jiang, Yevgen Chebotar et al. | Recent robot foundation models operate with single-step or short-history visuomotor... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15275) ⬆16 `🤗 HF` |
+| 2026 | **MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators** | Yushi Huang, Xiangxin Zhou et al. | MeanFlow generators achieve fast few-step sampling by predicting average velocities... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15273) ⬆12 [🐙 Repo](https://github.com/Harahan/MeanFlowNFT) `🤗 HF` |
+| 2026 | **SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration** | Yuyao Zhang, Junjie Gao et al. | Recent advances in Tool-Integrated Large Language Models have made web search a core... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15257) ⬆58 [🐙 Repo](https://github.com/antins-labs/SearchOS) `🤗 HF + PwC` |
+| 2026 | **HoloGeo: Mitigating Landmark Bias in Geo-localization via Evidence-Driven Reasoning** | Pengcheng Zhou, Xuanyu Liu et al. | Recent advances in Vision-Language Models (VLMs) have significantly improved image... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15255) `🤗 HF` |
+| 2026 | **MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal Repository-Level Issue Localization** | Shaoxiong Zhan, Shi Hu et al. | Real repository issues routinely include visual evidence such as screenshots... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15205) `🤗 HF` |
+| 2026 | **Setup Complete, Now You Are Compromised: Weaponizing Setup Instructions Against AI Coding Agents** | Aadesh Bagmar, Pushkar Saraf | AI coding agents set up projects by reading documentation and installing the... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15143) `🤗 HF` |
+| 2026 | **SUFLECA: Scaling Up Feature Learning for CAD-to-image Alignment** | Saad Ejaz, Miguel Fernandez-Cortizas et al. | CAD-to-image alignment aims to estimate an object's 9D pose (rotation... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15058) ⬆7 [🐙 Repo](https://github.com/snt-arg/SUFLECA) `🤗 HF` |
+| 2026 | **Video = World + Event Stream** | Lianghua Huang, Zhi-Fan Wu et al. | We present Wan-Streamer v0... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.15038) ⬆17 `🤗 HF` |
+| 2026 | **OmniaBench: Benchmarking General AI Agents Across Diverse Scenarios** | Chengyu Shen, Yujie Fu et al. | Large language models are increasingly evolving from text generators into general... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14989) `🤗 HF` |
+| 2026 | **From Draft to Draft-Free: One-Step Video Object Removal via Privileged Distillation and Fast Planting** | Zizhao Chen, Ping Wei et al. | Video object removal is a fundamental yet challenging task in video editing... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14976) `🤗 HF` |
+| 2026 | **LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget** | Changhai Zhou, Kieran Liu et al. | A growing gap separates inference context lengths from RL post-training: inference... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14952) ⬆172 [🐙 Repo](https://github.com/MindLab-Research/longstraw) `🤗 HF` |
+| 2026 | **FlashDecoder: Real-Time Latent-to-Pixel Streaming Decoder with Transformers** | Minguk Kang, Suha Kwak | Real-time video generation demands fast decoding as much as fast denoising... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14898) `🤗 HF` |
+| 2026 | **StructureClaw: Traceable LLM Agents and an Executable Benchmark for Structural Engineering Workflows** | Sizhong Qin, Yi Gu et al. | Addressing a structural-engineering request requires more than a single answer; it... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14896) `🤗 HF` |
+| 2026 | **Proof-or-Stop: Don't Trust the Agent, Trust the Evidence -- Loop Engineering for Verifiable Evidence-Gated Lifecycle Control** | Jek Huang, Jeffery Hsia et al. | Autonomous coding agents increasingly execute multi-step software work... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14890) `🤗 HF` |
+| 2026 | **SEED: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning** | Jinyang Wu, Shuo Yang et al. | Large language models are increasingly trained as interactive agents for... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14777) ⬆83 [🐙 Repo](https://github.com/jinyangwu/SEED) `🤗 HF + PwC` |
+| 2026 | **Does Multi-Agent Debate Improve AI Feedback on Research Papers?** | Tomas Havranek, Zuzana Irsova | Probably not, at least for meta-analyses in economics... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14713) `🤗 HF` |
+| 2026 | **Reflex: Real-Time VLA Control through Streaming Inference** | Yuanchun Guo, Bingyan Liu | Flow matching Vision-Language-Action (VLA) models promise precise continuous... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14695) `🤗 HF` |
+| 2026 | **MCPEvol-Bench: Benchmarking LLM Agent Performance Across Dynamic Evolutions of MCP Servers** | Huanxi Liu, Kun Hu et al. | As Model Context Protocol (MCP) servers emerge as the core infrastructure for... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14642) `🤗 HF` |
+| 2026 | **Action QFormer: Structured Representation Shaping under Action Supervision in Vision-Language-Action Models** | Yufeng Ji, Wenhao Tang et al. | Action supervision in vision-language-action (VLA) models is often treated as a... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14635) `🤗 HF` |
+| 2026 | **Bad Memory: Evaluating Prompt Injection Risks from Memory in Agentic Systems** | Soham Gadgil, David Alexander et al. | A growing class of agentic systems maintain persistent state across sessions through... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14611) `🤗 HF` |
+| 2026 | **Representation-Aligned Tactile Grounding for Contact-Rich Robotic Manipulation** | Ruilin Chen, Jingkai Jia et al. | Tactile-enhanced vision-language-action (VLA) policies have been introduced for... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14609) `🤗 HF` |
+| 2026 | **SoftNav: Injecting 3D Scene Tokens into VLMs for Embodied Navigation** | Yi Wu, Junjie An et al. | In goal-directed embodied navigation... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14586) `🤗 HF` |
+| 2026 | **SafeRelBench: A Spatial-Relation-Aware Benchmark for Process-Level Safety in VLM-Driven Embodied Agents** | Huaigang Yang, Ya Li et al. | Vision-language models (VLMs) are increasingly used as the reasoning backbone of... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14543) `🤗 HF` |
+| 2026 | **VTM-Nav: Hierarchical Visual-Topological Memory for Cross-Episode Object-Goal Navigation** | Xiaoran Xu, Yupeng Wu et al. | Object-goal navigation requires an embodied agent to locate and reach an instance of... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14514) `🤗 HF` |
+| 2026 | **ACID: Adaptive Caching for vIDeo generation** | Om Agrawal, Saurabh Agarwal et al. | Video diffusion models produce high-quality generations but remain slow at inference... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.12358) `🤗 HF` |
+| 2026 | **RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources** | Yijia Fan, Zonglin Di et al. | Skills are a useful abstraction for software agents... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2606.29538) ⬆3 `🤗 HF` |
+| 2026 | **Why Git Is the Memory Solution for the Agentic Development Lifecycle** | Frank Guo | Coding agents now produce a growing share of a team's code... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14390) `🤗 HF` |
+| 2026 | **Chat2Scenic: An Iterative RAG-Based Framework for Scenario Generation in Autonomous Driving** | Yuan Gao, Wenting Miao et al. | Validating autonomous driving systems requires diverse... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14387) ⬆4 [🐙 Repo](https://github.com/TUM-AVS/Chat2scenic) `🤗 HF` |
+| 2026 | **The Prover Is the Judge: Verified Security Software from AI Coding Agents in Ada/SPARK** | Tobias Philipp | AI coding agents produce code faster than humans can review it... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14340) `🤗 HF` |
+| 2026 | **Copy-on-Write Scoring: Application-Specific Agent Evaluations** | Joanna Roy, Sven Hoelzel | Trustworthy deployment of LLM-based agents in software systems requires evaluating... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14336) `🤗 HF` |
+| 2026 | **Multi-Head Latent Control: A Unified Interface for LLM Agent Decision Making** | Amirhosein Ghasemabadi, Ruichen Chen et al. | Large language models are increasingly deployed as agents... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14277) `🤗 HF` |
+| 2026 | **KeyFrame-Compass: Towards Comprehensive Evaluation of Keyframe-Conditioned Video Generation** | Yuqi Tang, Tengfei Liu et al. | Video generation increasingly relies on keyframe-based workflows... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14202) ⬆35 [🐙 Repo](https://github.com/cactusqq/KeyFrame-Compass) `🤗 HF` |
+| 2026 | **MultiRef-Compass: Towards Comprehensive Evaluation of Multi-Reference-to-Audio-Video Generation** | Xiaohan Zhang, Yuqing Wen et al. | Multi-reference-to-audio-video (MR2AV) generation aims to generate coherent... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.14189) ⬆31 [🐙 Repo](https://github.com/zxhhh0201/MultiRef-Compass) `🤗 HF` |
+| 2026 | **KnowAct-GUIClaw: Know Deeply, Act Perfectly, Personal GUI Assistant with Self-Evolving Memory and Skill** | Yunxin Li, Jinchao Li et al. | OpenClaw has emerged as a leading agent framework for complex task automation... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.12625) ⬆54 [🐙 Repo](https://github.com/HITsz-TMG/KnowAct) `PwC` |
+| 2026 | **Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation** | Guoxuan Chen, Chufeng Xiao et al. | We introduce Boogu-Image-0... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.13125) ⬆125 [🐙 Repo](https://github.com/boogu-project/Boogu-Image) `PwC` |
 | 2026 | **Hierarchical Denoising For Multi-Step Visual Reasoning** | Zezhong Qian, Xiaowei Chi et al. | Video models are evolving into vision foundation models... | [📄 arXiv:CS.CV](https://arxiv.org/abs/2607.15278) ⬆1 `arXiv + 🤗 HF` |
 | 2026 | **BadWAM: When World-Action Models Dream Right but Act Wrong** | Qi Li, Xingyi Yang et al. | World-action models (WAMs) are emerging as a promising foundation for embodied... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2607.15207) ⬆38 [🐙 Repo](https://github.com/LiQiiiii/BadWAM) `arXiv + 🤗 HF + PwC` |
 | 2026 | **DriftWorld: Fast World Modeling through Drifting** | Susie Lu, Haonan Chen et al. | Predictive world models enable robots to plan by imagining the outcomes of their... | [📄 arXiv:CS.RO](https://arxiv.org/abs/2607.15065) `arXiv` |
@@ -2246,7 +2281,7 @@ graph LR
 | 学习资源 | 16 | **20** | 95% | CS224R、16-831、Lil'Log、LeRobot、AwesomeWorldModels、WAM 教程、Cosmos 2.5、阅读路线图（4 类读者） |
 | 社区生态 | 16 | 16 | 93% | HuggingFace、智源、机器之心、工信部政策、WAIC 2026、WorldArena |
 | **结构性新增** | — | **7 章节** | — | 历史时间线、开放问题（28 项）、术语表（60+ 术语） |
-| **总计** | **869+** | **850+** | **99.5%+** | **覆盖全球世界模型与具身智能全生态，从"资源索引"升级为"深度研究型文档"** |
+| **总计** | **904+** | **850+** | **99.5%+** | **覆盖全球世界模型与具身智能全生态，从"资源索引"升级为"深度研究型文档"** |
 
 ---
 
@@ -2563,7 +2598,7 @@ v7.7: 4.96/5.0 (ICLR 2025 Workshop 系统整合) ← 当前
 ---
 
 > **维护者**：[isLinXu](https://github.com/isLinXu)
-> **最后更新**：2026-07-18（v7.7 ICLR 2025 World Models Workshop 系统整合）
+> **最后更新**：2026-07-19（v7.7 ICLR 2025 World Models Workshop 系统整合）
 > **许可证**：[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 > **引用格式**：`isLinXu/Awesome-Agent-World-Model v7.7 (2026)`
 
