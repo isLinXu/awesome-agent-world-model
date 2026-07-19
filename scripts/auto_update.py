@@ -707,14 +707,14 @@ def insert_papers_into_readme(readme_path: str, papers: List[Dict],
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Auto-update world model papers in README.md from multiple sources"
+        description="Auto-update world model papers in docs/papers.md from multiple sources"
     )
     parser.add_argument("--start_date", type=str, required=True,
                         help="Start date (YYYY-MM-DD)")
     parser.add_argument("--end_date", type=str, required=True,
                         help="End date (YYYY-MM-DD)")
-    parser.add_argument("--readme", type=str, default="README.md",
-                        help="Path to README.md")
+    parser.add_argument("--readme", type=str, default="docs/papers.md",
+                        help="Path to papers document (default: docs/papers.md)")
     parser.add_argument("--max_results", type=int, default=50,
                         help="Max papers per source")
     parser.add_argument("--dry-run", action="store_true",
