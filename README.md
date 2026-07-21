@@ -9,7 +9,7 @@
 [![Last Update](https://img.shields.io/badge/Last%20Update-2026-07-18-brightgreen)]()
 [![Version](https://img.shields.io/badge/Version-8.0-blue)]()
 [![Coverage](https://img.shields.io/badge/Coverage-99%25%2B-brightgreen)]()
-[![Entries](https://img.shields.io/badge/Entries-918%2B-orange)]()
+[![Entries](https://img.shields.io/badge/Entries-948%2B-orange)]()
 
 ---
 
@@ -226,7 +226,7 @@
 
 ---
 
-> **最后更新**：2026-07-20（v8.0 文档架构重构）
+> **最后更新**：2026-07-21（v8.0 文档架构重构）
 > **许可证**：[Apache 2.0](LICENSE)
 > **引用格式**：`isLinXu/Awesome-Agent-World-Model v8.0 (2026)`
 
