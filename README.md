@@ -139,6 +139,7 @@
 | 2025 | **Genie 3** | Google DeepMind | 交互式世界生成，720p/24fps 实时可控 |
 | 2025 | **AXIOM** | Heins et al. (Verses.ai) | 基于主动推断的对象中心世界模型，分钟级学习游戏规则 |
 | 2025 | **LeJEPA** | Balestriero & LeCun (AMI Labs) | JEPA 的理论基石，证明自监督学习无需启发式即可扩展 |
+| 2026 | **Masked Visual Actions** | Li Fei-Fei, Jiajun Wu et al. (Stanford) | 像素空间控制界面，15h 微调实现跨场景跨本体统一世界建模 |
 | 2026 | **Cosmos 3** | NVIDIA | 全球首款完全开源全模态物理 AI 模型，MoT 架构 |
 
 📖 [查看完整论文列表（630+ 篇，含 ICLR Workshop、流派对比、安全对齐等）→](docs/papers.md)
@@ -159,6 +160,7 @@
 | [LeRobot](https://github.com/huggingface/lerobot) | HuggingFace 机器人全栈框架，统一数据集格式 | 🟢 活跃 |
 | [SmolAgents](https://github.com/huggingface/smolagents) | 极简代码智能体框架（~1000 行代码） | 🟢 活跃 |
 | [WorldFoundry](https://github.com/OpenEnvision/WorldFoundry) | 世界模型统一推理与评测 Studio，v0.2.0 | 🟢 活跃 |
+| [Masked Visual Actions](https://github.com/HadiZayer/masked-visual-actions) | 李飞飞团队像素空间控制界面，统一世界建模 | 🟢 活跃 |
 
 📖 [查看完整框架列表（含物理仿真、数据集、评测基准等）→](docs/frameworks.md)
 
@@ -200,6 +202,7 @@
 | **Cosmos 3** | Mixture-of-Transformers | 全模态物理 AI | 原生推理+世界生成+动作预测 |
 | **π₀** | Flow Matching VLA | 跨本体通用控制 | 8 种机器人 |
 | **Genie 3** | 交互式生成 | 720p/24fps 实时交互 | 数分钟环境一致性 |
+| **Masked Visual Actions** | 像素空间控制界面 | 15h 微调跨场景跨本体 | 前向预测+逆向建模 |
 
 ### 物理仿真平台速览
 

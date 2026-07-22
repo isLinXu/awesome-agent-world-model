@@ -27,6 +27,7 @@
 | [Embodied.cpp](https://github.com/EmbodiedBench/embodied.cpp) | 东南大学等打造，统一推理运行时，"万能插座"让各种机器人 AI 模型顺畅运行 | — | 🟢 活跃 |
 | [OpenEnvision/WorldFoundry](https://github.com/OpenEnvision/WorldFoundry) | **世界模型统一推理与评测 Studio**，v0.2.0 集成 Wan/HunyuanVideo/LTX2/Cosmos 基座模型，支持 FlashAttention 2/3、SageAttention、NVFP4 量化、多 GPU Context/Sequence Parallel；内置 VLA 与世界模型集成（LingBot VLA/VLA2、OpenPI、OpenVLA-OFT、Octo、X-VLA、X-WAM、AlayaWorld 等），配套 Studio（模型发现/Conda 隔离/torchrun 分布式/Workspace Job/可视化）与 Benchmark catalog（LaryBench、WorldReasonBench 等） | 🆕 | 🟢 活跃 |
 | [Qwen-Robot Suite (LAWR)](https://qwen.ai/blog?id=qwen-robotsuite) | 阿里千问具身智能三件套：**Nav** 统一五类导航任务（VLN-CE 76.5% SR / NAVSIM 91.4 PDMS），参数化视觉分配策略，宇树 Go2 零样本部署 196ms；**Manip** 80 维统一动作表征跨本体兼容（单臂/双臂/灵巧手/移动平台），38100h 纯开源数据训练，LIBERO-Plus 91.4%、RoboChallenge Table30 通用赛道第一；**World** 60 层双流 MMDiT 架构 + Qwen2.5-VL 动作编码器，自然语言统一动作接口跨 20+ 本体，860 万视频-文本对，四大世界模型基准全面第一，物理规律遵循满分；**Claw** 机器人智能体框架，Qwen VLM 调用 Suite 模型完成长程任务 | 🆕 | 🟢 活跃 |
+| [HadiZayer/masked-visual-actions](https://github.com/HadiZayer/masked-visual-actions) | 李飞飞团队（Stanford/Harvard）像素空间控制界面，将动作表达为视频中任意实体的部分显示轨迹；15 小时微调实现跨场景跨本体高保真控制；支持前向动力学预测、策略评估与逆向建模 | 🆕 | 🟢 活跃 |
 
 ### 多模态世界模型
 
