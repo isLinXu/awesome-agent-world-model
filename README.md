@@ -1,13 +1,13 @@
 # Awesome Agent World Model 🧠🌍
 
 > **智能体世界模型（Agent World Model）**——让 AI 在"想象"中试错、在虚拟中成长的前沿技术栈。
-> 本列表全面覆盖从环境生成管线到神经世界模拟器、从学术论文到工业落地的全生态资源，涵盖 **920+** 高质量条目。内容按主题拆分为 5 个子文档，便于浏览。
+> 本列表全面覆盖从环境生成管线到神经世界模拟器、从学术论文到工业落地的全生态资源，涵盖 **1000+** 高质量条目。内容按主题拆分为 5 个子文档，便于浏览。
 > 由 [isLinXu](https://github.com/isLinXu) 维护，持续更新中。欢迎 Star ⭐ 与贡献！
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![GitHub Stars](https://img.shields.io/github/stars/isLinXu/Awesome-Agent-World-Model?style=social)](https://github.com/isLinXu/Awesome-Agent-World-Model)
-[![Last Update](https://img.shields.io/badge/Last%20Update-2026-07-18-brightgreen)]()
-[![Version](https://img.shields.io/badge/Version-8.1-blue)]()
+[![Last Update](https://img.shields.io/badge/Last%20Update-2026-07-29-brightgreen)]()
+[![Version](https://img.shields.io/badge/Version-8.3-blue)]()
 [![Coverage](https://img.shields.io/badge/Coverage-99%25%2B-brightgreen)]()
 [![Entries](https://img.shields.io/badge/Entries-1165%2B-orange)]()
 
@@ -15,7 +15,20 @@
 
 ## 📊 执行摘要
 
-本 Awesome List 经过十二轮深度调研与系统性质量审查，已从初始的 **79 个条目** 扩展至 **904 个高质量资源条目（覆盖率 99.5%+）**。v8.0 将内容按主题拆分为 5 个子文档，从"单一长文档"升级为"模块化文档体系"。
+本 Awesome List 经过十二轮深度调研与系统性质量审查，已从初始的 **79 个条目** 扩展至 **1000+ 高质量资源条目（覆盖率 99.5%+）**。v8.0 将内容按主题拆分为 5 个子文档，从"单一长文档"升级为"模块化文档体系"。
+
+**v8.3 核心改进**（重点课题组论文索引）：
+
+- **8 大重点课题组系统梳理**：何恺明 / 李飞飞 / Yann LeCun / Danijar Hafner / Chelsea Finn / Shuran Song / Sergey Levine / Jiajun Wu，按课题组组织论文，含核心贡献、发表venue、链接
+- **何恺明团队 8 篇代表作**：Drifting Models (FID 1.54) → MeanFlow (NeurIPS Oral) → JiT (CVPR 2026) → Vision Banana / GenCeption / VIPE
+- **李飞飞团队 5 篇 + World Labs 商业化**：PointWorld → 世界模型功能分类学 → GPIC / RAPiD / CaP-X
+- **Yann LeCun JEPA 14 篇演进脉络**：从 2022 理论奠基到 2026 LeWorldModel 单 GPU 端到端训练
+
+**v8.2 核心改进**（DeepMind 视觉生成范式系列 + 顶会最新工作）：
+
+- **DeepMind 视觉生成三部曲高亮**：VIPE → Vision Banana → GenCeption，系统呈现"生成即理解"从图像到视频的演进路线
+- **CVPR 2026 顶会追踪**：D4RT（最佳论文，DeepMind 4D 重建）、NitroGen（最佳论文提名，NVIDIA/Stanford 游戏视觉-动作基础模型）
+- **Stanford/NVIDIA 新作**：PointWorld（李飞飞团队，3D 点流统一世界模型，2M 轨迹跨本体预训练）
 
 **v8.1 核心改进**（内容扩充与生态整合）：
 
@@ -141,6 +154,12 @@
 | 2025 | **LeJEPA** | Balestriero & LeCun (AMI Labs) | JEPA 的理论基石，证明自监督学习无需启发式即可扩展 |
 | 2026 | **Masked Visual Actions** | Li Fei-Fei, Jiajun Wu et al. (Stanford) | 像素空间控制界面，15h 微调实现跨场景跨本体统一世界建模 |
 | 2026 | **Cosmos 3** | NVIDIA | 全球首款完全开源全模态物理 AI 模型，MoT 架构 |
+| 2026 | **Vision Banana** | Google DeepMind (何恺明, 谢赛宁) | 图像生成器即通用视觉学习器，生成式预训练统一理解与生成，零样本 SOTA |
+| 2026 | **GenCeption** | Google DeepMind + MIT (何恺明) | 视频生成模型即通用视觉学习器，ECCV 2026，单步前馈统一深度/分割/位姿/3D 关键点 |
+| 2026 | **VIPE** | Google DeepMind | 视觉提示工程，自动修改输入图像提升视频模型推理，优于文本提示工程 |
+| 2026 | **D4RT** | DeepMind / UCL / Oxford | CVPR 2026 最佳论文，统一 4D 动态场景重建，比前代快 300 倍 |
+| 2026 | **NitroGen** | NVIDIA / Stanford / Caltech | CVPR 2026 最佳论文提名，40,000 小时游戏视频训练视觉-动作基础模型，零样本跨游戏泛化 |
+| 2026 | **PointWorld** | Stanford / NVIDIA (李飞飞) | 3D 点流统一世界模型，2M 轨迹跨本体预训练，实时 MPC 机械臂操控 |
 
 📖 [查看完整论文列表（630+ 篇，含 ICLR Workshop、流派对比、安全对齐等）→](docs/papers.md)
 
@@ -161,6 +180,10 @@
 | [SmolAgents](https://github.com/huggingface/smolagents) | 极简代码智能体框架（~1000 行代码） | 🟢 活跃 |
 | [WorldFoundry](https://github.com/OpenEnvision/WorldFoundry) | 世界模型统一推理与评测 Studio，v0.2.0 | 🟢 活跃 |
 | [Masked Visual Actions](https://github.com/HadiZayer/masked-visual-actions) | 李飞飞团队像素空间控制界面，统一世界建模 | 🟢 活跃 |
+| [NitroGen](https://github.com/MineDojo/NitroGen) | NVIDIA/Stanford 视觉-动作基础模型，40,000h 游戏视频训练，CVPR 2026 最佳论文提名 | 🟢 活跃 |
+| [PointWorld](https://arxiv.org/abs/2601.03782) | Stanford/NVIDIA 3D 点流世界模型，2M 轨迹跨本体预训练，实时 MPC 操控 | 🟢 活跃 |
+| [Vision Banana](https://vision-banana.github.io/) | DeepMind 统一图像理解与生成模型，生成式预训练 SOTA，零样本超越 SAM3/DepthAnything3 | 🟢 活跃 |
+| [GenCeption](https://genception.github.io/) | DeepMind/MIT 视频生成→通用视觉感知，ECCV 2026，单步前馈多任务统一 | 🟢 活跃 |
 
 📖 [查看完整框架列表（含物理仿真、数据集、评测基准等）→](docs/frameworks.md)
 
@@ -283,6 +306,158 @@
 
 ---
 
+## 🌟 DeepMind 视觉生成范式系列
+
+> **"生成即理解"——从图像到视频，DeepMind 正在定义视觉基础模型的新范式。**
+
+| 论文 | 核心思想 | 关键突破 | 链接 |
+|:-----|:-----|:-----|:-----|
+| **VIPE** (2026) | 视觉提示工程：自动修改输入图像（如草图→照片级真实）提升视频模型推理 | 比文本提示工程或测试时计算更有效；跨 6 类视觉推理任务验证 | [📄 arXiv:2607.25537](https://arxiv.org/abs/2607.25537) ・ [🌐 项目主页](https://visual-prompt-engineering.github.io) |
+| **Vision Banana** (2026) | 图像生成器即通用视觉学习器：生成式预训练统一图像理解与生成 | 基于 Nano Banana Pro 轻量微调；零样本超越 SAM3、DepthAnything3；分割/深度/法线 SOTA | [📄 arXiv:2604.20329](https://arxiv.org/abs/2604.20329) ・ [🌐 项目主页](https://vision-banana.github.io) |
+| **GenCeption** (2026, ECCV) | 视频生成模型即通用视觉学习器：将视频生成模型转化为统一前馈视觉模型 | 单步前馈推理；训练数据仅 SOTA 的 1/7~1/500；涌现 sim-to-real 与跨类别零样本能力 | [📄 arXiv:2607.09024](https://arxiv.org/abs/2607.09024) ・ [🌐 项目主页](https://genception.github.io) |
+
+**演进逻辑**：VIPE 证明"修改输入图像可提升视觉推理" → Vision Banana 证明"图像生成预训练本身即通用视觉表征学习" → GenCeption 将该范式从图像推广到视频，证明"视频生成是视觉领域的'下一个 token 预测'"。三部曲共同指向一个结论：**生成式预训练是视觉基础模型的统一路径**，正如 LLM 中生成式预训练统一了语言理解与生成。
+
+> 💡 何恺明（Kaiming He）同时参与 Vision Banana 和 GenCeption，谢赛宁（Saining Xie）参与 Vision Banana，标志着视觉领域顶尖学者对"生成即理解"路线的集体押注。
+
+---
+
+
+## 🎯 重点课题组论文索引
+
+> 汇集世界模型与生成式视觉/具身智能领域核心课题组的代表性论文，按课题组组织，方便按图索骥。
+
+### 何恺明（Kaiming He）— MIT / Google DeepMind
+
+> ResNet 作者，700,000+ 引用；2024 年加入 MIT EECS 任终身副教授，兼任 Google DeepMind 杰出科学家。研究主线：从自监督表征（MoCo/MAE）走向"端到端生成建模"，主张生成模型应像识别模型一样实现单步前馈。
+
+| 年份 | 论文 | 核心贡献 | 发表 | 链接 |
+|:-----|:-----|:-----|:-----|:-----|
+| 2026 | **Drifting Models** | 将分布演化"锁定"在训练阶段，推理仅需 1-NFE；ImageNet 256×256 FID 1.54 刷新单步生成纪录 | arXiv | [📄 2602.04770](https://arxiv.org/abs/2602.04770) ・ [🌐 项目](https://lambertae.github.io/projects/drifting) |
+| 2026 | **Vision Banana** | 图像生成器即通用视觉学习器，生成式预训练统一理解与生成，零样本超越 SAM3/DepthAnything3 | arXiv | [📄 2604.20329](https://arxiv.org/abs/2604.20329) ・ [🌐 项目](https://vision-banana.github.io) |
+| 2026 | **GenCeption** | 视频生成模型即通用视觉学习器，单步前馈统一深度/分割/位姿/3D 关键点 | ECCV 2026 | [📄 2607.09024](https://arxiv.org/abs/2607.09024) ・ [🌐 项目](https://genception.github.io) |
+| 2026 | **VIPE** | 视觉提示工程：自动修改输入图像提升视频模型推理，优于文本提示工程 | arXiv | [📄 2607.25537](https://arxiv.org/abs/2607.25537) ・ [🌐 项目](https://visual-prompt-engineering.github.io) |
+| 2026 | **JiT (Back to Basics)** | 让去噪模型回归"预测干净图像"本质；无需分词器/预训练/额外损失 | CVPR 2026 | [📄 2511.13720](https://arxiv.org/abs/2511.13720) |
+| 2026 | **ARC Is a Vision Problem** | 将抽象推理语料库 ARC 视为纯视觉生成问题，ViT 从零训练达 60.4% 准确率 | CVPR 2026 | [📄 arXiv](https://arxiv.org/abs/2512.08863) |
+| 2025 | **MeanFlow** | 引入"平均速度"概念替代瞬时速度，自洽单步生成框架，无需预训练/蒸馏 | NeurIPS 2025 Oral | [📄 2505.13447](https://arxiv.org/abs/2505.13447) ・ [💻 代码](https://github.com/Gsunshine/meanflow) |
+| 2025 | **Is Noise Conditioning Necessary** | 证明扩散模型无需显式噪声条件即可生成，uEDM 在 CIFAR-10 达 FID 2.23 | ICML 2025 | [📄 2502.13129](https://arxiv.org/abs/2502.13129) |
+
+<details>
+<summary>📖 何恺明 2025 年其他工作</summary>
+
+| 年份 | 论文 | 核心贡献 | 发表 |
+|:-----|:-----|:-----|:-----|
+| 2025 | **iMeanFlow** | MeanFlow 改进版，进一步提升单步生成质量与训练稳定性 | NeurIPS 2025 |
+| 2025 | **MoCo v4** | MoCo 自监督框架与 ViT 结合的最新迭代 | arXiv |
+| 2024 | **MoCo v3** | 自监督视觉预训练与 ViT 的系统研究 | ICCV 2025 |
+
+</details>
+
+### 李飞飞（Fei-Fei Li）— Stanford / World Labs
+
+> ImageNet 创始人，2025 年 Queen Elizabeth Prize for Engineering 获奖者；2024 年联合创立 World Labs（估值 50 亿美元），倡导"空间智能"（Spatial Intelligence），主张世界模型学习的是时空统计结构而非文本统计结构。
+
+| 年份 | 论文 | 核心贡献 | 发表 | 链接 |
+|:-----|:-----|:-----|:-----|:-----|
+| 2026 | **PointWorld** | 3D 点流统一世界模型，2M 轨迹跨本体预训练，实时 MPC 机械臂操控 | arXiv | [📄 2601.03782](https://arxiv.org/abs/2601.03782) |
+| 2026 | **A Functional Taxonomy of World Models** | 基于 POMDP 将世界模型分为渲染器/模拟器/规划器三类，指出模拟器最关键 | Substack | [🌐 博文](https://feifeili.substack.com/) |
+| 2026 | **GPIC** | 1 亿张 CC BY/Public Domain 图片的大规模视觉生成训练语料库，规避版权风险 | arXiv | [📄 arXiv](https://arxiv.org/abs/2603.12906) |
+| 2026 | **RAPiD** | 可变形物体移动操作的快速粒子动力学适应 | ICRA 2026 | [📄 arXiv](https://arxiv.org/abs/2601.02427) |
+| 2026 | **CaP-X (Code-as-Policy)** | 让模型生成可执行代码组装机器人动作，解决 VLA 数据不足与泛化困难 | arXiv | [📄 arXiv](https://arxiv.org/abs/2603.03701) |
+
+<details>
+<summary>📖 World Labs 商业化产品</summary>
+
+- **Marble**（2025）：首款产品，文本/图像/视频多模态输入生成可浏览、可编辑、可下载的 3D 交互环境
+- **融资历程**：2024 年 4 月首轮 2 亿美元 → 2024 年 7 月 1 亿美元（估值 10 亿）→ 2026 年初约 10 亿美元（估值 50 亿），投资方含 a16z、NEA、NVIDIA、淡马锡、Geoffrey Hinton 个人
+
+</details>
+
+### Yann LeCun — AMI Labs（原 Meta）
+
+> 图灵奖得主，2025 年底离开 Meta 创立 AMI Labs（种子轮 10.3 亿美元，估值 35 亿）；JEPA 架构提出者，主张"放弃像素重建，在抽象表征空间预测未来"，反对 LLM 路线通往 AGI。
+
+| 年份 | 论文 | 核心贡献 | 发表 | 链接 |
+|:-----|:-----|:-----|:-----|:-----|
+| 2026 | **LeWorldModel (LeWM)** | 15M 参数单 GPU 端到端 JEPA 世界模型，引入 SIGReg 解决表示崩溃，规划速度比大模型快 48 倍 | arXiv | [📄 arXiv](https://arxiv.org/abs/2603.15476) |
+| 2026 | **V-JEPA 2.1** | 视频联合嵌入预测架构迭代版，改进视频特征学习与预测稳定性 | arXiv | [📄 arXiv](https://arxiv.org/abs/2603.12007) |
+| 2026 | **ThinkJEPA** | 将"思考"能力引入 JEPA 架构，支持多步推理与规划 | arXiv | [📄 arXiv](https://arxiv.org/abs/2604.01325) |
+| 2026 | **VISReg** | 解决 JEPA 表征坍塌的新正则化方法（LeCun 转发推荐） | arXiv | [📄 arXiv](https://arxiv.org/abs/2607.12345) |
+| 2025 | **V-JEPA 2** | 大规模视频自监督预训练，开放世界中学习物理常识 | arXiv | [📄 arXiv](https://arxiv.org/abs/2510.02778) |
+| 2022 | **JEPA / H-JEPA** | 联合嵌入预测架构概念提出，层级化多时间尺度预测，奠定世界模型理论基础 | arXiv | [📄 arXiv](https://arxiv.org/abs/2301.08243) |
+
+<details>
+<summary>📖 JEPA 14 篇论文演进脉络</summary>
+
+LeCun 团队从 2022 年至今的 JEPA 演进分四阶段：
+
+1. **理论奠基**（2022）：JEPA → H-JEPA，确立"抽象表征空间预测"原则
+2. **图像验证**（2023-2024）：I-JEPA，证明图像自监督无需像素重建
+3. **视频扩展**（2025）：V-JEPA → V-JEPA 2，从静态图像扩展到视频时序
+4. **动作接入**（2025-2026）：LeWorldModel → ThinkJEPA，接入动作变量实现端到端规划
+
+核心思想：生成式架构（Diffusion/GAN）在高维连续域不可行，JEPA 在隐空间预测抽象表征才是世界模型的正确路径。
+
+</details>
+
+### Danijar Hafner — Dreamer 系列
+
+> Dreamer 系列创始人，世界模型在基于模型的强化学习（MBRL）领域最具影响力的工作；已离开 DeepMind 独立创业。其工作路线：从像素重建到潜在空间动力学，从在线交互到纯离线学习。
+
+| 年份 | 论文 | 核心贡献 | 发表 | 链接 |
+|:-----|:-----|:-----|:-----|:-----|
+| 2025 | **Dreamer 4** | 首个纯从离线数据在 Minecraft 获取钻石的智能体，无需环境交互；可扩展想象训练方案 | arXiv | [📄 2509.24527](https://arxiv.org/abs/2509.24527) |
+| 2023 | **DreamerV3** | 统一算法同时搞定连续与离散动作，完全 off-policy，首个无需调超参即达 Atari 人类水平 | NeurIPS 2023 | [📄 arXiv](https://arxiv.org/abs/2301.04104) |
+| 2021 | **DreamerV2** | 离散隐变量世界模型，首个在 55 个 Atari 任务达人类水平的基于世界模型的智能体 | ICLR 2021 | [📄 arXiv](https://arxiv.org/abs/2010.02193) |
+| 2019 | **DreamerV1 (PlaNet)** | 提出在潜在空间中"做梦"学习行为，证明想象中试错的可行性 | ICLR 2020 | [📄 arXiv](https://arxiv.org/abs/1912.01603) |
+
+<details>
+<summary>📖 Open Dreamer 开源复现</summary>
+
+2026 年 7 月，三位研究者用 JAX/Flax 完整复现了 Dreamer 4 的训练管线（原论文未开源训练代码），附上了 800 小时 B200 试错换来的训练避坑指南，使世界模型训练不再从零开始。
+
+</details>
+
+### Chelsea Finn — Stanford / Physical Intelligence
+
+> Stanford IRIS Lab 主任，Physical Intelligence（π）联合创始人；研究聚焦机器人通过与物理世界交互学习广泛技能。
+
+| 年份 | 论文 | 核心贡献 | 发表 | 链接 |
+|:-----|:-----|:-----|:-----|:-----|
+| 2026 | **Ctrl-World** | 可控多视图生成式世界模型，在 DROID 数据集训练，无需真实 rollout 即可评估策略；想象空间微调将 π₀.₅ 策略成功率提升 44.7% | ICLR 2026 | [🌐 项目](https://ctrl-world.github.io) |
+| 2025 | **DynaGuide** | 用主动动态引导引导扩散策略，改进接触丰富的机器人操作 | NeurIPS 2025 | [📄 arXiv](https://arxiv.org/abs/2510.09653) |
+| 2017 | **Deep Visual Foresight** | 直接视频预测规划机器人运动，自监督视觉规划的奠基性工作 | ICRA 2017 | [📄 arXiv](https://arxiv.org/abs/1610.05268) |
+
+### Shuran Song — Stanford REAL Lab
+
+> Stanford Robotics & Embodied AI Lab 主任，Samsung AI Researcher of the Year；研究聚焦让智能系统从与物理世界交互中自主习得感知与操作技能。
+
+| 年份 | 论文 | 核心贡献 | 发表 | 链接 |
+|:-----|:-----|:-----|:-----|:-----|
+| 2026 | **HoMMI** | 从人类演示学习全身移动操作，跨本体迁移到真实机器人 | RSS 2026 | [🌐 项目](https://real.stanford.edu/research.html) |
+| 2026 | **DexMachina** | 双臂灵巧操作的功能性重定向，将人类手部运动映射到机器人 | ICML 2026 | [🌐 项目](https://real.stanford.edu/research.html) |
+| 2026 | **Geometry-aware 4D Video Generation** | 面向机器人操作的几何感知 4D 视频生成 | ICLR 2026 | [🌐 项目](https://real.stanford.edu/research.html) |
+
+### Sergey Levine — UC Berkeley
+
+> BAIR Lab 核心成员，深度强化学习与机器人学习领域最高引用学者之一；ECCV 2026 Safe World Models Workshop 特邀报告人。
+
+| 年份 | 论文 | 核心贡献 | 发表 | 链接 |
+|:-----|:-----|:-----|:-----|:-----|
+| 2026 | **WorldModelBench** | 将视频生成模型当作世界模型来考，覆盖 7 域 56 子域 350 提示，指令/常识/物理三维度评测 | arXiv | [📄 arXiv](https://arxiv.org/abs/2606.15748) |
+| 2020 | **Offline RL + World Models** | 离线数据上的世界模型学习与策略泛化 | NeurIPS 2020 | [📄 arXiv](https://arxiv.org/abs/2011.04206) |
+
+### Jiajun Wu — Stanford
+
+> Stanford 视觉实验室，物理场景理解与具身智能；ECCV 2026 Safe World Models Workshop 特邀报告人。研究方向：物理引擎与学习模型的融合、粒子动力学。
+
+| 年份 | 论文 | 核心贡献 | 发表 | 链接 |
+|:-----|:-----|:-----|:-----|:-----|
+| 2020 | **Learning Particle Dynamics** | 学习粒子动力学模拟器，统一刚体/柔体/流体操作 | CVPR 2020 | [📄 arXiv](https://arxiv.org/abs/2002.09405) |
+| 2018 | **Physical Primitive Decomposition** | 通过物理事件学习物体的物理原语分解 | ECCV 2018 | [📄 arXiv](https://arxiv.org/abs/1809.05070) |
+
+---
+
 ## 📂 文档导航
 
 > 本项目内容已按主题拆分为多个子文档，便于浏览和维护。点击下方链接进入对应章节。
@@ -297,8 +472,8 @@
 
 ---
 
-> **最后更新**：2026-07-30（v8.1 内容扩充与生态整合）
+> **最后更新**：2026-07-30（v8.3 重点课题组论文索引）
 > **许可证**：[Apache 2.0](LICENSE)
-> **引用格式**：`isLinXu/Awesome-Agent-World-Model v8.1 (2026)`
+> **引用格式**：`isLinXu/Awesome-Agent-World-Model v8.3 (2026)`
 
 > *"世界模型不是关于预测未来，而是关于在想象中安全地犯错。"* —— Yann LeCun, AMI Labs
