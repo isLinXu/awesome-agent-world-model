@@ -381,6 +381,12 @@
 | 2026 | **Masked Visual Actions for Unified World Modeling** | Hadi Alzayer, Wenlong Huang, Li Fei-Fei, Jiajun Wu et al. (Stanford/Harvard) | 像素空间控制界面，将动作表达为视频中任意实体的部分显示轨迹；15 小时微调实现跨场景跨本体高保真控制；支持前向动力学预测、策略评估与逆向建模 | [📄 arXiv:CS.CV](https://arxiv.org/abs/2607.19343) `arXiv` |
 | 2026 | **BridgeV2W: Bridging Video Generation Models to Embodied World Models via Embodiment Masks** | Yixiang Chen, Peiyan Li et al. (CASIA) | 将坐标空间动作转换为像素对齐的 embodiment masks，通过 ControlNet 路径注入预训练视频生成模型；统一跨本体世界模型架构；DROID 和 AgiBot-G1 上验证 | [📄 arXiv:CS.RO](https://arxiv.org/abs/2602.03793) `arXiv` |
 | 2026 | **FlowWAM: Optical Flow as a Unified Action Representation for World Action Models** | Yixiang Chen, Peiyan Li et al. | World Action Models (WAMs) are able to leverage pretrained video generators for both... | [📄 arXiv:CS.RO](https://arxiv.org/abs/2607.13017) `arXiv` |
+| 2026 | **Vision Banana: Image Generators are Generalist Vision Learners** | Google DeepMind (何恺明, 谢赛宁) | 图像生成器即通用视觉学习器；基于 Nano Banana Pro 轻量指令微调；零样本超越 SAM3/DepthAnything3；分割/深度/法线 SOTA | [📄 arXiv:CS.CV](https://arxiv.org/abs/2604.20329) `arXiv` |
+| 2026 | **GenCeption: Video Generation Models are General-Purpose Vision Learners** | Google DeepMind + MIT (何恺明) | 视频生成→通用视觉感知，ECCV 2026；单步前馈统一深度/分割/位姿/3D 关键点；涌现 sim-to-real | [📄 arXiv:CS.CV](https://arxiv.org/abs/2607.09024) `arXiv` |
+| 2026 | **VIPE: Visual Prompt Engineering for Video Models** | Google DeepMind (Robert Geirhos 等) | 视觉提示工程：自动修改输入图像提升视频模型推理，优于文本提示工程 | [📄 arXiv:CS.CV](https://arxiv.org/abs/2607.25537) `arXiv` |
+| 2026 | **D4RT: Efficiently Reconstructing Dynamic Scenes** | DeepMind / UCL / Oxford | CVPR 2026 最佳论文；统一 4D 动态场景重建，按需查询解码，比前代快 300 倍 | [📄 arXiv:CS.CV](https://arxiv.org/abs/2512.08924) `arXiv` |
+| 2026 | **NitroGen: Open Foundation Model for Generalist Gaming Agents** | NVIDIA / Stanford / Caltech | CVPR 2026 最佳论文提名；40,000h 游戏视频训练视觉-动作基础模型，零样本跨游戏泛化 | [📄 arXiv:CS.CV](https://arxiv.org/abs/2601.02427) `arXiv` |
+| 2026 | **PointWorld: Scaling 3D World Models for Robotic Manipulation** | Stanford / NVIDIA (李飞飞) | 3D 点流统一世界模型，2M 轨迹跨本体预训练，实时 MPC 机械臂操控 | [📄 arXiv:CS.RO](https://arxiv.org/abs/2601.03782) `arXiv` |
 | 2026 | **TRACE: An Operational Reasoning Schema for Auditable Agentic Commitments** | Edward Y. Chang, Emily J. Chang | This paper defines TRACE (Typed Reasoning And Commitment Evidence): a typed... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.12480) `arXiv` |
 | 2026 | **Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence** | Zhishan Zou, Guoyan Sun et al. | Autonomous UAV systems increasingly rely on multimodal large language models (MLLMs)... | [📄 arXiv:CS.CV](https://arxiv.org/abs/2607.12477) `arXiv` |
 | 2026 | **From Observation to Insight: Mechanistic World Models and the Quest for Autonomous Discovery** | Ingmar Posner, Anson Lei et al. | Recent advances in foundation models have transformed AI for Science... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.12474) `arXiv` |
@@ -503,6 +509,12 @@
 | 2026 | **Masked Visual Actions for Unified World Modeling** | Hadi Alzayer, Wenlong Huang, Li Fei-Fei, Jiajun Wu et al. (Stanford/Harvard) | 像素空间控制界面，将动作表达为视频中任意实体的部分显示轨迹；15 小时微调实现跨场景跨本体高保真控制；支持前向动力学预测、策略评估与逆向建模 | [📄 arXiv:CS.CV](https://arxiv.org/abs/2607.19343) `arXiv` |
 | 2026 | **BridgeV2W: Bridging Video Generation Models to Embodied World Models via Embodiment Masks** | Yixiang Chen, Peiyan Li et al. (CASIA) | 将坐标空间动作转换为像素对齐的 embodiment masks，通过 ControlNet 路径注入预训练视频生成模型；统一跨本体世界模型架构；DROID 和 AgiBot-G1 上验证 | [📄 arXiv:CS.RO](https://arxiv.org/abs/2602.03793) `arXiv` |
 | 2026 | **FlowWAM: Optical Flow as a Unified Action Representation for World Action Models** | Yixiang Chen, Peiyan Li et al. | World Action Models (WAMs) are able to leverage pretrained video generators for both... | [📄 arXiv:CS.RO](https://arxiv.org/abs/2607.13017) `arXiv` |
+| 2026 | **Vision Banana: Image Generators are Generalist Vision Learners** | Google DeepMind (何恺明, 谢赛宁) | 图像生成器即通用视觉学习器；基于 Nano Banana Pro 轻量指令微调；零样本超越 SAM3/DepthAnything3；分割/深度/法线 SOTA | [📄 arXiv:CS.CV](https://arxiv.org/abs/2604.20329) `arXiv` |
+| 2026 | **GenCeption: Video Generation Models are General-Purpose Vision Learners** | Google DeepMind + MIT (何恺明) | 视频生成→通用视觉感知，ECCV 2026；单步前馈统一深度/分割/位姿/3D 关键点；涌现 sim-to-real | [📄 arXiv:CS.CV](https://arxiv.org/abs/2607.09024) `arXiv` |
+| 2026 | **VIPE: Visual Prompt Engineering for Video Models** | Google DeepMind (Robert Geirhos 等) | 视觉提示工程：自动修改输入图像提升视频模型推理，优于文本提示工程 | [📄 arXiv:CS.CV](https://arxiv.org/abs/2607.25537) `arXiv` |
+| 2026 | **D4RT: Efficiently Reconstructing Dynamic Scenes** | DeepMind / UCL / Oxford | CVPR 2026 最佳论文；统一 4D 动态场景重建，按需查询解码，比前代快 300 倍 | [📄 arXiv:CS.CV](https://arxiv.org/abs/2512.08924) `arXiv` |
+| 2026 | **NitroGen: Open Foundation Model for Generalist Gaming Agents** | NVIDIA / Stanford / Caltech | CVPR 2026 最佳论文提名；40,000h 游戏视频训练视觉-动作基础模型，零样本跨游戏泛化 | [📄 arXiv:CS.CV](https://arxiv.org/abs/2601.02427) `arXiv` |
+| 2026 | **PointWorld: Scaling 3D World Models for Robotic Manipulation** | Stanford / NVIDIA (李飞飞) | 3D 点流统一世界模型，2M 轨迹跨本体预训练，实时 MPC 机械臂操控 | [📄 arXiv:CS.RO](https://arxiv.org/abs/2601.03782) `arXiv` |
 | 2026 | **TRACE: An Operational Reasoning Schema for Auditable Agentic Commitments** | Edward Y. Chang, Emily J. Chang | This paper defines TRACE (Typed Reasoning And Commitment Evidence): a typed... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.12480) `arXiv` |
 | 2026 | **Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence** | Zhishan Zou, Guoyan Sun et al. | Autonomous UAV systems increasingly rely on multimodal large language models (MLLMs)... | [📄 arXiv:CS.CV](https://arxiv.org/abs/2607.12477) `arXiv` |
 | 2026 | **From Observation to Insight: Mechanistic World Models and the Quest for Autonomous Discovery** | Ingmar Posner, Anson Lei et al. | Recent advances in foundation models have transformed AI for Science... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.12474) `arXiv` |
@@ -921,6 +933,12 @@
 | 2025 | **V-JEPA 2** | Meta AI | 基于动作条件的非生成式预测，机器人零样本规划成功率 80% | [📄 Meta AI Blog](https://ai.meta.com/blog/v-jepa-at-scale-self-supervised-learning-from-video/) |
 | 2025 | **GAIA-2** | Wayve | 15B 参数 Flow Matching 多视角视频生成，支持 500 城市零样本驾驶测试 | [📄 Wayve Blog](https://wayve.ai/thinking/gaia-2/) |
 | 2025 | **Genie 3** | Google DeepMind | 720p/24fps 实时交互式世界生成，神经游戏引擎，维持数分钟环境一致性 | [📄 DeepMind Blog](https://deepmind.google/research/genie-3/) |
+| 2026 | **Vision Banana** | Google DeepMind (何恺明, 谢赛宁, Kaiming He, Saining Xie) | 图像生成器即通用视觉学习器；基于 Nano Banana Pro 轻量指令微调统一理解与生成；零样本超越 SAM3/DepthAnything3；分割/深度/法线估计 SOTA；证明生成式预训练是视觉基础模型统一路径 | [📄 arXiv:2604.20329](https://arxiv.org/abs/2604.20329) ・ [🌐 项目主页](https://vision-banana.github.io) |
+| 2026 | **GenCeption** | Google DeepMind + MIT (何恺明, Kaiming He) | 视频生成模型即通用视觉学习器，ECCV 2026；将视频生成模型转化为单步前馈统一视觉模型；文本指令驱动深度/分割/位姿/3D 关键点；训练数据仅 SOTA 的 1/7~1/500；涌现 sim-to-real 与跨类别零样本能力 | [📄 arXiv:2607.09024](https://arxiv.org/abs/2607.09024) ・ [🌐 项目主页](https://genception.github.io) |
+| 2026 | **VIPE: Visual Prompt Engineering for Video Models** | Google DeepMind (Robert Geirhos 等) | 视觉提示工程：自动修改输入任务图像（如抽象草图→照片级真实）提升视频模型视觉推理；比文本提示工程或测试时计算更有效；跨 6 类视觉推理任务验证 | [📄 arXiv:2607.25537](https://arxiv.org/abs/2607.25537) ・ [🌐 项目主页](https://visual-prompt-engineering.github.io) |
+| 2026 | **D4RT: Efficiently Reconstructing Dynamic Scenes** | Google DeepMind / UCL / Oxford | CVPR 2026 最佳论文；统一前馈模型实现动态 4D 重建与跟踪；编码器+轻量解码器按需查询任意时空点 3D 位置；深度图/点云/点轨迹/相机参数统一输出；比前代快 300 倍 | [📄 arXiv:2512.08924](https://arxiv.org/abs/2512.08924) |
+| 2026 | **NitroGen: Open Foundation Model for Generalist Gaming Agents** | NVIDIA / Stanford / Caltech / UChicago / UT Austin | CVPR 2026 最佳论文提名；视觉-动作基础模型；40,000 小时/1,000+ 游戏视频训练；Flow Matching 统一架构；零样本跨游戏泛化，任务成功率 +52%；开源数据集/评测套件/模型权重 | [📄 arXiv:2601.02427](https://arxiv.org/abs/2601.02427) ・ [🌐 项目主页](https://nitrogen.minedojo.org/) |
+| 2026 | **PointWorld: Scaling 3D World Models for Robotic Manipulation** | Stanford / NVIDIA (李飞飞, Wenlong Huang) | 3D 点流统一世界模型；将状态与动作统一为 3D point flows 实现跨本体学习；2M 轨迹/500 小时大规模预训练（单臂 Franka + 双臂人形）；实时 0.1s 推理集成 MPC；真实机器人零微调完成推/变形体/关节体/工具使用 | [📄 arXiv:2601.03782](https://arxiv.org/abs/2601.03782) |
 | 2025 | **Cosmos** | NVIDIA | 物理 AI 平台，Blackwell 架构处理 2000 万小时视频，含 Predict 与 Reason 双模块 | [📄 NVIDIA](https://www.nvidia.com/en-us/ai-data-science/foundation-models/) |
 | 2025 | **RISE** | ETH Zurich / CoRL 2025 | 通过组合世界模型进行自我改进的机器人策略框架，利用想象力强化长程规划 | [📄 arXiv](https://arxiv.org/abs/2602.11075) |
 | 2025 | **NovaFlow** | ICRA 2026 | 基于生成视频推导"可行动流"，实现从像素预测到关节空间动作的零次转换 | [📄 ICRA 2026](https://rai-inst.com/icra-2026-summary) |
@@ -1093,6 +1111,100 @@
 | 论文 | 链接 | 要点 |
 |:-----|:-----|:-----|
 | **Thinking Guardrails** | [FutureAGI](https://futureagi.com/safety-report-2026) | 应用于 GPT-5.4 等前沿模型的内部自审计机制，生成物理指令前进行因果一致性校验 |
+
+
+## 🎯 重点课题组论文索引
+
+### 何恺明（Kaiming He）— MIT / Google DeepMind
+
+> ResNet 作者，700,000+ 引用；2024 年加入 MIT EECS 任终身副教授，兼任 Google DeepMind 杰出科学家。研究主线：从自监督表征（MoCo/MAE）走向"端到端生成建模"。
+
+| 论文 | 年份 | 核心贡献 | 发表 | 链接 |
+|:-----|:-----|:-----|:-----|:-----|
+| **Drifting Models** | 2026 | 将分布演化"锁定"在训练阶段，推理仅需 1-NFE；ImageNet 256×256 FID 1.54 | arXiv | [📄 2602.04770](https://arxiv.org/abs/2602.04770) ・ [🌐 项目](https://lambertae.github.io/projects/drifting) |
+| **Vision Banana** | 2026 | 图像生成器即通用视觉学习器，生成式预训练统一理解与生成 | arXiv | [📄 2604.20329](https://arxiv.org/abs/2604.20329) ・ [🌐 项目](https://vision-banana.github.io) |
+| **GenCeption** | 2026 | 视频生成模型即通用视觉学习器，单步前馈统一多视觉任务 | ECCV 2026 | [📄 2607.09024](https://arxiv.org/abs/2607.09024) ・ [🌐 项目](https://genception.github.io) |
+| **VIPE** | 2026 | 视觉提示工程：自动修改输入图像提升视频模型推理 | arXiv | [📄 2607.25537](https://arxiv.org/abs/2607.25537) ・ [🌐 项目](https://visual-prompt-engineering.github.io) |
+| **JiT (Back to Basics)** | 2026 | 让去噪模型回归"预测干净图像"本质，无需分词器/预训练 | CVPR 2026 | [📄 2511.13720](https://arxiv.org/abs/2511.13720) |
+| **ARC Is a Vision Problem** | 2026 | 将 ARC 视为纯视觉生成问题，ViT 从零训练达 60.4% | CVPR 2026 | [📄 arXiv](https://arxiv.org/abs/2512.08863) |
+| **MeanFlow** | 2025 | 引入"平均速度"概念，自洽单步生成框架，FID 3.43 | NeurIPS 2025 Oral | [📄 2505.13447](https://arxiv.org/abs/2505.13447) ・ [💻 代码](https://github.com/Gsunshine/meanflow) |
+| **Is Noise Conditioning Necessary** | 2025 | 证明扩散模型无需显式噪声条件，uEDM FID 2.23 | ICML 2025 | [📄 2502.13129](https://arxiv.org/abs/2502.13129) |
+
+### 李飞飞（Fei-Fei Li）— Stanford / World Labs
+
+> ImageNet 创始人，2025 年 Queen Elizabeth Prize 获奖者；2024 年联合创立 World Labs（估值 50 亿美元），倡导"空间智能"。
+
+| 论文 | 年份 | 核心贡献 | 发表 | 链接 |
+|:-----|:-----|:-----|:-----|:-----|
+| **PointWorld** | 2026 | 3D 点流统一世界模型，2M 轨迹跨本体预训练，实时 MPC 操控 | arXiv | [📄 2601.03782](https://arxiv.org/abs/2601.03782) |
+| **A Functional Taxonomy of World Models** | 2026 | 基于 POMDP 将世界模型分为渲染器/模拟器/规划器三类 | Substack | [🌐 博文](https://feifeili.substack.com/) |
+| **GPIC** | 2026 | 1 亿张 CC BY/Public Domain 图片的大规模视觉生成训练语料库 | arXiv | [📄 arXiv](https://arxiv.org/abs/2603.12906) |
+| **RAPiD** | 2026 | 可变形物体移动操作的快速粒子动力学适应 | ICRA 2026 | [📄 arXiv](https://arxiv.org/abs/2601.02427) |
+| **CaP-X (Code-as-Policy)** | 2026 | 让模型生成可执行代码组装机器人动作 | arXiv | [📄 arXiv](https://arxiv.org/abs/2603.03701) |
+
+### Yann LeCun — AMI Labs（原 Meta）
+
+> 图灵奖得主，2025 年底离开 Meta 创立 AMI Labs（种子轮 10.3 亿美元，估值 35 亿）；JEPA 架构提出者。
+
+| 论文 | 年份 | 核心贡献 | 发表 | 链接 |
+|:-----|:-----|:-----|:-----|:-----|
+| **LeWorldModel (LeWM)** | 2026 | 15M 参数单 GPU 端到端 JEPA 世界模型，SIGReg 解决表示崩溃 | arXiv | [📄 arXiv](https://arxiv.org/abs/2603.15476) |
+| **V-JEPA 2.1** | 2026 | 视频联合嵌入预测架构迭代版 | arXiv | [📄 arXiv](https://arxiv.org/abs/2603.12007) |
+| **ThinkJEPA** | 2026 | 将"思考"能力引入 JEPA 架构，支持多步推理与规划 | arXiv | [📄 arXiv](https://arxiv.org/abs/2604.01325) |
+| **V-JEPA 2** | 2025 | 大规模视频自监督预训练，开放世界中学习物理常识 | arXiv | [📄 arXiv](https://arxiv.org/abs/2510.02778) |
+| **JEPA / H-JEPA** | 2022 | 联合嵌入预测架构概念提出，层级化多时间尺度预测 | arXiv | [📄 arXiv](https://arxiv.org/abs/2301.08243) |
+
+> **JEPA 演进四阶段**：理论奠基（2022 JEPA/H-JEPA）→ 图像验证（2023 I-JEPA）→ 视频扩展（2025 V-JEPA 2）→ 动作接入（2026 LeWorldModel/ThinkJEPA）。核心思想：放弃像素重建，在隐空间预测抽象表征。
+
+### Danijar Hafner — Dreamer 系列
+
+> Dreamer 系列创始人，已离开 DeepMind 独立创业。路线：从像素重建到潜在空间动力学，从在线交互到纯离线学习。
+
+| 论文 | 年份 | 核心贡献 | 发表 | 链接 |
+|:-----|:-----|:-----|:-----|:-----|
+| **Dreamer 4** | 2025 | 首个纯从离线数据在 Minecraft 获取钻石的智能体，无需环境交互 | arXiv | [📄 2509.24527](https://arxiv.org/abs/2509.24527) |
+| **DreamerV3** | 2023 | 统一算法搞定连续与离散动作，完全 off-policy，首个无需调超参达 Atari 人类水平 | NeurIPS 2023 | [📄 arXiv](https://arxiv.org/abs/2301.04104) |
+| **DreamerV2** | 2021 | 离散隐变量世界模型，首个在 55 个 Atari 任务达人类水平 | ICLR 2021 | [📄 arXiv](https://arxiv.org/abs/2010.02193) |
+| **DreamerV1 (PlaNet)** | 2019 | 提出在潜在空间中"做梦"学习行为 | ICLR 2020 | [📄 arXiv](https://arxiv.org/abs/1912.01603) |
+
+> **Open Dreamer**（2026.07）：三位研究者用 JAX/Flax 完整复现 Dreamer 4 训练管线（原论文未开源），附 800 小时 B200 试错避坑指南。
+
+### Chelsea Finn — Stanford / Physical Intelligence
+
+> Stanford IRIS Lab 主任，Physical Intelligence（π）联合创始人。
+
+| 论文 | 年份 | 核心贡献 | 发表 | 链接 |
+|:-----|:-----|:-----|:-----|:-----|
+| **Ctrl-World** | 2026 | 可控多视图生成式世界模型，想象空间微调将 π₀.₅ 策略成功率提升 44.7% | ICLR 2026 | [🌐 项目](https://ctrl-world.github.io) |
+| **DynaGuide** | 2025 | 用主动动态引导引导扩散策略，改进接触丰富操作 | NeurIPS 2025 | [📄 arXiv](https://arxiv.org/abs/2510.09653) |
+| **Deep Visual Foresight** | 2017 | 直接视频预测规划机器人运动，自监督视觉规划奠基工作 | ICRA 2017 | [📄 arXiv](https://arxiv.org/abs/1610.05268) |
+
+### Shuran Song — Stanford REAL Lab
+
+> Stanford Robotics & Embodied AI Lab 主任，Samsung AI Researcher of the Year。
+
+| 论文 | 年份 | 核心贡献 | 发表 | 链接 |
+|:-----|:-----|:-----|:-----|:-----|
+| **HoMMI** | 2026 | 从人类演示学习全身移动操作，跨本体迁移 | RSS 2026 | [🌐 项目](https://real.stanford.edu/research.html) |
+| **DexMachina** | 2026 | 双臂灵巧操作的功能性重定向 | ICML 2026 | [🌐 项目](https://real.stanford.edu/research.html) |
+| **Geometry-aware 4D Video Generation** | 2026 | 面向机器人操作的几何感知 4D 视频生成 | ICLR 2026 | [🌐 项目](https://real.stanford.edu/research.html) |
+
+### Sergey Levine — UC Berkeley
+
+> BAIR Lab 核心成员，深度强化学习与机器人学习领域最高引用学者之一。
+
+| 论文 | 年份 | 核心贡献 | 发表 | 链接 |
+|:-----|:-----|:-----|:-----|:-----|
+| **WorldModelBench** | 2026 | 将视频生成模型当作世界模型评测，覆盖 7 域 56 子域，指令/常识/物理三维度 | arXiv | [📄 arXiv](https://arxiv.org/abs/2606.15748) |
+
+### Jiajun Wu — Stanford
+
+> Stanford 视觉实验室，物理场景理解与具身智能。
+
+| 论文 | 年份 | 核心贡献 | 发表 | 链接 |
+|:-----|:-----|:-----|:-----|:-----|
+| **Learning Particle Dynamics** | 2020 | 学习粒子动力学模拟器，统一刚体/柔体/流体操作 | CVPR 2020 | [📄 arXiv](https://arxiv.org/abs/2002.09405) |
+| **Physical Primitive Decomposition** | 2018 | 通过物理事件学习物体的物理原语分解 | ECCV 2018 | [📄 arXiv](https://arxiv.org/abs/1809.05070) |
 
 ---
 ---
