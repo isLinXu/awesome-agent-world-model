@@ -28,7 +28,7 @@
 
 | 企业 | 项目 | 核心能力 | 状态 |
 |:-----|:-----|:-----|:-----|
-| **Google DeepMind** | Genie 2 / Genie 3 | 24FPS 实时交互式世界生成，维持数分钟环境一致性 | 🟢 研发 |
+| **Google DeepMind** | Genie 2 / Genie 3 / Vision Banana / GenCeption | 24FPS 实时交互式世界生成；Vision Banana 证明"生成即理解"统一图像理解与生成；GenCeption 将范式推广至视频（ECCV 2026） | 🟢 研发 |
 | **NVIDIA** | Cosmos + Isaac Sim 6.0 | 物理 AI 平台 + 多后端物理引擎仿真 | 🟢 活跃 |
 | **Etched AI** | Sohu 芯片 | 专为 Transformer 推理优化的 ASIC，支持实时世界模型推理 | 🟢 研发 |
 | **World Labs** | 3D 空间智能 | 3D 高斯溅射构建内部 3D 地图，$10B 估值 | 🟢 研发 |
@@ -111,6 +111,11 @@
 | **Latent Space: 李飞飞访谈** | "After LLMs: Spatial Intelligence and World Models" — 李飞飞 & Justin Johnson 深度访谈 | [latent.space](https://www.latent.space/) |
 | **Xun Huang: Towards Video World Models** | Stanford 技术博客，提出视频世界模型五大属性框架（因果/交互/持久/实时/物理准确），系统梳理从视频生成到世界模型的路径 | [xunhuang.me](https://www.xunhuang.me/blogs/world_model.html) |
 | **Qwen-Robot Suite** | 阿里千问具身智能三件套（Nav+Manip+World），统一语言-导航-操作-世界预测，含 Claw 智能体框架 | [qwen.ai](https://qwen.ai/blog?id=qwen-robotsuite) |
+| **Vision Banana** | DeepMind 技术报告："Image Generators are Generalist Vision Learners"，证明图像生成预训练统一视觉理解与生成 | [vision-banana.github.io](https://vision-banana.github.io) |
+| **GenCeption** | DeepMind/MIT（ECCV 2026）："Video Generation Models are General-Purpose Vision Learners"，视频生成作为视觉预训练统一目标 | [genception.github.io](https://genception.github.io) |
+| **VIPE** | DeepMind："Visual Prompt Engineering for Video Models"，视觉提示工程提升视频模型推理 | [visual-prompt-engineering.github.io](https://visual-prompt-engineering.github.io) |
+| **D4RT** | CVPR 2026 最佳论文：DeepMind 统一 4D 动态场景重建与跟踪，比前代快 300 倍 | [arXiv:2512.08924](https://arxiv.org/abs/2512.08924) |
+| **NitroGen** | CVPR 2026 最佳论文提名：NVIDIA/Stanford 40,000h 游戏视频视觉-动作基础模型 | [nitrogen.minedojo.org](https://nitrogen.minedojo.org/) |
 
 ### 视频与课程
 

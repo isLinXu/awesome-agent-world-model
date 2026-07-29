@@ -29,6 +29,11 @@
 | **LingBot-VA** | 因果视频-动作 WM | 机器人控制 | LIBERO/RoboTwin | 自回归扩散统一视觉预测与动作推断 | RSS 2026 |
 | **GE-Sim 2.0** | 闭环世界模拟器 | 机器人仿真 | WorldArena | Track-1 榜首 68.26，Action Following 48.23 | WorldArena 2026 |
 | **UnifoLM-WMA** | 世界模型-动作架构 | 多形态机器人 | 跨本体数据 | 宇树科技开源跨形态世界模型-动作统一架构 | GitHub 2026 |
+| **Vision Banana** | 生成式预训练统一 | RGB 图像接口 | Nano Banana Pro | 零样本超越 SAM3/DepthAnything3，分割/深度/法线 SOTA | arXiv:2604.20329 |
+| **GenCeption** | 视频生成→前馈感知 | 单步 DiT 前向 | WAN 2.1 视频模型 | 训练数据仅 SOTA 1/7~1/500，涌现 sim-to-real | ECCV 2026 |
+| **D4RT** | 统一前馈 4D 重建 | 按需查询解码 | 视频编码 | 比 SOTA 快 300 倍，深度/点云/轨迹/相机统一输出 | CVPR 2026 最佳论文 |
+| **NitroGen** | Flow Matching V-A | 游戏视觉-动作 | 40,000h 游戏视频 | 1,000+ 游戏零样本泛化，成功率 +52% | CVPR 2026 提名 |
+| **PointWorld** | 3D 点流世界模型 | 3D point flows | 2M 轨迹/500h | 实时 0.1s MPC，跨本体（单臂+双臂人形）零微调 | arXiv:2601.03782 |
 
 ### 物理仿真平台性能对比
 

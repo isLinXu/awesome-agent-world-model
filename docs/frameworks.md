@@ -28,6 +28,12 @@
 | [OpenEnvision/WorldFoundry](https://github.com/OpenEnvision/WorldFoundry) | **世界模型统一推理与评测 Studio**，v0.2.0 集成 Wan/HunyuanVideo/LTX2/Cosmos 基座模型，支持 FlashAttention 2/3、SageAttention、NVFP4 量化、多 GPU Context/Sequence Parallel；内置 VLA 与世界模型集成（LingBot VLA/VLA2、OpenPI、OpenVLA-OFT、Octo、X-VLA、X-WAM、AlayaWorld 等），配套 Studio（模型发现/Conda 隔离/torchrun 分布式/Workspace Job/可视化）与 Benchmark catalog（LaryBench、WorldReasonBench 等） | 🆕 | 🟢 活跃 |
 | [Qwen-Robot Suite (LAWR)](https://qwen.ai/blog?id=qwen-robotsuite) | 阿里千问具身智能三件套：**Nav** 统一五类导航任务（VLN-CE 76.5% SR / NAVSIM 91.4 PDMS），参数化视觉分配策略，宇树 Go2 零样本部署 196ms；**Manip** 80 维统一动作表征跨本体兼容（单臂/双臂/灵巧手/移动平台），38100h 纯开源数据训练，LIBERO-Plus 91.4%、RoboChallenge Table30 通用赛道第一；**World** 60 层双流 MMDiT 架构 + Qwen2.5-VL 动作编码器，自然语言统一动作接口跨 20+ 本体，860 万视频-文本对，四大世界模型基准全面第一，物理规律遵循满分；**Claw** 机器人智能体框架，Qwen VLM 调用 Suite 模型完成长程任务 | 🆕 | 🟢 活跃 |
 | [HadiZayer/masked-visual-actions](https://github.com/HadiZayer/masked-visual-actions) | 李飞飞团队（Stanford/Harvard）像素空间控制界面，将动作表达为视频中任意实体的部分显示轨迹；15 小时微调实现跨场景跨本体高保真控制；支持前向动力学预测、策略评估与逆向建模 | 🆕 | 🟢 活跃 |
+| [MineDojo/NitroGen](https://github.com/MineDojo/NitroGen) | NVIDIA/Stanford/Caltech 视觉-动作基础模型，40,000 小时游戏视频训练，1,000+ 游戏零样本泛化，CVPR 2026 最佳论文提名，开源数据集+评测套件+模型权重 | 🆕 | 🟢 活跃 |
+| [PointWorld](https://arxiv.org/abs/2601.03782) | Stanford/NVIDIA（李飞飞）3D 点流统一世界模型，2M 轨迹/500h 跨本体预训练（单臂+双臂人形），实时 0.1s 推理集成 MPC，真实机器人零微调完成推/变形体/工具使用 | 🆕 | 🟢 活跃 |
+| [Vision Banana](https://vision-banana.github.io/) | Google DeepMind（何恺明、谢赛宁参与）统一图像理解与生成模型；基于 Nano Banana Pro 轻量指令微调；零样本超越 SAM3/DepthAnything3；分割/深度/法线 SOTA；证明"生成即理解"范式 | 🆕 | 🟢 活跃 |
+| [GenCeption](https://genception.github.io/) | Google DeepMind + MIT（何恺明参与）视频生成→通用视觉感知，ECCV 2026；单步前馈统一深度/分割/位姿/3D 关键点；训练数据仅 SOTA 1/7~1/500；涌现 sim-to-real 与跨类别零样本 | 🆕 | 🟢 活跃 |
+| [VIPE](https://visual-prompt-engineering.github.io/) | Google DeepMind 视觉提示工程；自动修改输入图像（如草图→照片级真实）提升视频模型视觉推理；比文本提示工程或测试时计算更有效；跨 6 类视觉推理任务验证 | 🆕 | 🟢 活跃 |
+| [D4RT](https://arxiv.org/abs/2512.08924) | DeepMind/UCL/Oxford 统一 4D 动态场景重建与跟踪，CVPR 2026 最佳论文；编码器+轻量解码器按需查询任意时空点 3D 位置；深度图/点云/点轨迹/相机参数统一输出；比前代快 300 倍 | 🆕 | 🟢 活跃 |
 
 ### 多模态世界模型
 
