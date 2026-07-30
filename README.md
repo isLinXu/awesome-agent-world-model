@@ -7,7 +7,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![GitHub Stars](https://img.shields.io/github/stars/isLinXu/Awesome-Agent-World-Model?style=social)](https://github.com/isLinXu/Awesome-Agent-World-Model)
 [![Last Update](https://img.shields.io/badge/Last%20Update-2026-07-29-brightgreen)]()
-[![Version](https://img.shields.io/badge/Version-8.3-blue)]()
+[![Version](https://img.shields.io/badge/Version-8.4-blue)]()
 [![Coverage](https://img.shields.io/badge/Coverage-99%25%2B-brightgreen)]()
 [![Entries](https://img.shields.io/badge/Entries-1165%2B-orange)]()
 
@@ -16,6 +16,12 @@
 ## 📊 执行摘要
 
 本 Awesome List 经过十二轮深度调研与系统性质量审查，已从初始的 **79 个条目** 扩展至 **1000+ 高质量资源条目（覆盖率 99.5%+）**。v8.0 将内容按主题拆分为 5 个子文档，从"单一长文档"升级为"模块化文档体系"。
+
+**v8.4 核心改进**（世界模型综述高亮）：
+
+- **综述精选章节**：新增「📋 世界模型综述精选」高亮章节，按四层组织：综合性综述（6 篇）→ 分类框架与功能分类学（4 篇）→ 领域专项综述（4 篇）→ 路线对比与竞争格局（六大流派 + Themesis 五路线 + Xun Huang 五属性框架）
+- **范式转变标注**：系统标注"从被动视频生成向预测性表征与主动规划的范式转变"
+- **三大路线对比整合**：六大技术流派表 + Themesis 五大竞争路线表 + 视频世界模型五大属性框架表，三张表横向对比
 
 **v8.3 核心改进**（重点课题组论文索引）：
 
@@ -306,6 +312,83 @@
 
 ---
 
+
+## 📋 世界模型综述精选
+
+> 2024-2026 年世界模型领域涌现出多篇系统性综述，标志着从"被动视频生成"向"预测性表征与主动规划"的范式转变。以下按**综述综述→分类框架→领域专项→路线对比**四层组织。
+
+### 综合性综述
+
+| 论文 | 时间 | 核心框架 | 链接 |
+|:-----|:-----|:-----|:-----|
+| **Understanding World or Predicting Future?** | 2024.11 | 将世界模型分为"内部表示理解"与"未来状态预测"两大功能，覆盖游戏/自驾/机器人/社会模拟四大领域 | [📄 arXiv:2411.14499](https://arxiv.org/abs/2411.14499) |
+| **World Models: Architectures, Methodologies, Reasoning** | 2026.06 | 最新综述，提出架构-方法-推理-应用四维分类法 | [📄 arXiv:2606.00133](https://arxiv.org/abs/2606.00133) |
+| **World Model for Robot Learning** | 2026.04 | 里程碑式综述，标志着从"被动视频生成"向"预测性表征"的范式转变 | [📄 arXiv](https://arxiv.org/) |
+| **A Step Toward World Models: A Survey on Robotic Manipulation** | 2025.11 | 超越固定定义，从机器人操作视角审视世界模型的核心能力（感知/预测/控制） | [📄 arXiv:2511.02097](https://arxiv.org/abs/2511.02097) |
+| **Embodied AI: From LLMs to World Models** | 2025.09 | 系统阐述从 LLM 到世界模型的演进路径，自主完成长程任务架构 | [📄 arXiv:2509.20021](https://arxiv.org/abs/2509.20021) |
+| **WAMs 综述** | 2026 | 首个系统性定义 World Action Models 概念框架，统一 Cascaded/Joint WAMs 分类法 | [📄 arXiv:2605.12090](https://arxiv.org/abs/2605.12090) |
+
+### 分类框架与功能分类学
+
+| 论文/框架 | 时间 | 核心分类 | 链接 |
+|:-----|:-----|:-----|:-----|
+| **World Models for Embodied AI** (POMDP 形式化) | 2025.10 | 以 POMDP 框架形式化具身世界模型，强调物理一致性优先于像素保真度 | [📄 arXiv:2510.16732](https://arxiv.org/abs/2510.16732) |
+| **A Functional Taxonomy of World Models** (李飞飞) | 2026 | 功能分类：渲染器 (Renderer)→像素 / 模拟器 (Simulator)→状态 / 规划器 (Planner)→动作 | [🌐 Substack](https://feifeili.substack.com/) |
+| **Learning Primitive Embodied World Models** | 2025.08 | 基于原语的世界模型学习框架，降低从零构建物理模拟的数据门槛 | [📄 arXiv:2508.20840](https://arxiv.org/abs/2508.20840) |
+| **Aligning Cyber Space with Physical World** | 2025 | 赛博空间与物理世界对齐，三类具身世界模型分类法 | [IEEE/ASME](https://ieeexplore.ieee.org/abstract/document/11098567/) |
+
+### 领域专项综述
+
+| 论文 | 时间 | 覆盖领域 | 链接 |
+|:-----|:-----|:-----|:-----|
+| **A Survey of World Models for Autonomous Driving** | 2025.01 | 自动驾驶三层分类：物理世界生成、行为规划、多智能体交互 | [📄 arXiv:2501.16732](https://arxiv.org/abs/2501.16732) |
+| **Learning Embodied Intelligence from Physical Simulators** | 2025.07 | 系统综述从物理仿真器与世界模型学习具身智能的方法 | [📄 arXiv:2507.00917](https://arxiv.org/abs/2507.00917) |
+| **Multi-agent Embodied AI** | 2026 | 多智能体具身 AI 综述，涵盖安全规划与复杂环境导航 | [Science China](https://link.springer.com/article/10.1007/s11432-025-4820-4) |
+| **VLA Survey** | 2026 | 视觉-语言-动作模型综述，从单模态到 VLA 模型演进时间线 | [IEEE Trans](https://ieeexplore.ieee.org/abstract/document/11495231/) |
+
+### 路线对比与竞争格局
+
+#### 六大技术流派
+
+> 2026 年世界模型赛道形成六大技术流派，智源研究院在 2026 智源大会上首次提出四条路线分类法，产业界进一步细化为六大流派。
+
+| 流派 | 代表机构 | 核心思路 | 优势 | 劣势 |
+|:-----|:-----|:-----|:-----|:-----|
+| **JEPA 联合嵌入预测** | AMI Labs (LeCun) / Meta V-JEPA 2 | 不在像素空间预测，在抽象表示空间预测世界状态 | 计算效率高，理论上限更高 | 真实场景验证不足 |
+| **空间智能 (3D World Model)** | World Labs (李飞飞) / Marble | 3D 高斯泼溅重建三维世界，先 XYZ 再加 T | 几何精度高，3D 一致性强 | 缺乏物理模拟，动态场景受限 |
+| **生成式视频 (交互仿真)** | DeepMind Genie 3 / Runway GWM-1 | 海量视频训练视频生成模型，输入动作输出下一帧 | 数据丰富，视觉保真度高 | 物理一致性差 |
+| **语言世界模型** | Qwen-AgentWorld / Snowflake AWM | 用 LLM 预测环境状态转移，语言空间模拟世界 | 无需物理引擎，可大规模并行 | 限于符号/语言空间 |
+| **物理仿真融合** | NVIDIA Cosmos 3 / Isaac Sim 6.0 | 物理引擎 + 神经渲染 + 合成数据管线 | 物理准确性最高 | 计算成本高，泛化有限 |
+| **类脑架构** | 智平方 NeuroVLA / AlphaBrain | 皮层-小脑-脊髓三层类脑体系 | 毫秒级反射，低功耗 | 架构复杂，工程门槛高 |
+
+#### Themesis 五大竞争路线
+
+> 2026 年 1 月，Themesis 从架构原理、首席科学家、融资规模、适用场景四个维度系统对比五条路线。
+
+| 路线 | 首席科学家 | 机构 | 核心优势 | 关键局限 |
+|:-----|:-----|:-----|:-----|:-----|
+| **Genie 3**（生成式视频） | Jack Parker-Holder | Google DeepMind | 实时交互，视觉保真高 | 物理一致性差 |
+| **Marble**（空间智能） | 李飞飞 / Justin Johnson | World Labs ($10B) | 几何精度极高，360° 自由视角 | 本质静态，无内嵌物理 |
+| **LeJEPA**（联合嵌入预测） | Yann LeCun | AMI Labs ($3.5B) | 计算效率极高，理论 AGI 路径 | 真实场景验证不足 |
+| **AXIOM**（主动推断） | Karl Friston | Verses.ai | 对象级物理建模，内嵌因果推理 | 社区小众，工程成熟度低 |
+| **神经符号** | 多机构探索 | 早期阶段 | 唯一允许对象显式符号表示 | 最不成熟，无代表产品 |
+
+#### 视频世界模型五大属性框架（Xun Huang, Stanford）
+
+> 当前 SOTA 视频生成器（Sora、Veo3）尚不是真正的世界模型——它们生成视觉上逼真的视频，但缺乏五项关键能力：
+
+| 属性 | 类型 | 关键挑战 | 代表性工作 |
+|:-----|:-----|:-----|:-----|
+| **因果性** | 硬约束 | DiT 双向注意力违反时间因果性 | CausVid, Diffusion Forcing, Self-Forcing |
+| **交互性** | 硬约束 | 缺乏带动作标注的大规模视频训练数据 | Genie/Genie 2, GameNGen, DIAMOND |
+| **持久性** | 软约束 | 上下文窗口增长导致延迟增加 | SSWM, FramePack, FAR, SPMEM |
+| **实时性** | 与物理准确权衡 | 非因果模型最低延迟 = 视频块时长 | Self-Forcing (17FPS), APT2, CausVid+DMD |
+| **物理准确性** | 与实时性权衡 | 组合泛化可行但外推泛化失败 | PhyWorld, VideoJAM, Ctrl-Crash, PISA |
+
+> 💡 **核心洞察**：因果性是交互性的前提；实时性与物理准确性存在双头金字塔权衡——人类娱乐需实时性（"骗过人眼"即可），机器人训练需物理准确性优先。内部世界理解模型（LeCun JEPA 路线）与外部世界模拟器（视频世界模型路线）是两类不同目标，但可在具身 AI 中协同工作。
+
+📖 [查看完整综述论文列表与流派对比→](docs/papers.md)
+
 ## 🌟 DeepMind 视觉生成范式系列
 
 > **"生成即理解"——从图像到视频，DeepMind 正在定义视觉基础模型的新范式。**
@@ -472,8 +555,8 @@ LeCun 团队从 2022 年至今的 JEPA 演进分四阶段：
 
 ---
 
-> **最后更新**：2026-07-30（v8.3 重点课题组论文索引）
+> **最后更新**：2026-07-30（v8.4 世界模型综述高亮）
 > **许可证**：[Apache 2.0](LICENSE)
-> **引用格式**：`isLinXu/Awesome-Agent-World-Model v8.3 (2026)`
+> **引用格式**：`isLinXu/Awesome-Agent-World-Model v8.4 (2026)`
 
 > *"世界模型不是关于预测未来，而是关于在想象中安全地犯错。"* —— Yann LeCun, AMI Labs
