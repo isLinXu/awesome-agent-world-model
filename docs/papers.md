@@ -6,6 +6,7 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **Bar-JEPA: Extracting Values from Bar Chart with Joint-Embedding Predictive Architecture** | Poonam Poonam, Alexander Epple et al. | Bar charts are commonly used in data visualization... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.06062) `🤗 HF` |
 | 2026 | **Helping Music Co-Creation Agents 'Listen' Well: Hierarchical Self-Supervised World Models for Understanding and Generation** | Scott H. Hawley | Collaborative music agents need internal representations rich enough to support both... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.04378) ⬆1 `🤗 HF` |
 | 2026 | **Loud or Silent? A Reusable Framework for Per-Modality Failure Analysis in Multimodal Clinical AI** | Quang Bui, Shlok Jaiswal et al. | Multimodal clinical models are usually judged on accuracy with every modality... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.01462) ⬆3 [🐙 Repo](https://github.com/criticaldata/PRIMED-AI) `🤗 HF` |
 | 2026 | **One Future, Every Robot: Label-Efficient Collective-State Prediction with Decentralized JEPA** | Alan-Barsag Gazzaev, Alexey Garvilov et al. | Can every robot in a swarm predict the same future collective state from only local... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2607.28443) `🤗 HF` |
@@ -80,6 +81,11 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **GeniWorld: A Generalizable Interactive World Model for Robotic Manipulation via Visual Actions** | Chenghao Gu, Hanyang Yu et al. | Generalist robot policies exhibit strong capabilities... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.06332) `🤗 HF` |
+| 2026 | **JoyAI-RA 0.5: Scaling Robot Manipulation Learning via Dual Action Alignment** | RA Team | Robot data is scarce... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.05674) `🤗 HF` |
+| 2026 | **Argus: A General-Purpose Agentic Runtime for Long-Horizon Reasoning** | Boxiu Li, Zimo Wen et al. | Long-horizon reasoning requires an agentic runtime that can persist when evidence... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.05144) `🤗 HF` |
+| 2026 | **OctoLong: Mid-Training On Cross-Repository Code Contexts Enhances Long-Context Modeling** | Indraneil Paul, Falko Helm et al. | Context lengths of language models (LMs) have dramatically increased... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.05141) `🤗 HF` |
+| 2026 | **JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion** | Yicheng Xiao, Wenxun Dai et al. | Real-time video editing requires low-latency causal generation with bounded... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.03974) ⬆87 [🐙 Repo](https://github.com/jd-opensource/JoyAI-Video-Edit) `PwC` |
 | 2026 | **MASS: Multiplayer World Models with Authoritative Shared State** | Ziqi Cai, Siqi Yang et al. | Current video world models struggle in multiplayer environments because they... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.06257) ⬆3 `🤗 HF` |
 | 2026 | **From Economic Agents to Agentic Economies: A Systems Blueprint for Economic World Models** | Jiale Han, Xiang Li et al. | Economic World Models (EWMs) are generative economic models that simulate how... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.06020) ⬆24 [🐙 Repo](https://github.com/FreedomIntelligence/Awesome-Economic-World-Models) `🤗 HF` |
 | 2026 | **OneEmo: A Unified Multimodal Reasoning Model for Emotion Perception, Understanding, and Interaction** | Jiahao Huang, Zheng Lian et al. | Multimodal Large Language Models (MLLMs) have demonstrated remarkable capabilities... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.06013) `🤗 HF` |
