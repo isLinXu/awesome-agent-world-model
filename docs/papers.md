@@ -81,6 +81,10 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **ArchEGraph: A Large-Scale Graph Dataset for Geometry-Topology-Physics Aligned Building Energy Modeling** | Yihui Li, Yihui Chen et al. | Accurate estimation of building energy use is essential for achieving carbon neutral... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.06772) `🤗 HF` |
+| 2026 | **Robust-WAM: Bridging Generative Pretraining and Semantic Foresight in World-Action Models** | Haodong Yan, Junfeng Li et al. | Mainstream World-Action Models (WAMs) adapt pretrained video generation models... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.05903) `🤗 HF` |
+| 2026 | **LAWM-3D: Learning 3D-Aware Latent Actions from Human Videos for Generalizable Robot World Models** | Jiarui Yang, Jiale Zhange et al. | World models enable agents to perform forward rollout and planning without... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.05706) `🤗 HF` |
+| 2026 | **PrivacyPeek: Auditing What LLM-Based Agents Acquire, Not Just What They Say** | Mingxuan Zhang, Jiahui Han et al. | LLM-based agents are rapidly advancing... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2606.00152) [🐙 Repo](https://github.com/Xuan269/PrivacyPeek-Resource) `🤗 HF` |
 | 2026 | **GeniWorld: A Generalizable Interactive World Model for Robotic Manipulation via Visual Actions** | Chenghao Gu, Hanyang Yu et al. | Generalist robot policies exhibit strong capabilities... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.06332) `🤗 HF` |
 | 2026 | **JoyAI-RA 0.5: Scaling Robot Manipulation Learning via Dual Action Alignment** | RA Team | Robot data is scarce... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.05674) `🤗 HF` |
 | 2026 | **Argus: A General-Purpose Agentic Runtime for Long-Horizon Reasoning** | Boxiu Li, Zimo Wen et al. | Long-horizon reasoning requires an agentic runtime that can persist when evidence... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.05144) `🤗 HF` |
