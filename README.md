@@ -6,16 +6,25 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![GitHub Stars](https://img.shields.io/github/stars/isLinXu/Awesome-Agent-World-Model?style=social)](https://github.com/isLinXu/Awesome-Agent-World-Model)
-[![Last Update](https://img.shields.io/badge/Last%20Update-2026-07-29-brightgreen)]()
-[![Version](https://img.shields.io/badge/Version-8.4-blue)]()
+[![Last Update](https://img.shields.io/badge/Last%20Update-2026-08-10-brightgreen)]()
+[![Version](https://img.shields.io/badge/Version-8.5-blue)]()
 [![Coverage](https://img.shields.io/badge/Coverage-99%25%2B-brightgreen)]()
-[![Entries](https://img.shields.io/badge/Entries-1165%2B-orange)]()
+[![Entries](https://img.shields.io/badge/Entries-1171%2B-orange)]()
 
 ---
 
 ## 📊 执行摘要
 
 本 Awesome List 经过十二轮深度调研与系统性质量审查，已从初始的 **79 个条目** 扩展至 **1000+ 高质量资源条目（覆盖率 99.5%+）**。v8.0 将内容按主题拆分为 5 个子文档，从"单一长文档"升级为"模块化文档体系"。
+
+**v8.5 核心改进**（WAM 前沿论文补充）：
+
+- **NVIDIA DreamZero**：14B 参数世界动作模型，基于视频扩散骨干联合预测视频与动作，零样本泛化 2x 超越 VLA，7Hz 实时闭环控制
+- **CASIA PhiZero**：提出"物理语言"紧凑离散表示，reason-then-render 范式先推理物理过程再渲染视频，Token 减少 175 倍
+- **ECCV 2026 DriveVA**：DiT 联合解码视频与动作序列做零样本自动驾驶，NAVSIM 90.9 PDMS
+- **清华 JEPA-VLA**：V-JEPA2 视频预测嵌入增强 VLA，补全环境理解与策略先验，LIBERO +7.4pp
+- **心智世界建模 (MWM)**：将 mental state 作为世界模型核心组件，从物理场景模拟走向心智模拟
+- **Koopman Dreamer**：谱约束潜在动力学稳定世界模型想象，推导多步 rollout 误差界
 
 **v8.4 核心改进**（世界模型综述高亮）：
 
@@ -103,7 +112,7 @@
 欢迎加入【World Model】we are the world 交流群，与全球世界模型研究者共同探讨前沿技术！
 
 > 群聊：【World Model】we are the world
-> 该二维码7天内（7月24日前）有效，过期后请通过 GitHub Issues 获取最新二维码
+> 该二维码7天内（8月17日前）有效，过期后请通过 GitHub Issues 获取最新二维码
 
 <img src="assets/wechat-group-qr.jpg" alt="World Model 微信交流群" width="240" />
 

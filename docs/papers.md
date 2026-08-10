@@ -6,6 +6,12 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **DreamZero: World Action Models are Zero-shot Policies** | NVIDIA GEAR Lab | 14B 参数 WAM，基于 Wan2.1 视频扩散骨干 + flow matching；联合预测视频与动作；零样本泛化 2x 超越 VLA；7Hz 实时闭环控制；10-20 分钟数据实现跨具身迁移 | [📄 arXiv:CS.RO](https://arxiv.org/abs/2602.15922) [🌐 Project](https://dreamzero0.github.io/) `arXiv` |
+| 2026 | **PhiZero: A World Model Built Around Physical Language** | Shuyao Shang, Yuqi Wang et al. (CASIA) | 提出"物理语言"紧凑离散状态转移表示，替代像素空间预测；reason-then-render 范式；先推理物理过程再渲染视频；Token 减少 175 倍 | [📄 arXiv:CS.CV](https://arxiv.org/abs/2607.28624) [🌐 Project](https://Phi-Zero.github.io/) `arXiv` |
+| 2026 | **DriveVA: Video Action Models are Zero-Shot Drivers** | Mengmeng Liu, Diankun Zhang et al. (Xiaomi/Univ. of Twente) | ECCV 2026；DiT 联合解码未来视频与动作序列；NAVSIM 90.9 PDMS；nuScenes 零样本 L2 降 78.9%、碰撞率降 83.3% | [📄 arXiv:CS.CV](https://arxiv.org/abs/2604.04198) `arXiv` |
+| 2026 | **JEPA-VLA: Video Predictive Embedding is Needed for VLA Models** | Shangchen Miao et al. (THUML × Huawei Noah) | 将 V-JEPA2 视频预测嵌入接入 VLA，补全环境理解与策略先验；LIBERO +7.4pp，RoboTwin2.0 +18.7pp；无需世界模型训练数据 | [📄 arXiv:CS.CV](https://arxiv.org/abs/2602.11832) `arXiv` |
+| 2026 | **Mental World Modeling (MWM)** | Hao Fei, Yiran Zhao et al. (Oxford/NUS) | 心智世界建模框架，将 mental state（信念/意图/情感）作为世界模型核心组件；MENTIS 免训练基线；跨文本/图像/音频视频评测 | [📄 arXiv:CS.CL](https://arxiv.org/abs/2607.27201) `arXiv` |
+| 2026 | **Koopman Dreamer: Spectrally Constrained Latent Dynamics for Stable World-Model Imagination** | Jiaqi Li, Xinglong Zhang et al. | Dreamer 式世界模型 + Koopman 启发的谱约束确定性潜空间动力学；二维旋转-缩放块表征阻尼/旋转/近周期模式；多步 rollout 误差界推导 | [📄 arXiv:CS.LG](https://arxiv.org/abs/2607.19719) `arXiv` |
 | 2026 | **CalTwin: Towards Calibrated, Shift-Robust Medical World Models via Fisher-Information Regularisation** | Behraj Khan, Shabir Ahmad et al. | Medical world models aim to learn a latent state of patient or organ physiology and... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2607.26752) `arXiv` |
 | 2026 | **INTACT: Isomorphic Intent-to-Action Learning for Search-Free World Models** | Junhan Sun, Hao Zhao et al. | Forward latent world models predict how actions change a scene... | [📄 arXiv:CS.RO](https://arxiv.org/abs/2607.26056) ⬆1 `arXiv + 🤗 HF` |
 | 2026 | **Reinformed Dreamer: An Asymmetric World Model Efficiently Trained through Latent Guidance** | Gaspard Lambrechts, Adrien Bolland et al. | Much like humans benefit from guidance while learning... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2607.26040) `arXiv` |

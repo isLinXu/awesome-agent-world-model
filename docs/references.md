@@ -56,6 +56,54 @@
   url     = {https://arxiv.org/abs/2606.24742}
 }
 
+@article{nvidia2026dreamzero,
+  title   = {World Action Models are Zero-shot Policies},
+  author  = {{NVIDIA GEAR Lab}},
+  journal = {arXiv preprint arXiv:2602.15922},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2602.15922}
+}
+
+@article{shang2026phizero,
+  title   = {PhiZero: A World Model Built Around Physical Language},
+  author  = {Shang, Shuyao and Wang, Yuqi and Gao, Ruopeng and Chen, Xu and Tan, Tieniu and Fan, Lue and Zhang, Zhaoxiang},
+  journal = {arXiv preprint arXiv:2607.28624},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2607.28624}
+}
+
+@inproceedings{liu2026driveva,
+  title     = {DriveVA: Video Action Models are Zero-Shot Drivers},
+  author    = {Liu, Mengmeng and Zhang, Diankun and Liu, Jiuming and Cui, Jianfeng and Xie, Hongwei and Chen, Guang and Ye, Hangjun and Yang, Michael Ying and Nex, Francesco and Cheng, Hao},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  year      = {2026},
+  url       = {https://arxiv.org/abs/2604.04198}
+}
+
+@article{miao2026jepavla,
+  title   = {JEPA-VLA: Video Predictive Embedding is Needed for VLA Models},
+  author  = {Miao, Shangchen and Feng, Ningya and Wu, Jialong and Lin, Ye and He, Xu and Li, Dong and Long, Mingsheng},
+  journal = {arXiv preprint arXiv:2602.11832},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2602.11832}
+}
+
+@article{fei2026mwm,
+  title   = {Mental World Modeling},
+  author  = {Fei, Hao and Zhao, Yiran},
+  journal = {arXiv preprint arXiv:2607.27201},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2607.27201}
+}
+
+@article{li2026koopmandreamer,
+  title   = {Koopman Dreamer: Spectrally Constrained Latent Dynamics for Stable World-Model Imagination},
+  author  = {Li, Jiaqi and Zhang, Xinglong and Xie, Haibin and Lan, Yixing and Pan, Wei and Xu, Xin},
+  journal = {arXiv preprint arXiv:2607.19719},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2607.19719}
+}
+
 @article{openai2024sora,
   title   = {Video Generation Models as World Simulators},
   author  = {Brooks, Tim and Peebles, Bill and others},
@@ -532,9 +580,9 @@ v7.7: 4.96/5.0 (ICLR 2025 Workshop 系统整合) ← 当前
 ---
 
 > **维护者**：[isLinXu](https://github.com/isLinXu)
-> **最后更新**：2026-07-19（v8.0 文档架构重构：拆分为 5 个子文档）
+> **最后更新**：2026-08-10（v8.5 WAM 前沿论文补充：DreamZero/PhiZero/DriveVA/JEPA-VLA/MWM/Koopman Dreamer）
 > **许可证**：[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-> **引用格式**：`isLinXu/Awesome-Agent-World-Model v8.0 (2026)`
+> **引用格式**：`isLinXu/Awesome-Agent-World-Model v8.5 (2026)`
 
 > *"世界模型不是关于预测未来，而是关于在想象中安全地犯错。"* —— Yann LeCun, AMI Labs
 ---
