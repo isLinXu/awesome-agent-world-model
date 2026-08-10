@@ -9,7 +9,7 @@
 [![Last Update](https://img.shields.io/badge/Last%20Update-2026-08-10-brightgreen)]()
 [![Version](https://img.shields.io/badge/Version-8.5-blue)]()
 [![Coverage](https://img.shields.io/badge/Coverage-99%25%2B-brightgreen)]()
-[![Entries](https://img.shields.io/badge/Entries-1171%2B-orange)]()
+[![Entries](https://img.shields.io/badge/Entries-1403%2B-orange)]()
 
 ---
 
@@ -17,7 +17,7 @@
 
 本 Awesome List 经过十二轮深度调研与系统性质量审查，已从初始的 **79 个条目** 扩展至 **1000+ 高质量资源条目（覆盖率 99.5%+）**。v8.0 将内容按主题拆分为 5 个子文档，从"单一长文档"升级为"模块化文档体系"。
 
-**v8.5 核心改进**（WAM 前沿论文补充）：
+**v8.5 核心改进**（WAM 前沿论文补充 + 8月新论文追踪）：
 
 - **NVIDIA DreamZero**：14B 参数世界动作模型，基于视频扩散骨干联合预测视频与动作，零样本泛化 2x 超越 VLA，7Hz 实时闭环控制
 - **CASIA PhiZero**：提出"物理语言"紧凑离散表示，reason-then-render 范式先推理物理过程再渲染视频，Token 减少 175 倍
@@ -25,6 +25,7 @@
 - **清华 JEPA-VLA**：V-JEPA2 视频预测嵌入增强 VLA，补全环境理解与策略先验，LIBERO +7.4pp
 - **心智世界建模 (MWM)**：将 mental state 作为世界模型核心组件，从物理场景模拟走向心智模拟
 - **Koopman Dreamer**：谱约束潜在动力学稳定世界模型想象，推导多步 rollout 误差界
+- **8月 arXiv 新论文追踪**：Bar-JEPA (图表值提取)、音乐共创 Agent (分层自监督 WAM)、多模态临床 AI 模态失效分析、去中心化 JEPA 群体状态预测
 
 **v8.4 核心改进**（世界模型综述高亮）：
 
@@ -564,7 +565,7 @@ LeCun 团队从 2022 年至今的 JEPA 演进分四阶段：
 
 ---
 
-> **最后更新**：2026-07-30（v8.4 世界模型综述高亮）
+> **最后更新**：2026-08-10（v8.4 世界模型综述高亮）
 > **许可证**：[Apache 2.0](LICENSE)
 > **引用格式**：`isLinXu/Awesome-Agent-World-Model v8.4 (2026)`
 
