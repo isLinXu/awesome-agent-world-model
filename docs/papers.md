@@ -6,6 +6,7 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **Is Forward Prediction Enough? Physical State Grounding for JEPA World Models** | Haodong Yan, Jiaguan Zhu et al. | Learning structured and control-relevant latent representations remains a key... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.06799) `🤗 HF` |
 <<<<<<< HEAD
 | 2026 | **Bar-JEPA: Extracting Values from Bar Chart with Joint-Embedding Predictive Architecture** | Poonam Poonam, Alexander Epple et al. | Bar charts are commonly used in data visualization... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.06062) `🤗 HF` |
 | 2026 | **Helping Music Co-Creation Agents 'Listen' Well: Hierarchical Self-Supervised World Models for Understanding and Generation** | Scott H. Hawley | Collaborative music agents need internal representations rich enough to support both... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.04378) ⬆1 `🤗 HF` |
@@ -88,6 +89,20 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **SimWAM: A Simple World Action Model for End-to-End Autonomous Driving** | Zongchuang Zhao, Xin Zhou et al. | World-Action Models (WAMs) improve end-to-end autonomous driving by transferring... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.07468) ⬆22 [🐙 Repo](https://github.com/H-EmbodVis/SimWAM) `🤗 HF + PwC` |
+| 2026 | **ResidencyRL: Reinforcement Learning in Simulated Clinical Environments** | Valentin Liévin, Samuel Schmidgall et al. | In medical education... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.07418) `🤗 HF` |
+| 2026 | **Addressable Memory for Video World Models** | Xindi Wu, Sven Elflein et al. | We study visual persistence in interactive video world models... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.07408) ⬆6 `🤗 HF` |
+| 2026 | **An End-to-End Agent Auditing Engine** | Haoning Wang, Mingxun Zhang et al. | With the rapid advancement of large language models (LLMs)... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.07346) ⬆1 `🤗 HF` |
+| 2026 | **WNM-3D: A World Navigation Model with 3D Scene Conditioning for Closed-Loop VLN** | Yuehao Huang, Yunzi Wu et al. | Recent vision-language navigation (VLN) systems increasingly adapt pretrained... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.07267) `🤗 HF` |
+| 2026 | **YOLO-PEFT: Parameter-Efficient Fine-Tuning on YOLO Family** | Xu Lin, WenJie Nie et al. | Generic parameter-efficient fine-tuning (PEFT) methods transferred from language... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.07051) ⬆15 `🤗 HF` |
+| 2026 | **PHASE-Tree: Modeling Character-State Evolution in Long-Horizon Role-Playing Dialogue** | Bo Tang, Jianan Yang et al. | Long-horizon role-playing demands that characters remain recognizable as they evolve... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.06975) `🤗 HF` |
+| 2026 | **Multi-Agent Forensic Reasoning for Generalizable Deepfake Video Detection** | Xuechao Zou, Shun Zhang et al. | The malicious use of generative artificial intelligence to create highly realistic... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.06865) ⬆3 [🐙 Repo](https://github.com/XavierJiezou/ARGUS) `🤗 HF` |
+| 2026 | **Capek 0.5: An Execution-Centric Vision-Language Model for Embodied Intelligence** | Ying Chen, Weizhen Li et al. | Vision-language models are increasingly serving as the reasoning core of embodied... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.06756) ⬆1 `🤗 HF` |
+| 2026 | **The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows** | Junbo Li, Boyi Liu et al. | Recent systems for optimizing prompts, programs... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.06714) ⬆4 `🤗 HF` |
+| 2026 | **Do AI Personas Grow? Analyzing and Benchmarking Personality Evolution in LLM Agents After Life Events** | Ming Wang, Peidong Wang et al. | Personality-conditioned LLM agents (PC-Agents) are increasingly used in emotional... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.06485) ⬆3 [🐙 Repo](https://github.com/sci-m-wang/BFI-Adapt) `🤗 HF` |
+| 2026 | **DCAS: Decoupling CLI Agent Scaffolding to Internalize Planning across Scaffolds** | Kishanthan Thangarajah, Boyuan Chen et al. | CLI-based software-engineering agents have matured rapidly... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.06113) ⬆13 `🤗 HF` |
+| 2026 | **The Next Screenshot Knows: Gated Hindsight Distillation for Mobile GUI Agents** | Weiwei Li, Junzhuo Liu et al. | GUI agents are commonly trained offline from successful interaction trajectories.... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.06065) `🤗 HF` |
+| 2026 | **SFT Conflicts, RL Coexists: A Theoretical and Empirical Analysis of Multi-Task Learning for LLMs** | Kejian Zhu, Zhuoran Jin et al. | Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) exhibit fundamentally... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.03573) ⬆32 [🐙 Repo](https://github.com/GaryStack/Parallel-RL) `PwC` |
 | 2026 | **ArchEGraph: A Large-Scale Graph Dataset for Geometry-Topology-Physics Aligned Building Energy Modeling** | Yihui Li, Yihui Chen et al. | Accurate estimation of building energy use is essential for achieving carbon neutral... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.06772) `🤗 HF` |
 | 2026 | **Robust-WAM: Bridging Generative Pretraining and Semantic Foresight in World-Action Models** | Haodong Yan, Junfeng Li et al. | Mainstream World-Action Models (WAMs) adapt pretrained video generation models... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.05903) `🤗 HF` |
 | 2026 | **LAWM-3D: Learning 3D-Aware Latent Actions from Human Videos for Generalizable Robot World Models** | Jiarui Yang, Jiale Zhange et al. | World models enable agents to perform forward rollout and planning without... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.05706) `🤗 HF` |
