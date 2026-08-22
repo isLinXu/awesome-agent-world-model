@@ -17,7 +17,7 @@
 
 本 Awesome List 经过十二轮深度调研与系统性质量审查，已从初始的 **79 个条目** 扩展至 **1000+ 高质量资源条目（覆盖率 99.5%+）**。v8.0 将内容按主题拆分为 5 个子文档，从"单一长文档"升级为"模块化文档体系"。
 
-**v8.5 核心改进**（WAM 前沿论文补充 + 8月新论文追踪）：
+**v8.5 核心改进**（WAM 前沿论文补充 + 8月新论文追踪 + 评测基准扩充）：
 
 - **NVIDIA DreamZero**：14B 参数世界动作模型，基于视频扩散骨干联合预测视频与动作，零样本泛化 2x 超越 VLA，7Hz 实时闭环控制
 - **CASIA PhiZero**：提出"物理语言"紧凑离散表示，reason-then-render 范式先推理物理过程再渲染视频，Token 减少 175 倍
@@ -26,6 +26,7 @@
 - **心智世界建模 (MWM)**：将 mental state 作为世界模型核心组件，从物理场景模拟走向心智模拟
 - **Koopman Dreamer**：谱约束潜在动力学稳定世界模型想象，推导多步 rollout 误差界
 - **8月 arXiv 新论文追踪**：Bar-JEPA (图表值提取)、音乐共创 Agent (分层自监督 WAM)、多模态临床 AI 模态失效分析、去中心化 JEPA 群体状态预测
+- **评测基准扩充**：TriWorldBench (五校联合三视角评测)、NAVSIM v1/v2 (比亚迪 HyWorldVLA 90.59 登顶)、DailyOmni (智元 WITA-Omni 85.21 登顶)、WBench Navi分榜 (HiDream-O1-World 80.9 登顶)、WorldArena 2.0 (小米 Robotics-U0 73.64 登顶)
 
 **v8.4 核心改进**（世界模型综述高亮）：
 

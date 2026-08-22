@@ -214,10 +214,11 @@
 | [Minecraft Diamond](https://github.com/danijar/dreamerv3) | 无人类演示获取钻石的长程规划测试 | 长程规划 | DreamerV3 | 首个成功 |
 | [WorldModelBench](https://worldmodelbench.github.io/) | CVPR 2025 首个物理遵循度基准 | 牛顿定律/碰撞/质量守恒 | Cosmos | 物理遵循度领先 |
 | [WorldLens](https://worldlens.github.io/) | 自动驾驶世界模型排行榜，24 维度几何一致性 | 多视角几何一致性 | GAIA-2 | 几何一致性最佳 |
+| [TriWorldBench](https://www.triworldbench.com) | 2026年8月，北大/清华/北航/上交/中科大五校联合发起；**首个三视角具身世界模型评测**，推动 WM 从"视觉生成"迈向"世界理解" | 三视角一致性(head+wrists)/任务执行/物理空间理解 | 🥇 WoVR_Plus (CASIA-DRL) / 🥈 BetaBWM (TONGJI) / 🥉 Fysiverse-Video (FysicsAI) | 三视角评测 |
 | [BFCL v3](https://berkeley-function-calling-leaderboard.github.io/) | Berkeley 函数调用榜单 | 工具调用准确性 | Arctic-AWM-14B | 70.18 |
 | [WorldVQA](https://worldvqa.github.io/) | 视觉世界知识问答 | 视觉世界知识 | Qwen3.7-Plus | 0.611 |
-| [WBench](https://wbench.github.io/) | 2026 年 5 月发布，交互式世界模型新标准，22 个自动子指标验证 | 视频质量/设置遵循/交互遵循/一致性/物理遵循 | HY-World 1.5 (导航 87.5) / LingBot-World (时序 89.9) | 多模型分项领先 |
-| [WorldArena 2.0](https://worldarena.ai) | IROS 2026 Challenge，三赛道：视频质量评测/在线 RL 环境/真实机器人 WAM 任务 | 视觉物理预测/闭环策略学习/真机任务执行 | GE-Sim 2.0 (Track-1: 68.26) | 闭环交互评测 |
+| [WBench](https://wbench.github.io/) | 2026年8月更新，美团LongCat+复旦联合推出，**交互式世界模型新标杆**；289场景/1058轮交互/22项自动指标；Navi分榜聚焦空间导航与视角控制 | 视频质量/设定遵循/交互遵循/一致性/物理遵循 | **HiDream-O1-World** (智象未来) — Navi **80.9** (物理 73.3 第1，一致性 88.0) / HY-World 1.5 (导航 87.5) | 交互评测 |
+| [WorldArena 2.0](https://worldarena.ai) | CVPR 2026官方设立，IROS 2026 Challenge；三赛道：视频质量评测/在线 RL 环境/真实机器人 WAM 任务；2026年7月小米 Xiaomi-Robotics-U0 登顶总分第1（126模型参评） | 视觉物理预测/闭环策略学习/真机任务执行 | **Xiaomi-Robotics-U0 (73.64)** / GE-Sim 2.0 (Track-1: 68.26) | 闭环交互评测 |
 | [WorldScore](https://worldscore.github.io/) | 统一世界生成评测，涵盖 3D 准确性、可控性、物理一致性 | 3D 几何/可控性/物理遵循 | Kling (闭源领先) | 统一评分 |
 | [AGIBOT World Challenge](https://agibot.world) | ICRA 2026 世界模型赛道，真实机器人任务导向评测 | 动作可控性/物理一致性/决策可用性 | NeoVerse-Abot (冠军) | 任务导向评测 |
 | [LaryBench](https://openenvision.github.io/WorldFoundry) | WorldFoundry v0.2.0 新增基准，语言-动作推理一致性评测 | 语言指令遵循/动作执行准确性 | — | VLA 评测 |
@@ -227,6 +228,8 @@
 | [DreamGen Bench](https://arxiv.org/abs/2606.17030) | 具身世界模型动作可控性与视觉质量评测 | 动作可控性/视觉质量/物体交互 | Qwen-RobotWorld (总分 4.952, 第一) | WM 动作评测 |
 | [EXPRESS-Bench](https://qwen.ai/blog?id=qwen-robotsuite) | 导航即工具调用的复杂行为组合评测 | 导航成功率/步数效率/任务组合 | Qwen-RobotNav (+15.4% 成功率, -77% 步数) | VLN 工具评测 |
 | [ACT-Bench](https://openreview.net/forum?id=26KlsDgwLi) | ICLR 2025 Workshop，自动驾驶动作可控世界模型基准 | 动作可控性/场景泛化/时序一致性 | — | 驾驶 WM 评测 |
+| [NAVSIM v1/v2](https://github.com/autonomousvision/navsim) | 国际通用自动驾驶仿真基准；PDMS综合碰撞安全/可行驶区域/车距/任务完成率/平顺性五大维度 | v1 PDMS: 碰撞/区域/车距/完成率/舒适性<br>v2 EPDMS: 增加信号灯/车道保持 | **比亚迪 HyWorldVLA** — v1 **90.59** / v2 **89.71**<br>DriveVA 90.9 PDMS | 自动驾驶 WM 评测 |
+| [Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive) | NeurIPS 2024 闭环多能力评测；CARLA v2 构建，评估世界模型闭环驾驶性能 | 成功率 SR / 驾驶评分 DS | DriveVA L2降52.5% 碰撞降52.4% | 闭环驾驶评测 |
 | [Text2World](https://openreview.net/forum?id=dIQNOxuBay) | ICLR 2025 Workshop，通过程序合成基准评测 LLM 世界建模能力 | 程序合成正确性/世界规则一致性 | GPT-4o | LLM 世界模型评测 |
 | [Newton](https://openreview.net/forum?id=xlp6P6qaRW) | ICLR 2025 Workshop，交互式基础世界模型小型基准 | 交互式预测/物理推理 | — | 交互 WM 评测 |
 
