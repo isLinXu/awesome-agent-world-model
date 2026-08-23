@@ -9,7 +9,7 @@
 [![Last Update](https://img.shields.io/badge/Last%20Update-2026-08-10-brightgreen)]()
 [![Version](https://img.shields.io/badge/Version-8.5-blue)]()
 [![Coverage](https://img.shields.io/badge/Coverage-99%25%2B-brightgreen)]()
-[![Entries](https://img.shields.io/badge/Entries-1826%2B-orange)]()
+[![Entries](https://img.shields.io/badge/Entries-1859%2B-orange)]()
 
 ---
 
@@ -566,7 +566,7 @@ LeCun 团队从 2022 年至今的 JEPA 演进分四阶段：
 
 ---
 
-> **最后更新**：2026-08-22（v8.4 世界模型综述高亮）
+> **最后更新**：2026-08-23（v8.4 世界模型综述高亮）
 > **许可证**：[Apache 2.0](LICENSE)
 > **引用格式**：`isLinXu/Awesome-Agent-World-Model v8.4 (2026)`
 
