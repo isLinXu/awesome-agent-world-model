@@ -218,7 +218,7 @@
 | [BFCL v3](https://berkeley-function-calling-leaderboard.github.io/) | Berkeley 函数调用榜单 | 工具调用准确性 | Arctic-AWM-14B | 70.18 |
 | [WorldVQA](https://worldvqa.github.io/) | 视觉世界知识问答 | 视觉世界知识 | Qwen3.7-Plus | 0.611 |
 | [WBench](https://wbench.github.io/) | 2026年8月更新，美团LongCat+复旦联合推出，**交互式世界模型新标杆**；289场景/1058轮交互/22项自动指标；Navi分榜聚焦空间导航与视角控制 | 视频质量/设定遵循/交互遵循/一致性/物理遵循 | **HiDream-O1-World** (智象未来) — Navi **80.9** (物理 73.3 第1，一致性 88.0) / HY-World 1.5 (导航 87.5) | 交互评测 |
-| [WorldArena 2.0](https://worldarena.ai) | CVPR 2026官方设立，IROS 2026 Challenge；三赛道：视频质量评测/在线 RL 环境/真实机器人 WAM 任务；2026年7月小米 Xiaomi-Robotics-U0 登顶总分第1（126模型参评） | 视觉物理预测/闭环策略学习/真机任务执行 | **Xiaomi-Robotics-U0 (73.64)** / GE-Sim 2.0 (Track-1: 68.26) | 闭环交互评测 |
+| [WorldArena 2.0](https://worldarena.ai) | CVPR 2026官方设立，IROS 2026 Challenge；三赛道：视频质量评测/在线 RL 环境/真实机器人 WAM 任务；2026年7月小米 Xiaomi-Robotics-U0 登顶总分第1（126模型参评）；[📋 榜单模型资源汇总](worldarena-leaderboard.md) | 视觉物理预测/闭环策略学习/真机任务执行 | **Xiaomi-Robotics-U0 (73.64)** / PAIWorld (72.31) / GE-Sim 2.0 (68.26) / Pelican-Unify (66.03) / GigaWorld-1 (>60) | 闭环交互评测 |
 | [WorldScore](https://worldscore.github.io/) | 统一世界生成评测，涵盖 3D 准确性、可控性、物理一致性 | 3D 几何/可控性/物理遵循 | Kling (闭源领先) | 统一评分 |
 | [AGIBOT World Challenge](https://agibot.world) | ICRA 2026 世界模型赛道，真实机器人任务导向评测 | 动作可控性/物理一致性/决策可用性 | NeoVerse-Abot (冠军) | 任务导向评测 |
 | [LaryBench](https://openenvision.github.io/WorldFoundry) | WorldFoundry v0.2.0 新增基准，语言-动作推理一致性评测 | 语言指令遵循/动作执行准确性 | — | VLA 评测 |

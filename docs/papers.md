@@ -1995,7 +1995,7 @@
 | 2026 | **World2VLM** | arXiv:2604.24039 | 将世界模型的空间想象力蒸馏到 VLM 中，正向/反向空间推理训练，消除推理时昂贵生成开销 | [📄 arXiv](https://arxiv.org/abs/2604.24039) |
 | 2026 | **RynnWorld-4D** | 阿里达摩院/港中文/湖畔实验室 | 首个 RGB-DF 4D 具身世界模型，同步生成 RGB 视频+深度图+光流，消除 2D→3D 表征鸿沟，2026.7.17 发布 | [📄 arXiv](https://arxiv.org/abs/2607.06559) |
 | 2026 | **LingBot-VA** | 蚂蚁灵波 (RSS 2026) | 因果视频-动作世界模型，自回归扩散框架统一视觉动力学预测与动作推断，双流 MoT 架构+异步执行 | [📄 RSS 2026](https://github.com/Robbyant/lingbot-va) |
-| 2026 | **GE-Sim 2.0** | 智元机器人 | WorldArena Track-1 榜首 (68.26 分)，闭环世界模拟器设计，Action Following 48.23 | [📄 WorldArena](https://worldarena.ai) |
+| 2026 | **GE-Sim 2.0** | 智元机器人 | WorldArena Track-1 榜首 (68.26 分)，闭环世界模拟器设计，Action Following 48.23 | [📄 arXiv](https://arxiv.org/abs/2605.27491) [🌐 项目](https://ge-sim-v2.github.io/) [🐙 Repo](https://github.com/AgibotTech/GE-Sim-V2) |
 | 2026 | **VerseCrafter** | 复旦/腾讯 PCG ARC Lab (CVPR 2026) | 4D 几何可控视频世界模型，3DGS 表征实现精确相机轨迹与多物体运动控制 | [📄 CVPR 2026](https://arxiv.org/abs/2603.16539) |
 | 2026 | **NeoVerse** | 中科院自动化所 NLPR/高德地图 (CVPR 2026) | 野外单目视频生成 4D 世界，无需多视角训练数据，ICRA 2026 世界模型赛道冠军 | [📄 CVPR 2026](https://arxiv.org/abs/2603.12718) |
 | 2026 | **VideoWorld 2** | CVPR 2026 | 解开视觉与动作纠缠，AI 直接从视频学习可迁移操作技能，无需动作标签 | [📄 CVPR 2026](https://arxiv.org/abs/2603.10472) |
@@ -2004,6 +2004,9 @@
 | 2026 | **From WMs to WAMs: A Concise Tutorial** | arXiv:2607.00836 | 首个从世界模型到世界动作模型的系统教程，面向机器人领域的 WAM 入门指南 | [📄 arXiv](https://arxiv.org/abs/2607.00836) |
 | 2026 | **Pano2World** | arXiv:2607.00832 | 端到端 3D 生成，统一多视角序列构建全景世界模型 | [📄 arXiv](https://arxiv.org/abs/2607.00832) |
 | 2026 | **Cosmos-Predict 2.5** | NVIDIA | 统一 Text2World/Image2World/Video2World 生成，2B/14B 双规模开源，RL 后训练优化 | [📄 arXiv](https://arxiv.org/abs/2511.00062) |
+| 2026 | **ABot-PhysWorld** | 高德/阿里巴巴 AMAP CV Lab | 14B 扩散 Transformer 世界模型，物理对齐交互式世界基础模型，WorldArena 榜单登顶（2026.04） | [📄 arXiv](https://arxiv.org/abs/2603.23376) [🐙 Repo](https://github.com/amap-cvlab/ABot-PhysWorld) |
+| 2026 | **PhysBrain 1.0** | 深度机智 (DeepCybo) / 港科大(广州) / 中关村学院 | TwinBrainVLA 双脑融合 + LangForce 训练策略，人本位数据连接 VLM 与物理智能，WorldArena 榜首（2026.05） | [📄 arXiv](https://arxiv.org/abs/2512.16793) [🌐 项目](https://phys-brain.github.io/) [🐙 Repo](https://github.com/Phys-Brain/PhysBrain-VLA) |
+| 2026 | **Pelican-Unify 1.0** | 北京人形 (X-Humanoid) | 具身大一统模型，WorldArena 66.03 分登顶，3D Accuracy 98.12，7B-72B 参数系列 | [📄 arXiv](https://arxiv.org/abs/2605.15153) [🌐 项目](https://pelican-vl.github.io/) [🐙 Repo](https://github.com/Open-X-Humanoid/pelican-vl) [🤗 HF](https://huggingface.co/X-Humanoid/Pelican1.0-VL-72B) |
 
 ### 世界模型综述专区
 

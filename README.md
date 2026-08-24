@@ -6,8 +6,8 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![GitHub Stars](https://img.shields.io/github/stars/isLinXu/Awesome-Agent-World-Model?style=social)](https://github.com/isLinXu/Awesome-Agent-World-Model)
-[![Last Update](https://img.shields.io/badge/Last%20Update-2026-08-10-brightgreen)]()
-[![Version](https://img.shields.io/badge/Version-8.5-blue)]()
+[![Last Update](https://img.shields.io/badge/Last%20Update-2026-08-24-brightgreen)]()
+[![Version](https://img.shields.io/badge/Version-8.6-blue)]()
 [![Coverage](https://img.shields.io/badge/Coverage-99%25%2B-brightgreen)]()
 [![Entries](https://img.shields.io/badge/Entries-2257%2B-orange)]()
 
@@ -27,6 +27,13 @@
 - **Koopman Dreamer**：谱约束潜在动力学稳定世界模型想象，推导多步 rollout 误差界
 - **8月 arXiv 新论文追踪**：Bar-JEPA (图表值提取)、音乐共创 Agent (分层自监督 WAM)、多模态临床 AI 模态失效分析、去中心化 JEPA 群体状态预测
 - **评测基准扩充**：TriWorldBench (五校联合三视角评测)、NAVSIM v1/v2 (比亚迪 HyWorldVLA 90.59 登顶)、DailyOmni (智元 WITA-Omni 85.21 登顶)、WBench Navi分榜 (HiDream-O1-World 80.9 登顶)、WorldArena 2.0 (小米 Robotics-U0 73.64 登顶)
+
+**v8.6 核心改进**（WorldArena 榜单模型资源系统整理）：
+
+- **WorldArena 榜单模型资源汇总**：新增独立文档 [docs/worldarena-leaderboard.md](docs/worldarena-leaderboard.md)，系统整理 WorldArena 榜单 10 个登顶模型的论文、项目主页、代码仓库与模型权重链接
+- **榜单模型覆盖**：Xiaomi-Robotics-U0 (73.64) / PAIWorld (72.31) / GE-Sim 2.0 (68.26) / Pelican-Unify 1.0 (66.03) / GigaWorld-1 (>60) / PhysBrain 1.0 / ABot-PhysWorld / WorldScape 0.2 / FlowWAM / Ctrl-World
+- **新增论文 3 篇**：ABot-PhysWorld (物理对齐交互式世界基础模型) / PhysBrain 1.0 (TwinBrainVLA 双脑融合) / Pelican-Unify 1.0 (具身大一统模型)
+- **GE-Sim 2.0 条目增强**：补充 arXiv 论文链接、GitHub 仓库与项目主页
 
 **v8.4 核心改进**（世界模型综述高亮）：
 
@@ -563,10 +570,11 @@ LeCun 团队从 2022 年至今的 JEPA 演进分四阶段：
 | **🏭 业界应用** | 自动驾驶、机器人、游戏 VR、工业应用、科学应用、初创独角兽、学习资源、社区生态 | [docs/industry.md](docs/industry.md) |
 | **📈 技术深度** | 技术全景对比、发展时间线、关键挑战与开放问题、快速入门指南、架构图示 | [docs/technical.md](docs/technical.md) |
 | **📝 附录** | BibTeX 引用导出、全面性评估报告、贡献指南、术语表、参考文献、版本演进历程 | [docs/references.md](docs/references.md) |
+| **🏆 WorldArena 榜单** | WorldArena 榜单登顶模型资源汇总（论文/主页/代码/权重） | [docs/worldarena-leaderboard.md](docs/worldarena-leaderboard.md) |
 
 ---
 
-> **最后更新**：2026-09-12（v8.4 世界模型综述高亮）
+> **最后更新**：2026-08-24（v8.6 WorldArena 榜单模型资源系统整理）
 > **许可证**：[Apache 2.0](LICENSE)
 > **引用格式**：`isLinXu/Awesome-Agent-World-Model v8.4 (2026)`
 
