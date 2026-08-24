@@ -104,6 +104,11 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **DECOWAM: Decoupled Whole-Body World-Action Model for Legged Mobile Manipulation** | Siyuan Ma, Boshi Zhang et al. | Mobile manipulation requires a robot to predict how locomotion and arm motion... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.20114) `🤗 HF` |
+| 2026 | **VGI-BENCH: Probing Visual Intelligence in Video Generation Models** | Xuan He, Cong Wei et al. | Recent studies suggest that video generation models can exhibit certain forms of... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.19583) `🤗 HF` |
+| 2026 | **EATR-Stereo: Embodiment-Aware Token Routing of Paired Stereo Evidence for Humanoid Vision-Language-Action Control** | Songwei Wu, Rui Zhao et al. | Long-horizon humanoid vision--language--action (VLA) control with head-mounted... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.17453) `🤗 HF` |
+| 2026 | **RoboEdit: Turning Human Manipulation Videos into Scalable Robot Experience** | Yaowei Guo, Zeng Tao et al. | Collecting robot hand-object interaction data is costly and embodiment-specific... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.18948) `🤗 HF` |
+| 2026 | **Vision-Language Models for Egocentric Video: From Hand-Object Interaction to Embodied AI** | Mohammad Zamani, Fatemeh Ziaeetabar | Egocentric video captures activities from the wearer's perspective... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.18671) `🤗 HF` |
 | 2026 | **WithEveryone: Unified Planning and Identity Grounding for Group Image Generation** | Hengyuan Xu, Qixun Wang et al. | Identity-preserving image generation becomes increasingly unreliable when a scene... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.20336) ⬆39 [🐙 Repo](https://github.com/doby-xu/WithEveryone) `🤗 HF + PwC` |
 | 2026 | **AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement** | Yizhe Chi, Wenyi Li et al. | Recursive self-improvement (RSI) asks whether an AI system can improve the process... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.20318) ⬆1 `🤗 HF` |
 | 2026 | **ID-VTG: Image-Disambiguated Video Temporal Grounding** | Minghang Zheng, Jingli Wei et al. | Video Temporal Grounding (VTG) faces significant challenges when natural language... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.20127) `🤗 HF` |
