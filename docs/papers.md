@@ -6,6 +6,7 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **LeVJEPA: Efficient & Scalable Video Pretraining without the Heuristics** | Lukas Kuhn, Lucas Maes et al. | Video carries the temporal structure of the physical world... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.27395) `🤗 HF` |
 | 2026 | **JEPA-x: Cross-Predictive Physics Grounding for Forecastable Latent Dynamics** | Kehan Wen, Ziming Li et al. | Latent world models plan by predicting how candidate actions advance learned latent... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2608.24044) `arXiv` |
 | 2026 | **DreamLedger: Execution-Settled Credit Files for World-Model Imagination in Robot Decision Loops** | Xianyao Li, Ruitong Tian et al. | Robots are beginning to act on world-model predictions... | [📄 arXiv:CS.RO](https://arxiv.org/abs/2608.23863) `arXiv` |
 | 2026 | **Correcting a learned physical invariant improves world-model rollouts** | Richard Bao | World models can predict video without learning dynamics that they reliably... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.23526) `arXiv` |
@@ -115,6 +116,16 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **Thomson: Continual Learning of Frontier Models for SovereignAI** | Shengzhuang Chen, Jerrod Parker et al. | The development of frontier models is commonly perceived to be the exclusive remit... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.27147) `🤗 HF` |
+| 2026 | **ASIL: Replacing Screenshot-and-Click with Structured State and Semantic Actions** | Rui Xie, Lu Chen | Powerful code agents can execute scripts, call tools, and manage files... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.26991) `🤗 HF` |
+| 2026 | **CGS-SLAM: Collaborative Gaussian Splatting based SLAM for Multi-Agent Reconstruction** | Jean-Daniel de Ambrogi, Aladine Chetouani et al. | Recent advances in SLAM have leveraged 3DGS for photorealistic reconstruction and... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.26868) `🤗 HF` |
+| 2026 | **StreamAV-Bench: A Comprehensive Benchmark for Streaming Audio-Video Generation** | Kaiqi Liu, Haoxuan Zeng et al. | Recent advancements in generative models are pushing video generation toward... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.26336) ⬆1 `🤗 HF` |
+| 2026 | **MyoMechanix: Biomechanically-Grounded Compositional Skilled Activity Understanding and Coaching** | Hao Yin, Paritosh Parmar et al. | Existing action quality assessment (AQA) datasets and methods rely primarily on... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.26094) `🤗 HF` |
+| 2026 | **One Policy, Many Embodiments: Unified Camera-Centric Action Geometry Pre-training for Heterogeneous Embodied Manipulation** | Xiaomi Embodied Intelligence Team, University of Macau et al. | Scaling generalist vision-language-action (VLA) policies is severely bottlenecked by... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.26058) `🤗 HF` |
+| 2026 | **One Symptom, Three Levers: A Critical Review of On-Policy Self-Distillation** | Justin Robert, Raheel Qader | On-policy distillation trains a language model on its own generations while a... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.25936) `🤗 HF` |
+| 2026 | **Code World Model: Coding Agent as World Brain** | Yiwen Chen, Guosheng Lin et al. | World models aim to simulate how complex environments evolve under actions and... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.25927) ⬆22 `🤗 HF` |
+| 2026 | **TacForcing: Streaming Action Generation with Execution-Time Tactile Feedback** | Jianbo Zhou, Boyuan Zhao et al. | Contact-rich manipulation requires adapting to contact states that can evolve... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.25798) ⬆5 `🤗 HF` |
+| 2026 | **GameWAM: A World Action Model for Video Games** | Yuncheng Guo, Zhanqiu Zhang et al. | Modern video games combine first-person perception, rapid visual changes... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.26200) ⬆38 [🐙 Repo](https://github.com/yunncheng/GameWAM) `PwC` |
 | 2026 | **UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City** | Tianjie Ju, Zheng Wu et al. | Multimodal large language models (MLLMs) can interpret a street view... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.27456) ⬆36 [🐙 Repo](https://github.com/UrbanGround/UrbanGround) `🤗 HF` |
 | 2026 | **WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution** | Liyan Tang, Cyrus Rashtchian et al. | Agent skills package specialized knowledge and workflows into reusable resources... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.27454) ⬆1 `🤗 HF` |
 | 2026 | **TTPO: Test-Time Policy Optimization** | Aozhe Wang, Zhengxi Lu et al. | Recent prominent post-training methods... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.27448) ⬆49 [🐙 Repo](https://github.com/ZJU-REAL/TTPO) `🤗 HF` |
@@ -1934,6 +1945,7 @@
 
 | 论文 | 年份 | 核心贡献 | 发表 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators** | Kechen Liu, Ola Shorinwa | State-of-the-art action-conditioned video models are typically restricted to a... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.27406) `🤗 HF` |
 | 2026 | **ResiliFlow: An Open Transport World Model for Infrastructure Perception and Disaster Resilience** | Junxiang Xu, Vinayak Dixit et al. | Transport resilience work is often split across separate data preparation scripts,... | [📄 arXiv:MATH.OC](https://arxiv.org/abs/2608.20709) `arXiv` |
 | **Drifting Models** | 2026 | 将分布演化"锁定"在训练阶段，推理仅需 1-NFE；ImageNet 256×256 FID 1.54 | arXiv | [📄 2602.04770](https://arxiv.org/abs/2602.04770) ・ [🌐 项目](https://lambertae.github.io/projects/drifting) |
 | **Vision Banana** | 2026 | 图像生成器即通用视觉学习器，生成式预训练统一理解与生成 | arXiv | [📄 2604.20329](https://arxiv.org/abs/2604.20329) ・ [🌐 项目](https://vision-banana.github.io) |
