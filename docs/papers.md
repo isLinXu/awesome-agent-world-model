@@ -116,6 +116,8 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **Computationally Efficient Pathology Segmentation using Knowledge Distillation from Foundation Models** | Jiaqi Lv, Yijie Zhu et al. | Automatic tissue segmentation is essential for large-scale analysis of... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2609.03947) `🤗 HF` |
+| 2026 | **One Demonstration, Many Objects: Generalizing Manipulation via Local Contact Geometry** | Satvik Sharma, Samrat Sahoo et al. | Dexterous manipulation with multi-fingered robot hands promises human-level... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2609.01938) `🤗 HF` |
 | 2026 | **Compile by Training: Turning Natural-Language Specifications into Local Neural Functions** | Yuntian Deng, Pengyu Nie et al. | Many recurring text functions are easy to describe but difficult to implement with... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2609.04199) ⬆265 [🐙 Repo](https://github.com/programasweights/compile-by-training) `🤗 HF` |
 | 2026 | **Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States** | Kang Liao, Yihang Luo et al. | We propose Puffin-World... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2609.04196) ⬆65 `🤗 HF` |
 | 2026 | **DRACO: Fine-Grained Credit Assignment with Dynamic Rubrics for Long-Horizon Agent Training** | Shubham Gandhi, Saurabh Goyal et al. | Reinforcement Learning from Verifiable Rewards works well when a task has a... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2609.04094) ⬆23 [🐙 Repo](https://github.com/IBM/draco) `🤗 HF` |
