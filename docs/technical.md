@@ -28,6 +28,11 @@
 | **NeuroVLA** | 类脑 VLA (皮层-小脑-脊髓) | 类生物运动 | 视触觉数据 | 20ms 反射，0.4W 脊髓层，抖动 -75% | 智平方 2026 |
 | **LingBot-VA** | 因果视频-动作 WM | 机器人控制 | LIBERO/RoboTwin | 自回归扩散统一视觉预测与动作推断 | RSS 2026 |
 | **GE-Sim 2.0** | 闭环世界模拟器 | 机器人仿真 | WorldArena | Track-1 榜首 68.26，Action Following 48.23 | WorldArena 2026 |
+| **GenCeption** | 视频生成→前馈感知 | 单步 DiT 前向 | WAN 2.1 视频模型 | 训练数据仅 SOTA 1/7~1/500，涌现 sim-to-real | **ECCV 2026** |
+| **RayRoPE** | 投影射线位置编码 | 多视角 3D 表征 | 3D 场景理解 | Apple，解决多视角注意力视角一致性 | **ECCV 2026** |
+| **UniWorld** | 统一感知-推理-世界建模 | 跨模态统一 | 感知+推理+预测 | 打破感知-推理-预测壁垒 | **ECCV 2026** |
+| **DreamWorld** | 显式 3D 几何视频扩散 | 几何约束世界模型 | 视频生成 | HiDream.ai，视角变化几何一致性 | **ECCV 2026** |
+| **VLA-JEPA** | 潜空间世界模型+VLA | 预测式决策 | VLA 增强 | 机器人从即时反应转向预测式决策 | **ECCV 2026** |
 | **UnifoLM-WMA** | 世界模型-动作架构 | 多形态机器人 | 跨本体数据 | 宇树科技开源跨形态世界模型-动作统一架构 | GitHub 2026 |
 | **Vision Banana** | 生成式预训练统一 | RGB 图像接口 | Nano Banana Pro | 零样本超越 SAM3/DepthAnything3，分割/深度/法线 SOTA | arXiv:2604.20329 |
 | **GenCeption** | 视频生成→前馈感知 | 单步 DiT 前向 | WAN 2.1 视频模型 | 训练数据仅 SOTA 1/7~1/500，涌现 sim-to-real | ECCV 2026 |
@@ -485,6 +490,56 @@ graph LR
 ```
 
 ---
+
+### ECCV 2026 世界模型技术前沿
+
+> 2026 年 9 月 8–12 日，瑞典马尔默。10,473 篇投稿，2,883 篇接收（接收率 27.5%），86 个 Workshop（历史新高）。世界模型从"视觉生成"正式跃升为计算机视觉核心议题。
+
+#### 四大旗舰 Workshop
+
+| Workshop | 时间 | 主办/讲者 | 核心命题 | 技术要点 |
+|:---------|:----:|:----------|:---------|:---------|
+| **How to Build Effective World Models for Embodied AI** | 9/9 全天 | 梁晓丹（中山大学）、杨高（特邀） | 物理具身基础模型的表征、架构及真机评测 | eWAM（VLA 与世界模型原生融合）、AtomicVLA（原子动作分解）、PhyAgentOS（标准化框架）、ManipArena（真机评测基准） |
+| **3D in the Era of World Models** | 9/9 全天 | **Apple** 主讲 | 多视角 3D 表征与世界模型的交叉 | **RayRoPE**（Projective Ray Positional Encoding）：投影射线位置编码解决多视角注意力中的视角一致性问题 |
+| **UniWorld: Universal Representations for Perception, Reasoning, and World Modeling** | 9/9 | Chen Tang（CUHK MMLab） | 统一感知-推理-世界建模框架 | 统一表征空间，打破感知→推理→预测之间的壁垒，文本指令驱动多任务切换 |
+| **Safe World Models for Trustworthy Embodied AI** | 9/8 半天 | 帝国理工/CMU/斯坦福/清华/港大/牛津/UC Berkeley/NVIDIA/微软 | 世界模型的安全可靠性 | 三大议题：① 预测可靠性 ② 安全关键评估与生成 ③ 动作世界模型与可执行智能；Sergey Levine & Jiajun Wu 特邀报告 |
+
+#### ECCV 2026 世界模型关键论文
+
+| 论文 | 机构 | 核心创新 | 链接 |
+|:-----|:-----|:---------|:-----|
+| **GenCeption** | Google DeepMind + MIT (何恺明) | 视频生成扩散模型→单步前馈通用视觉感知器；文本指令驱动深度/分割/位姿/3D 关键点；训练数据仅 SOTA 1/7~1/500；涌现 sim-to-real | [📄 2607.09024](https://arxiv.org/abs/2607.09024) [🌐 项目](https://genception.github.io) |
+| **DriveVA** | 小米/特温特大学 | DiT 联合解码视频与动作序列；NAVSIM 90.9 PDMS；nuScenes 零样本 L2 降 78.9% | [📄 2604.04198](https://arxiv.org/abs/2604.04198) |
+| **DreamWorld** | HiDream.ai | 显式 3D 几何约束视频扩散；视角变化下几何一致性 | [📄 2605.00700](https://arxiv.org/abs/2605.00700) |
+| **OVOW** | 清华/中科大/SparcAI | 单目视频重建可进入物理引擎的 4D Mesh 世界 | [📄 2606.31388](https://arxiv.org/abs/2606.31388) |
+| **PhysMani** | 香港理工大学 | 面向高速动态物体操作的 3D 世界模型；物理一致、3D 几何准确、延迟可控 | [📄 2607.01938](https://arxiv.org/abs/2607.01938) |
+| **VLA-JEPA** | 多机构 | VLA 中加入潜空间世界模型；机器人从即时反应转向预测式决策 | [📄 2605.10000](https://arxiv.org/abs/2605.10000) |
+
+#### 三大技术趋势（ECCV 2026 观察）
+
+1. **3D Gaussian Splatting 基座化**：ECCV 首场海报超 80 篇 3DGS 相关论文，3D 高斯作为世界模型的"通用物理 token"（可微、紧凑、位置/朝向/尺度/颜色/透明度可学习）。
+2. **视频生成→通用视觉感知器（GenCeption 范式）**：扩散 Transformer 不再只是视频生成工具，而是深度/分割/位姿/3D 关键点的统一前馈感知器。
+3. **VLA + 世界模型融合（eWAM 路线）**：世界模型潜空间预测作为 VLA 内部监督信号，机器人从"反应式"转向"预测式"决策。
+
+#### 大会 Keynote 中的世界模型
+
+| Keynote 讲者 | 机构 | 主题 | 世界模型相关内容 |
+|:-------------|:-----|:-----|:---------------|
+| **Kristen Grauman** | UT Austin / Meta FAIR | 视频与具身感知 | 视频表征学习在具身智能中的应用 |
+| **Yann LeCun** | AMI Labs / 图灵奖得主 | **"World Models: Enabling the Next AI Revolution"** | JEPA 架构的完整愿景：世界模型是通往 AGI 的必经之路 |
+| **Jamie Shotton** | Wayve 首席科学家 | 自动驾驶世界模型 | 生成式世界模型在端到端自动驾驶中的落地 |
+
+#### 新兴评测基准（ECCV Workshop 发布）
+
+| 基准 | 主办 | 评估维度 | 状态 |
+|:-----|:-----|:---------|:-----|
+| **4DWorldBench** | 多机构 | 物理规律符合度 + 4D 时空一致性 | 发布 |
+| **CaliBench** | 安全 Workshop | 预测可靠性校准 | 发布 |
+| **PlayWorld** | 具身 Workshop | 任务支持能力 + 交互闭环 | 发布 |
+| **SafeWorldBench** | 帝国理工/CMU/斯坦福等 | 安全关键场景评测 | 发布 |
+
+*来源：ECCV 2026 官方议程、TechTimes 报道（2026-09-05）、Google Research 页面、arXiv 论文*
+
 ---
 
 > [⬅ 返回主目录](../README.md)  |  [📖 文档导航](../README.md#-文档导航)

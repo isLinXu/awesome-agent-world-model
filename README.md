@@ -6,8 +6,8 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![GitHub Stars](https://img.shields.io/github/stars/isLinXu/Awesome-Agent-World-Model?style=social)](https://github.com/isLinXu/Awesome-Agent-World-Model)
-[![Last Update](https://img.shields.io/badge/Last%20Update-2026-08-24-brightgreen)]()
-[![Version](https://img.shields.io/badge/Version-8.6-blue)]()
+[![Last Update](https://img.shields.io/badge/Last%20Update-2026-09-11-brightgreen)]()
+[![Version](https://img.shields.io/badge/Version-8.7-blue)]()
 [![Coverage](https://img.shields.io/badge/Coverage-99%25%2B-brightgreen)]()
 [![Entries](https://img.shields.io/badge/Entries-2257%2B-orange)]()
 
@@ -27,6 +27,14 @@
 - **Koopman Dreamer**：谱约束潜在动力学稳定世界模型想象，推导多步 rollout 误差界
 - **8月 arXiv 新论文追踪**：Bar-JEPA (图表值提取)、音乐共创 Agent (分层自监督 WAM)、多模态临床 AI 模态失效分析、去中心化 JEPA 群体状态预测
 - **评测基准扩充**：TriWorldBench (五校联合三视角评测)、NAVSIM v1/v2 (比亚迪 HyWorldVLA 90.59 登顶)、DailyOmni (智元 WITA-Omni 85.21 登顶)、WBench Navi分榜 (HiDream-O1-World 80.9 登顶)、WorldArena 2.0 (小米 Robotics-U0 73.64 登顶)
+
+**v8.7 核心改进**（ECCV 2026 世界模型前沿追踪）：
+
+- **ECCV 2026 四大旗舰 Workshop**：How to Build Effective World Models for Embodied AI（全天）/ 3D in the Era of World Models（Apple RayRoPE）/ UniWorld（统一感知-推理-世界建模）/ Safe World Models（安全可靠性）
+- **ECCV 2026 关键论文 6 篇**：GenCeption（何恺明/DeepMind，视频生成→通用视觉感知器）、DriveVA（小米，DiT 联合解码自动驾驶）、DreamWorld（HiDream.ai，显式 3D 几何视频扩散）、OVOW（清华/中科大，单目视频→4D Mesh 物理世界）、PhysMani（港理工，高速动态操作 3D 世界模型）、VLA-JEPA（VLA+潜空间世界模型融合）
+- **技术趋势洞察**：3D Gaussian Splatting 基座化（80+ 篇海报）、视频生成→通用感知器（GenCeption 范式）、VLA + 世界模型融合（eWAM 路线）
+- **新增评测基准**：4DWorldBench / CaliBench / PlayWorld / SafeWorldBench（ECC 2026 Workshop 发布）
+- **大会 Keynote**：Yann LeCun "World Models: Enabling the Next AI Revolution" 完整阐述 JEPA 架构愿景
 
 **v8.6 核心改进**（WorldArena 榜单模型资源系统整理）：
 

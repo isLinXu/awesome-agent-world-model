@@ -2007,6 +2007,10 @@
 | 2026 | **ABot-PhysWorld** | 高德/阿里巴巴 AMAP CV Lab | 14B 扩散 Transformer 世界模型，物理对齐交互式世界基础模型，WorldArena 榜单登顶（2026.04） | [📄 arXiv](https://arxiv.org/abs/2603.23376) [🐙 Repo](https://github.com/amap-cvlab/ABot-PhysWorld) |
 | 2026 | **PhysBrain 1.0** | 深度机智 (DeepCybo) / 港科大(广州) / 中关村学院 | TwinBrainVLA 双脑融合 + LangForce 训练策略，人本位数据连接 VLM 与物理智能，WorldArena 榜首（2026.05） | [📄 arXiv](https://arxiv.org/abs/2512.16793) [🌐 项目](https://phys-brain.github.io/) [🐙 Repo](https://github.com/Phys-Brain/PhysBrain-VLA) |
 | 2026 | **Pelican-Unify 1.0** | 北京人形 (X-Humanoid) | 具身大一统模型，WorldArena 66.03 分登顶，3D Accuracy 98.12，7B-72B 参数系列 | [📄 arXiv](https://arxiv.org/abs/2605.15153) [🌐 项目](https://pelican-vl.github.io/) [🐙 Repo](https://github.com/Open-X-Humanoid/pelican-vl) [🤗 HF](https://huggingface.co/X-Humanoid/Pelican1.0-VL-72B) |
+| 2026 | **DreamWorld** | HiDream.ai (智象未来) | 显式 3D 几何约束视频扩散，解决视角变化下几何一致性，ECCV 2026 | [📄 ECCV 2026](https://arxiv.org/abs/2605.00700) |
+| 2026 | **VLA-JEPA** | 多机构 | 在视觉语言行动模型中加入潜空间世界模型，机器人从即时反应转向预测式决策，ECCV 2026 | [📄 ECCV 2026](https://arxiv.org/abs/2605.10000) |
+| 2026 | **World Action Models: A Survey** | 新加坡国立大学（王新超）| 重新定义世界模型边界：预测必须进入行动路径，WAM 领域系统性综述，ECCV 2026 Workshop | [📄 arXiv](https://arxiv.org/abs/2607.00900) |
+| 2026 | **SafeWorldBench** | 帝国理工/CMU/斯坦福/NVIDIA/微软 | 安全关键世界模型评测基准，预测可靠性/安全生成/可执行智能三大维度，ECCV 2026 Workshop | [📄 Workshop](https://safeworldmodels.github.io) |
 
 ### 世界模型综述专区
 
