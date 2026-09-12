@@ -542,4 +542,69 @@ graph LR
 
 ---
 
+### 学术课程资源
+
+| 课程 | 机构 | 学期 | 主讲 | 核心模块 | 资源 |
+|:-----|:-----|:-----|:-----|:---------|:-----|
+| **CIS 6280: World Models** | **University of Pennsylvania** | Fall 2026 | **Jiatao Gu** | 世界模型概论→环境仿真→状态空间模型→表征学习→生成模型基础→序列生成世界模型→MBRL/规划/控制→视频世界模型→空间世界模型（3D/4D）→神经物理→机器人学习→LLM 作为世界模型→推理模型→数字 Agent→评测 | [📚 官网](https://www.cis.upenn.edu/~cis6280/) |
+
+> **课程亮点**：CIS 6280 是截至目前世界模型方向最系统的研究生课程之一。23 讲覆盖从概率建模基础到前沿生成模型（Diffusion / Flow Matching / Normalizing Flows）的完整链路，并专门设置**空间世界模型**（3D/4D 表征）、**神经物理**（粒子/网格/流体/形变体）和**机器人学习中的 VLA 与 WAM**三个前沿专题。课程资源页已整理 6 篇奠基性文章、6 套 tutorial/collection、6 场关键演讲与 8 个可复现系统（含 DreamerV3、V-JEPA 2、Genie、Marble、GAIA-4、AIDO、DayDreamer、DINO-WM）。
+
+#### 课程大纲速览
+
+| 编号 | 主题 | 关键内容 |
+|:---:|:-----|:---------|
+| 01 | World Models: An Overview | 观察、状态、转移、记忆、动作、预测、仿真、规划、推理 |
+| 02 | History, Foundations, Probabilistic Formulation | 轨迹分布、潜状态、部分可观测性、单步 vs rollout 目标 |
+| 03–04 | Environments & State-Space Models | Gymnasium、滤波/平滑、信念状态推断、Kalman Filter |
+| 05–06 | Representation Learning I & II | 重建/掩码/自回归/对比目标、JEPA、联合嵌入预测 |
+| 07–10 | Generative Model Foundations | VAE/GAN → 自回归模型 → Diffusion/Flow Matching → Normalizing Flows |
+| 11 | Sequential Generative World Models | 循环/随机状态、先验-后验对齐、多步训练、开环生成 |
+| 12 | MBRL, Planning, and Control | 想象 rollouts、模型偏差、MPC、CEM、轨迹优化 |
+| 13–14 | Video World Models | 像素/Token/潜状态、因果 rollout、动作条件、长上下文一致性 |
+| 15–16 | Spatial World Models | 坐标系、深度、点云、占据、NeRF、Gaussian Splatting、场景流、4D 动态 |
+| 17 | Neural Physics | 粒子/网格/流体/形变体学习仿真器、图网络、神经算子 |
+| 18–19 | Robot Learning | Sim-to-Real、域随机化、VLA、World-Action Models |
+| 20 | LLMs as World Models | 语言/多模态上下文作为观察、信念状态、动作、反馈、记忆 |
+| 21 | Reasoning Models | 序贯审议、分支搜索、验证、循环深度、自适应计算 |
+| 22 | Digital Agents | 游戏/GUI/软件/多智能体系统中的世界预测、推理、工具与反馈 |
+| 23 | Evaluating World Models | 效用、可控性、校准、OOD 行为、干预、漂移、延迟与失败 |
+
+#### 课程资源精选
+
+**📖 Essays & Perspectives**
+- [World Models](https://worldmodels.github.io/) — Ha & Schmidhuber（奠基性工作）
+- [A Path Towards Autonomous Machine Intelligence](https://openreview.net/pdf?id=BZ5a1r-kVsf) — Yann LeCun（JEPA 架构愿景）
+- [From Words to Worlds](https://www.worldlabs.ai/blog) — Fei-Fei Li（空间智能）
+- [A Functional Taxonomy of World Models](https://www.worldlabs.ai/blog) — World Labs（功能分类学）
+- [Agents That Imagine and Plan](https://deepmind.google/research/highlighted-research/imagination-augmented-agents/) — Google DeepMind（想象增强 Agent）
+- [The Quest for a Common Model of the Intelligent Decision Maker](https://www.cs.ualberta.ca/~sutton/talks/AlbertaPlan.pdf) — Richard Sutton（Alberta Plan）
+
+**🎓 Tutorials & Collections**
+- [From Video Generation to World Model (CVPR 2025)](https://video2world.github.io/)
+- [World Modeling Workshop (Mila 2026)](https://mila.quebec/en/event/workshop-world-models)
+- [Awesome World Models](https://github.com/ggleizer/awesome-world-models)
+- [From World Models to World Action Models](https://arxiv.org/abs/2607.00836)
+- [World Models (CMU Generative AI)](https://cmu-generative-ai.github.io/)
+- [The World of World Modeling (Stanford CS234)](https://web.stanford.edu/class/cs234/)
+
+**🎤 Talks & Seminars**
+- Fireside Chat: Ilya Sutskever & Jensen Huang (NVIDIA GTC 2023)
+- The Sensorimotor Road to AI (UC Berkeley 2023)
+- With Spatial Intelligence, AI Will Understand the Real World (TED 2024, Fei-Fei Li)
+- Fireside Chat with Yann LeCun (RAISE 2026)
+- A Path Towards Autonomous Machine Intelligence (AFOSR 2024 & IHES 2023)
+
+**🔧 Systems & Demos**
+- [DreamerV3](https://github.com/danijar/dreamerv3) — Hafner et al.
+- [V-JEPA 2](https://github.com/facebookresearch/vjepa) — Meta AI
+- [Genie](https://deepmind.google/research/highlighted-research/genie/) — Google DeepMind
+- [Marble](https://www.worldlabs.ai/blog) — World Labs
+- [GAIA-4](https://wayve.ai/science/gaia) — Wayve
+- [AIDO Cell Simulator](https://www.genbio.ai/) — GenBio AI
+- [DayDreamer](https://github.com/imeraj/daydreamer) — Wu et al.
+- [DINO-WM](https://github.com/zjukg/DINO-WM) — Zhou et al. (ICML 2025)
+
+---
+
 > [⬅ 返回主目录](../README.md)  |  [📖 文档导航](../README.md#-文档导航)
