@@ -6,6 +6,8 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **DUET-DINO: Simultaneous Cross-View World Modeling for Latent Planning in Robot Manipulation** | Nisarga Nilavadi, Ralf Römer et al. | Action-conditioned latent world models predict future visual representations... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2609.10506) `🤗 HF` |
+| 2026 | **Semigroup-JEPA: Latent Dynamics Consistency for Zero-Shot Physics Generalization** | Andy Zeyi Liu, Haoran Sun et al. | Joint-Embedding Predictive Architecture (JEPA) world models learn a compact latent... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2609.10464) `🤗 HF` |
 | 2026 | **LeVJEPA: Efficient & Scalable Video Pretraining without the Heuristics** | Lukas Kuhn, Lucas Maes et al. | Video carries the temporal structure of the physical world... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2608.27395) `🤗 HF` |
 | 2026 | **JEPA-x: Cross-Predictive Physics Grounding for Forecastable Latent Dynamics** | Kehan Wen, Ziming Li et al. | Latent world models plan by predicting how candidate actions advance learned latent... | [📄 arXiv:CS.LG](https://arxiv.org/abs/2608.24044) `arXiv` |
 | 2026 | **DreamLedger: Execution-Settled Credit Files for World-Model Imagination in Robot Decision Loops** | Xianyao Li, Ruitong Tian et al. | Robots are beginning to act on world-model predictions... | [📄 arXiv:CS.RO](https://arxiv.org/abs/2608.23863) `arXiv` |
@@ -116,6 +118,11 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **Φ-Bench: Can Large Language Models Engineer the Infrastructure That Powers Them?** | Leilei Ding, Shumin Wang et al. | Large language models (LLMs) have demonstrated remarkable capabilities in reasoning... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2609.10226) ⬆14 [🐙 Repo](https://github.com/one2piece2hello/faibench_Frontier_InfraBench) `🤗 HF` |
+| 2026 | **Assembling Two Parts in One Hand** | Liuao Pei, Tianyue Wu et al. | A hallmark of human dexterity is the cooperative use of fingers... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2609.10137) `🤗 HF` |
+| 2026 | **AuK Technical Report: An Open-Source Foundational Model for Speech Generation and Editing** | Ziyang Ma, Zhikang Niu et al. | We introduce AuK... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2609.08936) ⬆214 [🐙 Repo](https://github.com/Tencent-Hunyuan/AuK) `PwC` |
+| 2026 | **Omni Interaction Agent Technical Report** | Orantqing, Shengpeng Ji et al. | In this work, we present Gander... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2609.08977) ⬆130 [🐙 Repo](https://github.com/Omni-Interaction-Gander/Omni-Interaction-Agent) `PwC` |
+| 2026 | **Mask Forcing: Improving Autoregressive Video Diffusion Distillation via Dual-Noise Masking Rollout** | Zhuoran Zhao, Shengju Qian et al. | Autoregressive (AR) video diffusion models have shown great potential in real-time... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2609.09123) ⬆49 [🐙 Repo](https://github.com/delaprada/Mask-Forcing) `PwC` |
 | 2026 | **The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement** | Yi Duan, Ying Liu et al. | Recursive self-improvement (RSI) enables AI systems to turn experience and feedback... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2609.11873) ⬆1 `🤗 HF` |
 | 2026 | **Negative Self-Distillation: Learning to Reason by Avoiding Flaws** | Rongcan Pei, Zhepei Wei et al. | On-Policy Self-Distillation (OPSD) has emerged as a popular paradigm for large... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2609.11699) ⬆4 [🐙 Repo](https://github.com/Prongcan/NSD) `🤗 HF` |
 | 2026 | **Memory as Plans: World-Action Modeling with Memory-Grounded Planning** | Sizhe Zhao, Haozhe Xie et al. | Mainstream robotic policies often adopt a Markovian formulation... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2609.11561) ⬆10 [🐙 Repo](https://github.com/aipixel/MaP-WAM) `🤗 HF` |
