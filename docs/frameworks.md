@@ -256,6 +256,9 @@
 | [RoboBench](https://robobench.github.io/) | 机器人操作综合基准，覆盖抓取、放置、推拉等基础动作的物理一致性评估 | 物理一致性 |
 | [Strands Evals](https://aws.amazon.com/strands-evals) | AWS 推出的轨迹检查 Agent 评估框架，2026 年 7 月发布 | 轨迹级 Agent 评估 |
 | [openevals](https://github.com/langchain-ai/openevals) | LangChain 配套的 LLM-as-Judge 评分工具，2026 年 7 月发布 | LLM 评判式评估 |
+| [RoboDojo](https://robodojo-benchmark.com/) | 首个统一"仿真+真机"通用机器人操作评测平台（2026.07，arXiv 2607.04434），由港大 MMLab 罗平/陈天行团队联合 UC Berkeley、清华、北大、MIT 等全球 18 所机构发起，RoboTwin 原班团队延续；42 仿真 + 18 真机任务，榜单由 AI MMLab Club 基金会公益治理，双盲打分 | 通用机器人操作（泛化/精细操作/长程任务） |
+
+以下是评测基准详解——RoboDojo 采用"仿真+真机"双榜单机制，仿真榜单集成 30 个代表性操作策略，真机榜单头部成功率普遍仅个位数到十几个百分点（人类专家 76%+），集中暴露 VLA 策略"不够稳"的短板。
 
 ### 评估指标详解
 

@@ -519,6 +519,8 @@ OXE = Open X-Embodiment                                Sim2Real = Simulation to 
 
 [70] [iclr.cc - ICLR 2025 Workshop: World Models — Understanding, Modelling and Scaling (2025)](https://iclr.cc/virtual/2025/workshop/24000)
 
+[71] [arxiv.org - RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies (2026-07-08)](https://arxiv.org/abs/2607.04434)
+
 ---
 
 
@@ -526,6 +528,7 @@ OXE = Open X-Embodiment                                Sim2Real = Simulation to 
 
 | 版本 | 日期 | 条目数 | 关键更新 |
 |:-----|:-----|:-----|:-----|
+| **v8.8** | **2026.09.14** | **2257+** | **RoboDojo 评测基准收录（arXiv 2607.04434，仿真+真机双榜单）、GPT 6 Astra as an Embodied Policy 专项榜单（12 模型 RoboDojo-Sim 对比，π₀.₅ 混合控制 62.6 登顶）、新建 docs/robodojo-leaderboard.md、论文 1 篇、参考文献至 [71]** |
 | v1.0-v5.0 | 2025.06-2026.05 | 79→300+ | 七轮深度调研，从初始 79 条目扩展至 300+，覆盖 20 个板块 |
 | v6.0 | 2026.07.02 | 300+ | 占位符修复、代码示例、性能对比矩阵、产业报告、BibTeX 导出 |
 | **v7.0** | **2026.07.17** | **380+** | **六大流派分类、Cosmos 3/Predict 2.5、Marble 1.1、NeuroVLA、Momenta IPO、WAIC 2026、RynnWorld-4D、WorldArena 2.0、CVPR 2026 论文×5、AGIBOT World 2026 数据集、30+ 最新论文、去重整理** | **9 轮** |

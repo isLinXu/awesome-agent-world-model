@@ -2045,6 +2045,7 @@
 | 2026 | **VLA-JEPA** | 多机构 | 在视觉语言行动模型中加入潜空间世界模型，机器人从即时反应转向预测式决策，ECCV 2026 | [📄 ECCV 2026](https://arxiv.org/abs/2605.10000) |
 | 2026 | **World Action Models: A Survey** | 新加坡国立大学（王新超）| 重新定义世界模型边界：预测必须进入行动路径，WAM 领域系统性综述，ECCV 2026 Workshop | [📄 arXiv](https://arxiv.org/abs/2607.00900) |
 | 2026 | **SafeWorldBench** | 帝国理工/CMU/斯坦福/NVIDIA/微软 | 安全关键世界模型评测基准，预测可靠性/安全生成/可执行智能三大维度，ECCV 2026 Workshop | [📄 Workshop](https://safeworldmodels.github.io) |
+| 2026 | **GPT 6 Astra as an Embodied Policy** | Yu-Mool Shu / Lipxin Zheng | 将 OpenAI GPT-6 Astra 直接接入机器人操作闭环的对比研究：直接末端执行器控制 vs 与 π₀.₅ 混合控制；在 RoboDojo-Sim 10 任务上 π₀.₅ + GPT 6 Astra 以 62.6 平均分大幅登顶（第二名 Galaxea G0.5 38.26），验证大语言模型作为具身策略基座的可行性（榜单来源：论文项目页截图，含 GitHub/轨迹视频/评测数据/参考文献入口，非官方 RoboDojo 排行榜） | [🖥️ RoboDojo](https://robodojo-benchmark.com/) |
 
 ### 世界模型综述专区
 

@@ -6,8 +6,8 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![GitHub Stars](https://img.shields.io/github/stars/isLinXu/Awesome-Agent-World-Model?style=social)](https://github.com/isLinXu/Awesome-Agent-World-Model)
-[![Last Update](https://img.shields.io/badge/Last%20Update-2026-09-11-brightgreen)]()
-[![Version](https://img.shields.io/badge/Version-8.7-blue)]()
+[![Last Update](https://img.shields.io/badge/Last%20Update-2026-09-14-brightgreen)]()
+[![Version](https://img.shields.io/badge/Version-8.8-blue)]()
 [![Coverage](https://img.shields.io/badge/Coverage-99%25%2B-brightgreen)]()
 [![Entries](https://img.shields.io/badge/Entries-2306%2B-orange)]()
 
@@ -16,6 +16,12 @@
 ## 📊 执行摘要
 
 本 Awesome List 经过十二轮深度调研与系统性质量审查，已从初始的 **79 个条目** 扩展至 **1000+ 高质量资源条目（覆盖率 99.5%+）**。v8.0 将内容按主题拆分为 5 个子文档，从"单一长文档"升级为"模块化文档体系"。
+
+**v8.8 核心改进**（RoboDojo 评测基准 + GPT-6 Astra 具身策略专项收录）：
+
+- **新增 RoboDojo 评测基准**：首个统一"仿真+真机"的通用机器人操作评测平台（arXiv 2607.04434，港大 MMLab 联合 18 所机构，2026.07），42 仿真 + 18 真机任务，榜单由 AI MMLab Club 基金会公益治理；官方仿真榜首 Hy-Embodied-0.5-VLA 平均分 13.07/成功率 8.80%，真机榜首 π₀.₅ 成功率 12.8%，人类专家 76%+
+- **GPT 6 Astra as an Embodied Policy 专项榜单**：新增独立文档 [docs/robodojo-leaderboard.md](docs/robodojo-leaderboard.md)，收录论文在 RoboDojo-Sim 10 任务上的 12 模型对比评测（π₀.₅ + GPT 6 Astra 混合控制 62.6 登顶，较纯 π₀.₅ 24.43 提升 +156%；Astra 直接末端控制 37.81 亦超过多数专用 VLA），标注"论文内部评测，非官方排行榜"
+- **papers.md 新增论文 1 篇**：GPT 6 Astra as an Embodied Policy（Yu-Mool Shu / Lipxin Zheng）
 
 **v8.5 核心改进**（WAM 前沿论文补充 + 8月新论文追踪 + 评测基准扩充）：
 
@@ -579,10 +585,11 @@ LeCun 团队从 2022 年至今的 JEPA 演进分四阶段：
 | **📈 技术深度** | 技术全景对比、发展时间线、关键挑战与开放问题、快速入门指南、架构图示 | [docs/technical.md](docs/technical.md) |
 | **📝 附录** | BibTeX 引用导出、全面性评估报告、贡献指南、术语表、参考文献、版本演进历程 | [docs/references.md](docs/references.md) |
 | **🏆 WorldArena 榜单** | WorldArena 榜单登顶模型资源汇总（论文/主页/代码/权重） | [docs/worldarena-leaderboard.md](docs/worldarena-leaderboard.md) |
+| **🥋 RoboDojo 榜单** | RoboDojo 仿真+真机双榜单资源与 GPT 6 Astra 具身策略专项评测 | [docs/robodojo-leaderboard.md](docs/robodojo-leaderboard.md) |
 
 ---
 
-> **最后更新**：2026-09-15（v8.6 WorldArena 榜单模型资源系统整理）
+ > **最后更新**：2026-09-15（v8.8 RoboDojo 评测基准、GPT-6 Astra 具身策略与 CIS 6280 教材收录）
 > **许可证**：[Apache 2.0](LICENSE)
 > **引用格式**：`isLinXu/Awesome-Agent-World-Model v8.4 (2026)`
 
