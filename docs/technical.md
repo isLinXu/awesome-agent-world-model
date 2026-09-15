@@ -546,7 +546,7 @@ graph LR
 
 | 课程 | 机构 | 学期 | 主讲 | 核心模块 | 资源 |
 |:-----|:-----|:-----|:-----|:---------|:-----|
-| **CIS 6280: World Models** | **University of Pennsylvania** | Fall 2026 | **Jiatao Gu** | 世界模型概论→环境仿真→状态空间模型→表征学习→生成模型基础→序列生成世界模型→MBRL/规划/控制→视频世界模型→空间世界模型（3D/4D）→神经物理→机器人学习→LLM 作为世界模型→推理模型→数字 Agent→评测 | [📚 官网](https://www.cis.upenn.edu/~cis6280/) |
+| **CIS 6280: World Models** | **University of Pennsylvania** | Fall 2026 | **Jiatao Gu** | 世界模型概论→环境仿真→状态空间模型→表征学习→生成模型基础→序列生成世界模型→MBRL/规划/控制→视频世界模型→空间世界模型（3D/4D）→神经物理→机器人学习→LLM 作为世界模型→推理模型→数字 Agent→评测 | [📚 官网](https://www.cis.upenn.edu/~cis6280/) · [📖 中文版教材 v10](../assets/CIS6280-World-Models-v10.pdf) |
 
 > **课程亮点**：CIS 6280 是截至目前世界模型方向最系统的研究生课程之一。23 讲覆盖从概率建模基础到前沿生成模型（Diffusion / Flow Matching / Normalizing Flows）的完整链路，并专门设置**空间世界模型**（3D/4D 表征）、**神经物理**（粒子/网格/流体/形变体）和**机器人学习中的 VLA 与 WAM**三个前沿专题。课程资源页已整理 6 篇奠基性文章、6 套 tutorial/collection、6 场关键演讲与 8 个可复现系统（含 DreamerV3、V-JEPA 2、Genie、Marble、GAIA-4、AIDO、DayDreamer、DINO-WM）。
 

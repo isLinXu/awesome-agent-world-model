@@ -100,6 +100,7 @@
 | 资源 | 描述 | 链接 |
 |:-----|:-----|:-----|
 | **Penn CIS 6280** | 世界模型最系统研究生课程（23讲）：概率建模→生成模型→视频/空间世界模型→神经物理→VLA&WAM→评测 | [cis.upenn.edu/~cis6280](https://www.cis.upenn.edu/~cis6280/) |
+| **Penn CIS 6280 中文版教材 (v10)** | 本项目整理的中文自学教材黑皮书版（基于 v10 LaTeX 编译稿，508页/约35万字/27章），含完整讲义、代码示例与论文导读 | [📖 PDF](../assets/CIS6280-World-Models-v10.pdf) |
 | **Stanford CS224R** | 深度强化学习与机器人控制，含世界模型专题 | [cs224r.stanford.edu](https://cs224r.stanford.edu) |
 | **CMU 16-831** | 机器人学习与规划，含世界模型与 VLA 模块 | [16-831.cmu.edu](https://16-831.cmu.edu) |
 | **Lil'Log (Lilian Weng)** | 《Why We Think》深度探讨测试时计算与世界模型模拟 | [lilianweng.github.io](https://lilianweng.github.io/posts/2025-05-01-thinking/) |
