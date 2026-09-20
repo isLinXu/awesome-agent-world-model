@@ -9,7 +9,7 @@
 [![Last Update](https://img.shields.io/badge/Last%20Update-2026-09-14-brightgreen)]()
 [![Version](https://img.shields.io/badge/Version-8.8-blue)]()
 [![Coverage](https://img.shields.io/badge/Coverage-99%25%2B-brightgreen)]()
-[![Entries](https://img.shields.io/badge/Entries-2486%2B-orange)]()
+[![Entries](https://img.shields.io/badge/Entries-2496%2B-orange)]()
 
 ---
 
@@ -589,7 +589,7 @@ LeCun 团队从 2022 年至今的 JEPA 演进分四阶段：
 
 ---
 
- > **最后更新**：2026-09-19（v8.8 RoboDojo 评测基准、GPT-6 Astra 具身策略与 CIS 6280 教材收录）
+ > **最后更新**：2026-09-20（v8.8 RoboDojo 评测基准、GPT-6 Astra 具身策略与 CIS 6280 教材收录）
 > **许可证**：[Apache 2.0](LICENSE)
 > **引用格式**：`isLinXu/Awesome-Agent-World-Model v8.4 (2026)`
 
