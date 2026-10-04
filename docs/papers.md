@@ -140,6 +140,9 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **Video-Index: A Curated Meta-Benchmark for Video Understanding** | Enxin Song, Yinuo Xu et al. | A video benchmark should reward the capability it claims to measure... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2610.00960) `🤗 HF` |
+| 2026 | **What Makes World Action Models Generalize? An Empirical Study of Test-Time Future Modeling** | Renping Zhou, Zanlin Ni et al. | World action models (WAMs) predict the future alongside actions during training... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2609.34981) ⬆127 [🐙 Repo](https://github.com/LeapLabTHU/Simple-WAM) `PwC` |
+| 2026 | **HOI-Retarget: Contact-Centric Retargeting for Human-Object Interaction** | Jihwan Shin, Adrià López Escoriza et al. | Learning from demonstration (LfD) has enabled humanoid robots to acquire diverse... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2609.34674) ⬆1 [🐙 Repo](https://github.com/shinben0327/hoi-retarget) `PwC` |
 | 2026 | **KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards** | Pengfei Li, Naufal Suryanto et al. | LLMs are increasingly applied to cybersecurity workflows... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2610.02206) ⬆4 [🐙 Repo](https://github.com/RISys-Lab/KaliBench) `🤗 HF` |
 | 2026 | **InterEvolve: Test-Time Evolution of Reward Programs for Humanoid Loco-Manipulation** | Zhuo Lin, Sirui Xu et al. | We study test-time evolution for humanoid loco-manipulation: solving tasks that a... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2610.02196) ⬆37 `🤗 HF` |
 | 2026 | **Generative modeling of intrinsically disordered protein regions by reinforcing sparse autoencoder features** | Jason X. Liu, Sebastian Ibarraran et al. | Intrinsically disordered protein regions (IDRs) play central roles in cellular... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2610.02189) `🤗 HF` |
