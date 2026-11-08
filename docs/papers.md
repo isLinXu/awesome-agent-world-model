@@ -182,6 +182,11 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **Reinforcing End-to-End Autonomous Driving Safety via Negative-Aware Planning in a Unified World-Action Model** | Zihao Zhang, Xinyu Zhang et al. | World-action models (WAMs) jointly model future traffic states and driving actions... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.08111) `🤗 HF` |
+| 2026 | **EnvOpt: Automated Optimization for Agent Environments** | Mingxuan Li, Huanzhi Mao et al. | An LLM agent's cost and success depend on its model, its harness... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.07372) `🤗 HF` |
+| 2026 | **VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding** | Yu-Cheng Chou, Shihao Wang et al. | Models for physical AI tasks, such as robotics and autonomous driving... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.08449) ⬆100 `🤗 HF` |
+| 2026 | **PVDepth: Panoramic Video Depth Estimation via Geometry-Aware Spatiotemporal Adaptation** | Chuanxin Song, Peixi Peng | Panoramic video depth estimation is pivotal for applications such as Virtual Reality... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.07873) `🤗 HF` |
+| 2026 | **NorthCUA Technical Report: Turbocharging Computer-Use Agents through Experience at Scale** | Chaoyun Zhang, Bingxuan Li et al. | Scaling computer-use agents from individual actions to complex software work... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.02102) ⬆32 [🐙 Repo](https://github.com/beipo-ai/NorthCUA) `PwC` |
 | 2026 | **Where and Why is Grounded Reasoning Useful?** | David Yan, Le Xue et al. | Grounded reasoning... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.08485) `🤗 HF` |
 | 2026 | **Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling** | Xiaojun Wu, Cehao Yang et al. | Mathematical modeling turns an open-ended real-world problem into assumptions... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.08237) ⬆7 [🐙 Repo](https://github.com/wxj630/terminal-bench-math-modeling) `🤗 HF` |
 | 2026 | **Static Recovery Is Not Dynamic Stability: Dynamics-Aware Benchmarking of Protein Motif Scaffolding** | Emile de Bruyn, Moritz Schäffler et al. | Protein motif scaffolding benchmarks assess whether generative models can build... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.07723) [🐙 Repo](https://github.com/PROFOUND-HFMI/BILBY-MD) `🤗 HF` |
