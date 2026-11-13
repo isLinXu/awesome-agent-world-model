@@ -184,6 +184,12 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **Duo: A Reciprocal World Model for Full-Duplex Interaction** | Hengyuan Cao, Biao Gong et al. | In this report... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.15131) ⬆6 `🤗 HF` |
+| 2026 | **Science Prediction Universe** | Zengji Tu, Xiang Liu et al. | Humanity has long sought to explain natural phenomena... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.15049) ⬆1 `🤗 HF` |
+| 2026 | **RSLiveBench-UAV: A Continually Evolving Vision-Language Benchmark for Aerial Spatial Intelligence** | Yue Zhou, Jiawei Liu et al. | Aerial spatial intelligence (ASI) requires models to understand objects and spatial... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.14953) ⬆12 `🤗 HF` |
+| 2026 | **BirdDreams: Joint Perspective and BEV Video Generation for a Plausible, Reactive Driving World Model** | Junyoung Seo, Jaewoo Seo et al. | Driving world models aim to simulate how a scene unfolds under different ego... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.14815) ⬆18 `🤗 HF` |
+| 2026 | **Coding Agent Memory Post-Training II: Unlocking the Memory Potential of Pre-trained File Operations for Long-Horizon Tasks via On-Policy Distillation** | Lirui Luo, Kelong Mao et al. | Language-model agents increasingly tackle long-horizon tasks whose interaction... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.14009) `🤗 HF` |
+| 2026 | **InfraRSI: Harnessing Recursive Self-Improvement for Training Infrastructure** | InfraRSI Team, Yuchuan Tian et al. | While Recursive Self-Improvement (RSI) accelerates isolated algorithm and kernel... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.11558) ⬆32 [🐙 Repo](https://github.com/TokenRhythm/InfraRSI) `PwC` |
 | 2026 | **ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows** | Kaiyuan Hou, Yang Ping Kuo et al. | Business process automation runs the same Standard Operating Procedure (SOP) again... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.14492) `🤗 HF` |
 | 2026 | **Is Your Robot's Memory Just a Clock? Temporal Shortcuts in Memory-Augmented VLA Policies** | Chubin Zhang, Bo An | Memory-augmented vision-language-action (VLA) policies are meant to remember what... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.14488) ⬆7 [🐙 Repo](https://github.com/bennidict23/memory-clock) `🤗 HF` |
 | 2026 | **UGG: Unified Generative Geometry Model** | Amani Kiruga, Zhiyi Li et al. | Understanding 4D scenes is a core challenge in visual intelligence... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.14440) `🤗 HF` |
