@@ -184,6 +184,9 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **CADET: Construction of PCB Routing Instances with Executable Demonstrations** | Hyungseok Song, Won-Seok Choi et al. | Printed circuit board (PCB) routing is the stage of physical layout that finds paths... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.16913) `🤗 HF` |
+| 2026 | **Evaluating Video LLMs' Understanding of Corner Cases in Autonomous Driving** | Gabriel Manalu, Minh Son Hoang et al. | Natural language explanations promised by modern Video Large Language Models (Video... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.16767) `🤗 HF` |
+| 2026 | **VibePrevisBench: Evaluating Agentic Coding for 4D Scene Generation in Blender** | Yuzhe Chen, Muxi Diao et al. | Controllable real-world video generation models can condition on a rendered graybox... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.15789) `🤗 HF` |
 | 2026 | **Back to Pixels: Lifting Latent Video Diffusion into Pixel Space** | Yanke Song, Shuo Chen et al. | Frontier video generation models work in a VAE latent space that compresses video in... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.17336) ⬆2 `🤗 HF` |
 | 2026 | **Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents** | Haochen Liu, Qianhao Zhu et al. | Decision models answer a question with a typed output... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.17167) ⬆29 [🐙 Repo](https://github.com/ZJU-REAL/decision-agents) `🤗 HF + PwC` |
 | 2026 | **Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors** | Hao Li, Fangzhou Hong et al. | Large foundation models such as GPT-6 Astra and Claude Fable 5... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.17060) ⬆26 [🐙 Repo](https://github.com/Ropedia/Ropedia-Xperience-2) `🤗 HF` |
