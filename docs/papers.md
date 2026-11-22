@@ -6,6 +6,7 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **Fast-JEPA: Advancing the Success-Latency Frontier for Latent World Models** | Yao Zhang, Bin Yu et al. | Latent world models predict the outcomes of action sequences... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.25927) ⬆1 `🤗 HF` |
 | 2026 | **One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning** | Yuxin Jiang, Wenqiang Sun et al. | Videos reveal how the world changes... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.26617) ⬆2 [🐙 Repo](https://github.com/showlab/O2LaF) `🤗 HF` |
 | 2026 | **JEPA4R: Embodied JEPA World Models with 4D Point Planning** | Jiarui Dong, Zhiheng Liang et al. | Joint-embedding predictive architecture (JEPA) world models predict future... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.19771) ⬆1 `🤗 HF` |
 | 2026 | **V-JEPA-LM: Video-Language Models That Read Dynamics Beyond Static, Text-Aligned Representations** | Keuntae Kim, Dongjun Kim et al. | World-model video encoders such as V-JEPA learn how scenes change (direction... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.17831) `🤗 HF` |
@@ -187,6 +188,7 @@
 
 | 年份 | 论文 | 作者/机构 | 核心贡献 | 链接 |
 |:-----|:-----|:-----|:-----|:-----|
+| 2026 | **MovieRoll: A Systematic Framework for Rolling Out Long-Form Videos** | Yunyang Ge, Weijie Kong et al. | Streaming video generation must sustain quality beyond the training horizon while... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.21339) ⬆13 [🐙 Repo](https://github.com/Tencent-Hunyuan/MovieRoll) `PwC` |
 | 2026 | **Posterior Matching Distillation** | Hidir Yesiltepe, Julius Berner et al. | Diffusion distillation accelerates image and video generation by compressing a... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.26629) ⬆34 [🐙 Repo](https://github.com/yesiltepe-hidir/PMD) `🤗 HF` |
 | 2026 | **RL Post-Training in Diffusion Transformers Is Activation Steering** | Tuna Han Salih Meral, Kaan Oktay et al. | Reinforcement learning (RL) post-training substantially improves the visual quality,... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.26627) ⬆14 `🤗 HF` |
 | 2026 | **Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)** | Mengxiao Wang, Mahbub Alam et al. | Agents based on large language models (LLMs) can now delete files and send payments... | [📄 arXiv:CS.AI](https://arxiv.org/abs/2611.26553) ⬆2 `🤗 HF` |
